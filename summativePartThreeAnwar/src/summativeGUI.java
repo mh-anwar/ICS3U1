@@ -6,7 +6,7 @@
 
 /**
  *
- * @author anwar
+ * @author mohammad
  */
 import java.awt.*;
 import java.awt.event.ComponentEvent;

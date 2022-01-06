@@ -1,0 +1,77 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package custom.components;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.border.Border;
+
+/**
+ *
+ * @author mohammad
+ */
+public class PasswordContainer extends javax.swing.JPanel {
+    public PasswordContainer(String text){
+        PasswordField passField = new PasswordField(text);
+        ShowPasswordBtn showPassword = new ShowPasswordBtn(passField);
+        
+        this.add(passField);
+        this.add(showPassword);
+    }
+    
+    /* Generally, custom components are in their own class/file
+     * However, in this case, this components will always be together
+     * component. Therefore, it makes sense to have them in one class/file.
+    */
+    class PasswordField extends javax.swing.JPasswordField{
+        public PasswordField(String text){
+            setPreferredSize(new Dimension(400,60));
+            Border fieldBorder = BorderFactory.createTitledBorder(text);
+            setBorder(fieldBorder);
+            setOpaque(false);
+            Font textFont = new Font("Dialog", 0, 30);
+            setFont(textFont);
+        }
+    }
+    class ShowPasswordBtn extends javax.swing.JToggleButton{
+        public ShowPasswordBtn(PasswordField passField){
+            setPreferredSize(new Dimension(60,60));
+            Border fieldBorder = BorderFactory.createTitledBorder("Show");
+            setBorder(fieldBorder);
+            
+            ImageIcon eyeOpenIcon = new ImageIcon(getClass().getResource("images/eyeOpenEmoji.png"));
+            // TODO: this can probably be optimized
+            // Get the image from the Image Icon
+            Image eyeOpenInitialImage = eyeOpenIcon.getImage();
+            //Scale the image smoothly to 40x40
+            Image eyeOpenResized = eyeOpenInitialImage.getScaledInstance(40, 40,  java.awt.Image.SCALE_SMOOTH);
+            // Set the eyeOpenIcon to the resized image
+            eyeOpenIcon = new ImageIcon(eyeOpenResized);
+            // Set the icon of the button
+            setIcon(eyeOpenIcon);
+            setBackground(new Color(0, 0, 0));
+            setOpaque(false);
+            setSelected(false);
+            this.addActionListener(new ActionListener(){
+                @Override
+                public void actionPerformed(ActionEvent e){
+                    // Apparently, since this is inside this class, it doesn't need to use this
+                    boolean showPassword = isSelected();
+                    if(showPassword){
+                        passField.setEchoChar((char)0); 
+                    } else{
+                        passField.setEchoChar('•');
+                    }
+                }
+            });
+        }
+    }
+}
