@@ -1,3 +1,7 @@
+
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,12 +13,24 @@
  * @author s201076699
  */
 public class FrmDiceGame extends javax.swing.JFrame {
+    final int EASY_MODE_HEALTH = 45;
+    final int MEDIUM_MODE_HEALTH = 50;
+    final int HARD_MODE_HEALTH = 55;
+    final int GOD_MODE_HEALTH = 50;
+    /* Initial health will only be set when the mode is changed, it keeps track 
+    of the maximum health acheivable, in other words, the starting health*/
+    int initialHealth = 20;
+    // Initialized and set health counter to 20, this variable will change with each guess
+    int health = 20;
+    
     int totalRolls = 0; 
     int totalCorrect = 0; 
     int totalIncorrect = 0; 
     int userGuess; 
     int diceRoll; 
+    int rollAmount = 6;
     double percCorrect = 0;
+    
     // Creates new form FrmDiceGame
     public FrmDiceGame() {
         initComponents();
@@ -29,60 +45,69 @@ public class FrmDiceGame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        btnRollDice = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        txtUserGuess = new javax.swing.JTextField();
-        lblRollsValue = new javax.swing.JLabel();
+        buttonGroup5 = new javax.swing.ButtonGroup();
         lblCorrectValue = new javax.swing.JLabel();
-        lblIncorrectValue = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         lblPercentValue = new javax.swing.JLabel();
-        lblRollValue = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        lblIncorrectValue = new javax.swing.JLabel();
+        lblRollsValue = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        txtUserGuess = new javax.swing.JTextField();
+        featurePanel = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        radEasyMode = new javax.swing.JRadioButton();
+        radMediumMode = new javax.swing.JRadioButton();
+        radHardMode = new javax.swing.JRadioButton();
+        jLabel20 = new javax.swing.JLabel();
+        lblHealthAmount = new javax.swing.JLabel();
+        radGodMode = new javax.swing.JRadioButton();
+        jLabel22 = new javax.swing.JLabel();
+        lblRollInstructions = new javax.swing.JLabel();
+        btnRollDice = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        lblCorrectAnswer = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(0, 0, 200, 0));
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        lblCorrectValue.setText("0");
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Super Dice Guessing Game");
+        jLabel10.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel10.setText("Percentage of correct guesses:");
 
-        jLabel2.setText("Enter a number from 1 to 6");
+        jLabel11.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel11.setText("Number of incorrect guesses:");
 
-        jLabel3.setText("and click to roll the dice");
+        jLabel12.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel12.setText("Number of correct guesses:");
 
-        jLabel4.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
-        jLabel4.setText("Your Guess");
+        lblPercentValue.setText("0");
 
-        jLabel5.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
-        jLabel5.setText("Dice Roll");
+        jLabel13.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel13.setText("Number of rolls:");
 
-        btnRollDice.setText("Roll Dice");
-        btnRollDice.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRollDiceActionPerformed(evt);
-            }
-        });
+        lblIncorrectValue.setText("0");
 
-        jLabel6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel6.setText("Number of rolls:");
+        lblRollsValue.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblRollsValue.setText("0");
 
-        jLabel7.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel7.setText("Number of correct guesses:");
+        jLabel14.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
+        jLabel14.setText("Dice Roll");
 
-        jLabel8.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel8.setText("Number of incorrect guesses:");
+        jLabel15.setText("and click to roll the dice");
 
-        jLabel9.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel9.setText("Percentage of correct guesses:");
+        jLabel17.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("Super Dice Guessing Game");
+
+        jLabel18.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
+        jLabel18.setText("Your Guess");
 
         txtUserGuess.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtUserGuess.setText("0");
@@ -92,147 +117,306 @@ public class FrmDiceGame extends javax.swing.JFrame {
             }
         });
 
-        lblRollsValue.setText("0");
+        featurePanel.setBackground(new java.awt.Color(204, 204, 255));
+        featurePanel.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        featurePanel.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
 
-        lblCorrectValue.setText("0");
+        jLabel19.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("Choose Difficulty:");
 
-        lblIncorrectValue.setText("0");
+        radEasyMode.setBackground(featurePanel.getBackground());
+        buttonGroup5.add(radEasyMode);
+        radEasyMode.setSelected(true);
+        radEasyMode.setText("Easy");
+        radEasyMode.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        radEasyMode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radEasyModeActionPerformed(evt);
+            }
+        });
 
-        lblPercentValue.setText("0");
+        radMediumMode.setBackground(featurePanel.getBackground());
+        buttonGroup5.add(radMediumMode);
+        radMediumMode.setText("Medium");
+        radMediumMode.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        radMediumMode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radMediumModeActionPerformed(evt);
+            }
+        });
 
-        lblRollValue.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblRollValue.setText("0");
+        radHardMode.setBackground(featurePanel.getBackground());
+        buttonGroup5.add(radHardMode);
+        radHardMode.setText("Hard");
+        radHardMode.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        radHardMode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radHardModeActionPerformed(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(btnRollDice, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel6)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblPercentValue, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblIncorrectValue, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(txtUserGuess))
-                            .addComponent(jLabel4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 219, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblRollsValue, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblCorrectValue, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblRollValue, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(26, 26, 26))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel3)))
-                .addGap(137, 137, 137))
+        jLabel20.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel20.setText("Life Amount");
+
+        lblHealthAmount.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
+        lblHealthAmount.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblHealthAmount.setText("Health: 20");
+
+        radGodMode.setBackground(new java.awt.Color(204, 0, 0));
+        buttonGroup5.add(radGodMode);
+        radGodMode.setForeground(new java.awt.Color(255, 255, 255));
+        radGodMode.setText("God Mode");
+        radGodMode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radGodModeActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout featurePanelLayout = new javax.swing.GroupLayout(featurePanel);
+        featurePanel.setLayout(featurePanelLayout);
+        featurePanelLayout.setHorizontalGroup(
+            featurePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(featurePanelLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addGroup(featurePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(radEasyMode)
+                    .addComponent(radMediumMode)
+                    .addComponent(radHardMode)
+                    .addComponent(radGodMode))
+                .addContainerGap(65, Short.MAX_VALUE))
+            .addComponent(lblHealthAmount, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        featurePanelLayout.setVerticalGroup(
+            featurePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(featurePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
+                .addComponent(jLabel19)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtUserGuess, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblRollValue)
-                            .addComponent(btnRollDice, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(54, 54, 54)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(lblRollsValue))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(lblCorrectValue))))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(lblIncorrectValue))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(lblPercentValue))
+                .addComponent(radEasyMode)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(radMediumMode)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(radHardMode)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(radGodMode)
+                .addGap(56, 56, 56)
+                .addComponent(jLabel20)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblHealthAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dice.png"))); // NOI18N
+
+        lblRollInstructions.setText("Enter an amount from 1 to 6");
+
+        btnRollDice.setText("Roll Dice");
+        btnRollDice.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRollDiceActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel1.setText("Correct Anwser:  ");
+
+        lblCorrectAnswer.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        lblCorrectAnswer.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(9, 9, 9)
+                .addComponent(featurePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(89, 89, 89)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(jLabel15)
+                                    .addGap(40, 40, 40)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txtUserGuess, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(101, 101, 101)
+                                            .addComponent(btnRollDice)))
+                                    .addGap(63, 63, 63)
+                                    .addComponent(lblRollsValue, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel18)
+                                    .addGap(139, 139, 139)
+                                    .addComponent(jLabel14)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel10)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(56, 56, 56)
+                                    .addComponent(jLabel12))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(jLabel13)
+                                    .addGap(40, 40, 40))
+                                .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)))
+                        .addGap(71, 71, 71)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblPercentValue, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblIncorrectValue, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCorrectValue, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(134, 134, 134)
+                        .addComponent(lblRollInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(99, 99, 99)
+                        .addComponent(jLabel1)
+                        .addGap(97, 97, 97)
+                        .addComponent(lblCorrectAnswer, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(212, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(featurePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(jLabel17)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblRollInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel15)
+                                        .addGap(35, 35, 35)
+                                        .addComponent(jLabel14)
+                                        .addGap(2, 2, 2))
+                                    .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtUserGuess, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnRollDice))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(24, 24, 24)
+                                        .addComponent(lblRollsValue)))
+                                .addGap(47, 47, 47)
+                                .addComponent(jLabel13)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel12)
+                                .addGap(2, 2, 2)
+                                .addComponent(lblCorrectValue)
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblIncorrectValue, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel10)
+                                    .addComponent(lblPercentValue))
+                                .addGap(30, 30, 30)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel1)
+                                    .addComponent(lblCorrectAnswer))
+                                .addGap(46, 46, 46)))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(115, 115, 115))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    void setMode(int rollingAmount, int healthAmount){
+        rollAmount = rollingAmount;
+        lblRollInstructions.setText("Enter a number from 1 to " + Integer.toString(rollingAmount));
+        health = healthAmount;
+    }
+    void modifyHealth(String healthAction){
+        if(health <= 0){
+            lblHealthAmount.setText("Your health is being reset");
+            health = initialHealth;
+            
+            // JavaScript has much better ways to do this, but this works just as well
+            final ImageIcon icon = new ImageIcon("dice.png");
+            JOptionPane.showMessageDialog(null, "You have died. Your life will be reset.", "Death Notification", JOptionPane.INFORMATION_MESSAGE, icon);
+        } else if(healthAction.equals("remove")){
+            health -=5;
+            lblHealthAmount.setText("Health: " + Integer.toString(health));
+        } else {
+            health += 5;
+            lblHealthAmount.setText("Health: " + Integer.toString(health));
+        }
+        /* Note: To avoid having the lblHealthAmount.setText line three times, 
+           I could have nested if statements, but those look bad*/
+    }
+    
     private void txtUserGuessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserGuessActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtUserGuessActionPerformed
 
-    private void btnRollDiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRollDiceActionPerformed
+    private void radEasyModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radEasyModeActionPerformed
+        setMode(6, EASY_MODE_HEALTH);
+        initialHealth = EASY_MODE_HEALTH;
+    }//GEN-LAST:event_radEasyModeActionPerformed
 
-    diceRoll = (int) Math.round (Math.random()*5+1);
-    lblRollValue.setText(String.valueOf(diceRoll));
-    userGuess = Integer.parseInt(txtUserGuess.getText ());
-    totalRolls = totalRolls + 1;
-    if (diceRoll == userGuess){
-        // Using += is equivalent to totalCorrect = totalCorrect +1, but more efficient
-        totalCorrect += 1;
-    } else {
-        totalIncorrect += 1;
-    }
-    percCorrect = ((double) totalCorrect/ (double) totalRolls) *100;
-    percCorrect *= 100;
-    percCorrect = Math.round(percCorrect);
-    percCorrect = percCorrect / 100;
-    lblRollsValue.setText(String.valueOf(totalRolls));
-    lblCorrectValue.setText(String.valueOf(totalCorrect));
-    lblIncorrectValue.setText (String.valueOf(totalIncorrect));
-    lblPercentValue.setText(String.valueOf(percCorrect));
+    private void radGodModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radGodModeActionPerformed
+        // Health is set to 35 on purpose, it's called God Mode for a reason
+        setMode(1000, GOD_MODE_HEALTH);
+        initialHealth = GOD_MODE_HEALTH;
+    }//GEN-LAST:event_radGodModeActionPerformed
+
+    private void radMediumModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radMediumModeActionPerformed
+        setMode(40, MEDIUM_MODE_HEALTH);
+        initialHealth = MEDIUM_MODE_HEALTH;
+    }//GEN-LAST:event_radMediumModeActionPerformed
+
+    private void radHardModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radHardModeActionPerformed
+        setMode(80, HARD_MODE_HEALTH);
+        initialHealth = HARD_MODE_HEALTH;
+    }//GEN-LAST:event_radHardModeActionPerformed
+
+    private void btnRollDiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRollDiceActionPerformed
+        diceRoll = (int) Math.round (Math.random()*rollAmount+1);
+        lblRollsValue.setText(String.valueOf(diceRoll));
+        userGuess = Integer.parseInt(txtUserGuess.getText ());
+        totalRolls = totalRolls + 1;
+        
+        if (diceRoll == userGuess){
+            totalCorrect = totalCorrect + 1;
+            modifyHealth("add");
+        }
+        else{
+            totalIncorrect = totalIncorrect + 1;
+            modifyHealth("remove");
+        }
+        
+        percCorrect = ((double) totalCorrect/ (double) totalRolls) *100;
+        percCorrect = percCorrect*100;
+        percCorrect = Math.round(percCorrect);
+        percCorrect = percCorrect / 100;
+        lblCorrectAnswer.setText(Integer.toString(diceRoll));
+        lblRollsValue.setText(String.valueOf(totalRolls));
+        lblCorrectValue.setText(String.valueOf(totalCorrect));
+        lblIncorrectValue.setText(String.valueOf(totalIncorrect));
+        lblPercentValue.setText (String.valueOf(percCorrect));
     }//GEN-LAST:event_btnRollDiceActionPerformed
     
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -264,24 +448,34 @@ public class FrmDiceGame extends javax.swing.JFrame {
             }
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRollDice;
+    private javax.swing.ButtonGroup buttonGroup5;
+    private javax.swing.JPanel featurePanel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel lblCorrectAnswer;
     private javax.swing.JLabel lblCorrectValue;
+    private javax.swing.JLabel lblHealthAmount;
     private javax.swing.JLabel lblIncorrectValue;
     private javax.swing.JLabel lblPercentValue;
-    private javax.swing.JLabel lblRollValue;
+    private javax.swing.JLabel lblRollInstructions;
     private javax.swing.JLabel lblRollsValue;
+    private javax.swing.JRadioButton radEasyMode;
+    private javax.swing.JRadioButton radGodMode;
+    private javax.swing.JRadioButton radHardMode;
+    private javax.swing.JRadioButton radMediumMode;
     private javax.swing.JTextField txtUserGuess;
     // End of variables declaration//GEN-END:variables
 }
