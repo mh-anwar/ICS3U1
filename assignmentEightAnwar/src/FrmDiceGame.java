@@ -39,7 +39,9 @@ public class FrmDiceGame extends javax.swing.JFrame {
     int diceRoll; 
     int rollAmount = 6;
     double percCorrect = 0;
+    // Create image icon for dialogs
     
+    final ImageIcon icon = new ImageIcon(getClass().getResource("/dice.png"));
     // Creates new form FrmDiceGame
     public FrmDiceGame() {
         initComponents();
@@ -239,14 +241,9 @@ public class FrmDiceGame extends javax.swing.JFrame {
                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(lblRollInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel15))
-                            .addGroup(layout.createSequentialGroup()
+                                .addGap(44, 44, 44)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(jLabel10)
@@ -259,27 +256,36 @@ public class FrmDiceGame extends javax.swing.JFrame {
                                     .addComponent(lblIncorrectValue, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addComponent(lblRollsValue, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(lblCorrectValue, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(107, 107, 107)
-                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(lblCorrectValue, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(101, 101, 101)
+                                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(74, 74, 74)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btnRollDice)
-                                        .addGap(63, 63, 63))
+                                        .addGap(98, 98, 98))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(spnUserGuess, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(158, 158, 158)))
-                                .addComponent(lblRollValue, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel18)
-                                .addGap(139, 139, 139)
-                                .addComponent(jLabel14)))))
-                .addContainerGap(23, Short.MAX_VALUE))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(spnUserGuess, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(136, 136, 136)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(6, 6, 6)
+                                                .addComponent(lblRollValue, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jLabel14))))))
+                        .addContainerGap(41, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lblRollInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(95, 95, 95))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel15)
+                                .addGap(121, 121, 121))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -291,45 +297,47 @@ public class FrmDiceGame extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(featurePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblRollInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel15))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblRollInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
+                                .addGap(39, 39, 39)
                                 .addComponent(jLabel14)
                                 .addGap(2, 2, 2))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel15)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel18)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(spnUserGuess, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(lblRollValue)))
+                                .addGap(71, 71, 71)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel13)
+                                    .addComponent(lblRollsValue))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(spnUserGuess, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnRollDice))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel12)
+                                    .addComponent(lblCorrectValue))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel11)
+                                    .addComponent(lblIncorrectValue))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel10)
+                                    .addComponent(lblPercentValue)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(24, 24, 24)
-                                .addComponent(lblRollValue)))
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13)
-                            .addComponent(lblRollsValue))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel12)
-                            .addComponent(lblCorrectValue))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel11)
-                            .addComponent(lblIncorrectValue))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel10)
-                            .addComponent(lblPercentValue))
+                                .addGap(39, 39, 39)
+                                .addComponent(btnRollDice)))
                         .addGap(4, 4, 4)))
                 .addContainerGap())
         );
@@ -338,51 +346,73 @@ public class FrmDiceGame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     // Method to set the mode
     void setMode(int rollingAmount, int healthAmount){
-        
+        // Set the new rolling amount (this is provided by the function-caller(?) based on difficulty)
         rollAmount = rollingAmount;
+        // Update roll instructions with new roll amount
         lblRollInstructions.setText("Enter a number from 1 to " + Integer.toString(rollingAmount));
+        // Set new health based on health provided by the function caller
         health = healthAmount;
+        // Set the initial health
         initialHealth = healthAmount;
+        // Update the health label
         lblHealthAmount.setText("Health: " + Integer.toString(healthAmount) + " HP");
+        // Reset all relevant variables
+        resetInformation();
+        // Display dialog notifying user that all statistics are being reset.
+        JOptionPane.showMessageDialog(null, "You changed your mode and your stats are being reset..", "Statistic Notification", JOptionPane.INFORMATION_MESSAGE, icon);
     }
     // Method to reset user health
     void resetHealth(){
-        lblHealthAmount.setText("Health: " + Integer.toString(initialHealth) + " HP");
+        // Resets health to the initialHealth
         health = initialHealth;
-        // Show a dialog with an icon that tells user that they lost/died
-        final ImageIcon icon = new ImageIcon(getClass().getResource("/dice.png"));
+        
+        // Updates health label
+        lblHealthAmount.setText("Health: " + Integer.toString(health) + " HP");
+        
+        // Show a dialog that tells user that they lost/died
         JOptionPane.showMessageDialog(null, "You have died. Absolute failure. Your life will be reset.", "Death Notification", JOptionPane.INFORMATION_MESSAGE, icon);
+        
+        // Reset all relevant variables
+        resetInformation();
+    }
+    
+    void resetInformation(){
         // Reset all variables that change
         totalRolls = 0;
         totalCorrect = 0;
         totalIncorrect = 0;
         percCorrect = 0;
+        
+        // Resets all the labels with values
         lblRollsValue.setText(Integer.toString(0));
         lblCorrectValue.setText(Integer.toString(0));
         lblIncorrectValue.setText(Integer.toString(0));
         lblPercentValue.setText(Integer.toString(0));
     }
+    // Modifies health based on the health action
     void modifyHealth(String healthAction){
         if(health <= 0){
+            // Calls resetHealth if the health is less than or 0
             resetHealth();
         } else if(healthAction.equals("remove")){
+            // Reduces health and updates health label
             health -=5;
             lblHealthAmount.setText("Health: " + Integer.toString(health) + " HP");
         } else {
+            // Increases health and updates health label
             health += 5;
             lblHealthAmount.setText("Health: " + Integer.toString(health) + " HP");
         }
         /* Note: To avoid having the lblHealthAmount.setText line three times, 
            I could have nested if statements, but those look bad*/
     }
-    
+    // The next four methods set the mode based on the click of each mode radio button
     private void radEasyModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radEasyModeActionPerformed
         setMode(EASY_MODE_DIFFICULTY, EASY_MODE_HEALTH);
     }//GEN-LAST:event_radEasyModeActionPerformed
 
     private void radGodModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radGodModeActionPerformed
-
-        setMode(GOD_MODE_HEALTH, GOD_MODE_HEALTH);
+        setMode(GOD_MODE_DIFFICULTY, GOD_MODE_HEALTH);
     }//GEN-LAST:event_radGodModeActionPerformed
 
     private void radMediumModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radMediumModeActionPerformed
@@ -396,24 +426,29 @@ public class FrmDiceGame extends javax.swing.JFrame {
     private void btnRollDiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRollDiceActionPerformed
         diceRoll = (int) Math.round (Math.random()*rollAmount+1);
         lblRollValue.setText(String.valueOf(diceRoll));
+        
         userGuess = Integer.parseInt(spnUserGuess.getValue().toString());
+        
         totalRolls = totalRolls + 1;
         
         if (diceRoll == userGuess){
             totalCorrect = totalCorrect + 1;
+            // Modify the health to add to it, because the user guessed correctly
             modifyHealth("add");
         }
         else{
             totalIncorrect = totalIncorrect + 1;
+            // Modify the health to remove from it, because the user guessed in incorrectly
             modifyHealth("remove");
         }
         
         percCorrect = ((double) totalCorrect/ (double) totalRolls) *100;
+        
         percCorrect = percCorrect*100;
         percCorrect = Math.round(percCorrect);
         percCorrect = percCorrect / 100;
-        lblRollsValue.setText(String.valueOf(totalRolls));
         
+        lblRollsValue.setText(String.valueOf(totalRolls));
         lblCorrectValue.setText(String.valueOf(totalCorrect));
         lblIncorrectValue.setText(String.valueOf(totalIncorrect));
         lblPercentValue.setText (String.valueOf(percCorrect));
