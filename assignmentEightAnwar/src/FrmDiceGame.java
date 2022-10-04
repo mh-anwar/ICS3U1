@@ -13,6 +13,9 @@ import javax.swing.JOptionPane;
  * @author s201076699
  */
 public class FrmDiceGame extends javax.swing.JFrame {
+    // Create image icon for dialogs
+    final ImageIcon DIALOG_ICON = new ImageIcon(getClass().getResource("/dice.png"));
+    
     // Set the health for each mode
     final int EASY_MODE_HEALTH = 40;
     final int MEDIUM_MODE_HEALTH = 60;
@@ -39,9 +42,7 @@ public class FrmDiceGame extends javax.swing.JFrame {
     int diceRoll; 
     int rollAmount = 6;
     double percCorrect = 0;
-    // Create image icon for dialogs
     
-    final ImageIcon icon = new ImageIcon(getClass().getResource("/dice.png"));
     // Creates new form FrmDiceGame
     public FrmDiceGame() {
         initComponents();
@@ -359,7 +360,7 @@ public class FrmDiceGame extends javax.swing.JFrame {
         // Reset all relevant variables
         resetInformation();
         // Display dialog notifying user that all statistics are being reset.
-        JOptionPane.showMessageDialog(null, "You changed your mode and your stats are being reset..", "Statistic Notification", JOptionPane.INFORMATION_MESSAGE, icon);
+        JOptionPane.showMessageDialog(null, "You changed your mode and your stats are being reset..", "Statistic Notification", JOptionPane.INFORMATION_MESSAGE, DIALOG_ICON);
     }
     // Method to reset user health
     void resetHealth(){
@@ -370,7 +371,7 @@ public class FrmDiceGame extends javax.swing.JFrame {
         lblHealthAmount.setText("Health: " + Integer.toString(health) + " HP");
         
         // Show a dialog that tells user that they lost/died
-        JOptionPane.showMessageDialog(null, "You have died. Absolute failure. Your life will be reset.", "Death Notification", JOptionPane.INFORMATION_MESSAGE, icon);
+        JOptionPane.showMessageDialog(null, "You have died. Absolute failure. Your life will be reset.", "Death Notification", JOptionPane.INFORMATION_MESSAGE, DIALOG_ICON);
         
         // Reset all relevant variables
         resetInformation();
