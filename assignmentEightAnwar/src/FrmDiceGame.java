@@ -23,10 +23,10 @@ public class FrmDiceGame extends javax.swing.JFrame {
     final int GOD_MODE_HEALTH = 40;
     
     // Set the difficulty for each mode
-    final int EASY_MODE_DIFFICULTY = 6;
-    final int MEDIUM_MODE_DIFFICULTY = 20;
-    final int HARD_MODE_DIFFICULTY = 40;
-    final int GOD_MODE_DIFFICULTY = 1000;
+    final int EASY_MODE_DIFFICULTY = 5;
+    final int MEDIUM_MODE_DIFFICULTY = 19;
+    final int HARD_MODE_DIFFICULTY = 39;
+    final int GOD_MODE_DIFFICULTY = 99999;
     
     /* Initial health will only be set when the mode is changed, it keeps track 
     of the maximum health acheivable, in other words, the starting health*/
@@ -40,7 +40,7 @@ public class FrmDiceGame extends javax.swing.JFrame {
     int totalIncorrect = 0; 
     int userGuess; 
     int diceRoll; 
-    int rollAmount = 6;
+    int rollAmount = 5;
     double percCorrect = 0;
     
     // Creates new form FrmDiceGame
@@ -259,9 +259,6 @@ public class FrmDiceGame extends javax.swing.JFrame {
                                         .addComponent(lblRollsValue, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(lblCorrectValue, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(101, 101, 101)
-                                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGap(74, 74, 74)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
@@ -276,17 +273,19 @@ public class FrmDiceGame extends javax.swing.JFrame {
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(6, 6, 6)
                                                 .addComponent(lblRollValue, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(jLabel14))))))
+                                            .addComponent(jLabel14)))))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(lblRollInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addGap(101, 101, 101)
+                                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addContainerGap(41, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lblRollInstructions, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(95, 95, 95))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel15)
-                                .addGap(121, 121, 121))))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
+                        .addComponent(jLabel15)
+                        .addGap(121, 121, 121))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -350,7 +349,7 @@ public class FrmDiceGame extends javax.swing.JFrame {
         // Set the new rolling amount (this is provided by the function-caller(?) based on difficulty)
         rollAmount = rollingAmount;
         // Update roll instructions with new roll amount
-        lblRollInstructions.setText("Enter a number from 1 to " + Integer.toString(rollingAmount));
+        lblRollInstructions.setText("Enter a number from 1 to " + Integer.toString(rollingAmount + 1) );
         // Set new health based on health provided by the function caller
         health = healthAmount;
         // Set the initial health
