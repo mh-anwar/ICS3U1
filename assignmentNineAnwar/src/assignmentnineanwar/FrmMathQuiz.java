@@ -54,7 +54,7 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
         txtChoiceSix = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnSubmitTest = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         Results = new javax.swing.JPanel();
@@ -77,23 +77,21 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         lblPercScore = new javax.swing.JLabel();
         lblCorrectAnswers = new javax.swing.JLabel();
         lblIncorrectAnswers = new javax.swing.JLabel();
+        btnRetakeTest = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Quiz.setBackground(new java.awt.Color(51, 51, 255));
+        Quiz.setBackground(new java.awt.Color(255, 153, 255));
         Quiz.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Math and Programming Quiz");
+        jLabel1.setText("General Quiz");
 
         jLabel2.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("4. Which equation is in vertex form?");
 
         jLabel3.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("1. What are the first three values of Pi?");
 
         jScrollPane1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -104,7 +102,6 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jTextArea1.setBackground(Quiz.getBackground());
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
-        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jTextArea1.setText("A. y = a(x-y)\nB. y = ax + bx + c\nC. y = a(x-h)^2 + k\nD. y = (x-s)(x-t)");
@@ -121,7 +118,6 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jTextArea2.setBackground(Quiz.getBackground());
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
-        jTextArea2.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
         jTextArea2.setText("A. 3.145\nB. 1.390\nC. 3.141\nD. 2.141");
@@ -131,7 +127,6 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea2);
 
         jLabel4.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("3. What is: \"1\" + \"1\":");
 
         jScrollPane3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -143,7 +138,6 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jTextArea3.setBackground(Quiz.getBackground());
         jTextArea3.setColumns(20);
         jTextArea3.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
-        jTextArea3.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
         jTextArea3.setText("A. -4\nB. 4\nC. 1/4\nD. 10");
@@ -165,7 +159,6 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jTextArea4.setBackground(Quiz.getBackground());
         jTextArea4.setColumns(20);
         jTextArea4.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
-        jTextArea4.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
         jTextArea4.setText("A. Mr. Buckland\nB. Ms. Reid\nC. Ms. Halai\nD. Mr. Vasani");
@@ -175,11 +168,9 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jScrollPane4.setViewportView(jTextArea4);
 
         jLabel5.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("5. If 5 >4 but 4>3 then what is 4");
 
         jLabel6.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("2. Who is the best teacher:");
 
         jScrollPane5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -190,7 +181,6 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jTextArea5.setBackground(Quiz.getBackground());
         jTextArea5.setColumns(20);
         jTextArea5.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
-        jTextArea5.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea5.setLineWrap(true);
         jTextArea5.setRows(5);
         jTextArea5.setText("A. 1\nB. -4\nC. Window\nD. 11\n");
@@ -200,7 +190,6 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jScrollPane5.setViewportView(jTextArea5);
 
         jLabel7.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("6. What does NaN stand for?");
 
         jScrollPane6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -211,7 +200,6 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jTextArea6.setBackground(Quiz.getBackground());
         jTextArea6.setColumns(20);
         jTextArea6.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
-        jTextArea6.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea6.setLineWrap(true);
         jTextArea6.setRows(5);
         jTextArea6.setText("A. Nanny\nB. Compile\nC. Not a number\nD. Null");
@@ -220,21 +208,20 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jTextArea6.setHighlighter(null);
         jScrollPane6.setViewportView(jTextArea6);
 
-        jButton1.setBackground(new java.awt.Color(51, 204, 0));
-        jButton1.setText("Submit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnSubmitTest.setBackground(new java.awt.Color(102, 102, 255));
+        btnSubmitTest.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btnSubmitTest.setText("Submit");
+        btnSubmitTest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnSubmitTestActionPerformed(evt);
             }
         });
 
         jLabel15.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("Enter in the option that you would like");
 
         jLabel16.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("such as A, B, C or D, then Submit!");
 
@@ -273,8 +260,8 @@ public class FrmMathQuiz extends javax.swing.JFrame {
                                     .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 375, Short.MAX_VALUE)
                                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING))
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(18, 18, 18)
                                 .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(QuizLayout.createSequentialGroup()
@@ -282,7 +269,7 @@ public class FrmMathQuiz extends javax.swing.JFrame {
                                             .addComponent(txtChoiceFive, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(txtChoiceSix, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btnSubmitTest, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(QuizLayout.createSequentialGroup()
                                         .addComponent(txtChoiceFour, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE))))
@@ -358,16 +345,17 @@ public class FrmMathQuiz extends javax.swing.JFrame {
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 6, Short.MAX_VALUE))
+                        .addGap(0, 69, Short.MAX_VALUE))
                     .addGroup(QuizLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 486, Short.MAX_VALUE)
+                        .addComponent(btnSubmitTest, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
-        Results.setBackground(new java.awt.Color(255, 255, 0));
+        Results.setBackground(new java.awt.Color(255, 102, 153));
         Results.setVisible(false);
 
+        jLabel8.setBackground(new java.awt.Color(255, 102, 255));
         jLabel8.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Results");
@@ -419,58 +407,70 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jLabel19.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabel19.setText("Number of Correct Answers:");
 
+        lblPercScore.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lblPercScore.setText("Score");
 
+        lblCorrectAnswers.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lblCorrectAnswers.setText("Score");
 
+        lblIncorrectAnswers.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         lblIncorrectAnswers.setText("Score");
+
+        btnRetakeTest.setBackground(new java.awt.Color(51, 51, 255));
+        btnRetakeTest.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
+        btnRetakeTest.setText("Return and Retake Test");
+        btnRetakeTest.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRetakeTestActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout ResultsLayout = new javax.swing.GroupLayout(Results);
         Results.setLayout(ResultsLayout);
         ResultsLayout.setHorizontalGroup(
             ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ResultsLayout.createSequentialGroup()
+                .addContainerGap(198, Short.MAX_VALUE)
+                .addComponent(btnRetakeTest, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(181, 181, 181))
             .addGroup(ResultsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(ResultsLayout.createSequentialGroup()
-                        .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblCorrectAnswers, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(ResultsLayout.createSequentialGroup()
-                                .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addGroup(ResultsLayout.createSequentialGroup()
-                                            .addComponent(jLabel11)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(lblResult2))
-                                        .addGroup(ResultsLayout.createSequentialGroup()
-                                            .addComponent(jLabel12)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(lblResult3))
-                                        .addGroup(ResultsLayout.createSequentialGroup()
-                                            .addComponent(jLabel10)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(lblResult4))
-                                        .addGroup(ResultsLayout.createSequentialGroup()
+                                .addGap(46, 46, 46)
+                                .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(ResultsLayout.createSequentialGroup()
+                                        .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel13)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(lblResult5))
-                                        .addGroup(ResultsLayout.createSequentialGroup()
                                             .addComponent(jLabel14)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(lblResult6))
-                                        .addGroup(ResultsLayout.createSequentialGroup()
-                                            .addComponent(jLabel9)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(lblResult1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                    .addComponent(jLabel17)
-                                    .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(39, 39, 39)
-                                .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblPercScore, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
-                                    .addComponent(lblIncorrectAnswers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGap(0, 332, Short.MAX_VALUE)))
+                                            .addComponent(jLabel12)
+                                            .addComponent(jLabel10)
+                                            .addComponent(jLabel11))
+                                        .addGap(52, 52, 52)
+                                        .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lblResult4)
+                                            .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addComponent(lblResult2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(lblResult3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(lblResult1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                            .addComponent(lblResult5)
+                                            .addComponent(lblResult6)))
+                                    .addComponent(jLabel9)))
+                            .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(lblCorrectAnswers, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(ResultsLayout.createSequentialGroup()
+                                    .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jLabel17)
+                                        .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGap(39, 39, 39)
+                                    .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(lblPercScore, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
+                                        .addComponent(lblIncorrectAnswers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         ResultsLayout.setVerticalGroup(
@@ -478,23 +478,23 @@ public class FrmMathQuiz extends javax.swing.JFrame {
             .addGroup(ResultsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(lblResult1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblResult1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(lblResult2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
                     .addComponent(lblResult3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(lblResult4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(lblResult5))
@@ -502,7 +502,7 @@ public class FrmMathQuiz extends javax.swing.JFrame {
                 .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(lblResult6))
-                .addGap(66, 66, 66)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
                     .addComponent(lblPercScore, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -514,7 +514,9 @@ public class FrmMathQuiz extends javax.swing.JFrame {
                 .addGroup(ResultsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
                     .addComponent(lblIncorrectAnswers, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(99, 99, 99))
+                .addGap(197, 197, 197)
+                .addComponent(btnRetakeTest, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(182, 182, 182))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -522,19 +524,20 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addComponent(Quiz, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Results, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66))
+                .addComponent(Results, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Quiz, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Results, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(Results, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Quiz, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         pack();
@@ -543,26 +546,31 @@ public class FrmMathQuiz extends javax.swing.JFrame {
     private void txtChoiceOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtChoiceOneActionPerformed
 
     }//GEN-LAST:event_txtChoiceOneActionPerformed
+    // Declare variables and arraylists
     int correctScore = 0;
     int incorrectScore = 0;
-    
     ArrayList<String> results = new ArrayList<>();
     
+    //Method to check provided input
     void checkInput(String input, String correctChoice){
         /* instead of converting all of them to lower case, using .toLowerCase
-           I can just ignore the case with .equalsIgnoreCase*/
+           I can just ignore the case with .equalsIgnoreCase and compare them to the correct choice*/
         if(input.equalsIgnoreCase(correctChoice)){
+            // Add the result to the results array and add to the correct score
             results.add("Correct");
             correctScore += 1;
         } else{
+            // Add the result to the results array and add to the incorrect score
             results.add("Incorrect");
             incorrectScore += 1;
         }
     }
     
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnSubmitTestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitTestActionPerformed
+        // Declare constants
         final int totalQuestions = 6;
         
+        // Get all text from inputs
         String choiceOneInput = txtChoiceOne.getText();
         String choiceTwoInput = txtChoiceTwo.getText();
         String choiceThreeInput = txtChoiceThree.getText();
@@ -570,25 +578,50 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         String choiceFiveInput = txtChoiceFive.getText();
         String choiceSixInput = txtChoiceSix.getText();
         
+        //Check all the inputs
         checkInput(choiceOneInput, "c");
         checkInput(choiceTwoInput, "a");
         checkInput(choiceThreeInput, "d");
         checkInput(choiceFourInput, "c");
         checkInput(choiceFiveInput, "b");
         checkInput(choiceSixInput, "c");
+        
+        // Hide the form and show the results
         Results.setVisible(true);
         Quiz.setVisible(false);
         
         /* This is perhaps the coolest thing, I tried doing it in assignmentFive but it didn't work. */
+        // Store all the result labels in an array and then update then in a for loop (by accessing the array with the results)
         ArrayList<javax.swing.JLabel> resultOutputs = new ArrayList<>(Arrays.asList(lblResult1, lblResult2, lblResult3, lblResult4, lblResult5, lblResult6));
         for(int i = 0; i < resultOutputs.size(); i++){
-            resultOutputs.get(i).setText(results.get(i));
+            // The variable `i` corresponds to both the correct input and the result
+            String result = results.get(i);
+            resultOutputs.get(i).setText(result);
         }
+        
+        // Calculate the percentage of correct answers
         double correctPercScore = (double)correctScore/totalQuestions *100;
+        
+        // Update the percentage of correct answers (after rounding it)
         lblPercScore.setText(Double.toString(Math.round(correctPercScore)) + "%");
+        
+        // Update number of correct and incorrect answers
         lblCorrectAnswers.setText(Integer.toString(correctScore));
         lblIncorrectAnswers.setText(Integer.toString(incorrectScore));
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnSubmitTestActionPerformed
+
+    private void btnRetakeTestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRetakeTestActionPerformed
+        // Reset the scores
+        incorrectScore = 0;
+        correctScore = 0;
+        
+        // Reset the old results
+        results.clear();
+        
+        // Set the quiz visible and no the results
+        Quiz.setVisible(true);
+        Results.setVisible(false);
+    }//GEN-LAST:event_btnRetakeTestActionPerformed
 
     // window size
     /**
@@ -629,7 +662,8 @@ public class FrmMathQuiz extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Quiz;
     private javax.swing.JPanel Results;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnRetakeTest;
+    private javax.swing.JButton btnSubmitTest;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
