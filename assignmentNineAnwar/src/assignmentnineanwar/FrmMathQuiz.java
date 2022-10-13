@@ -101,7 +101,7 @@ public class FrmMathQuiz extends javax.swing.JFrame {
         jTextArea1.setEditable(false);
         jTextArea1.setBackground(Quiz.getBackground());
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Century", 0, 18)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Century", 1, 18)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jTextArea1.setText("A. y = a(x-y)\nB. y = ax + bx + c\nC. y = a(x-h)^2 + k\nD. y = (x-s)(x-t)");
