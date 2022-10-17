@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-17T14:30:14.927Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="I4MUwGlOTBuQaPuS_Gqv" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-17T14:37:42.998Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="Tfg4sRZNRW513afS6IDX" version="20.3.6" type="github">
   <diagram id="ykSedt-QM4OsxcuQvwfg" name="Page-1">
-    <mxGraphModel dx="2887" dy="544" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3085" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -137,7 +137,7 @@
         <mxCell id="VNunNrLz-rnGxFZPBOeD-37" value="Walk on foot" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="1213.755" y="505" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-39" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-39" value="You encounter a group of trolls" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="826.255" y="635" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="VNunNrLz-rnGxFZPBOeD-41" value="Wake uo:&lt;br&gt;1. 10 Am&lt;br&gt;2. 12 PM" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -149,11 +149,11 @@
         <mxCell id="VNunNrLz-rnGxFZPBOeD-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-49" target="VNunNrLz-rnGxFZPBOeD-53">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-49" value="You decide to leave for the forest now." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-49" value="You decide to leave for the wild now." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="-1110" y="665" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-53" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1090" y="840" width="80" height="80" as="geometry" />
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-53" value="Do you enter the Lone Lands and leave Hobbitton?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1131.25" y="820" width="162.5" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
