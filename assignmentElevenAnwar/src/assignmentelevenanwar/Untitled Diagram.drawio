@@ -1,1 +1,123 @@
-<mxfile host="app.diagrams.net" modified="2022-10-17T13:51:48.255Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" version="20.3.6" etag="9EQkVcWUUZ_wrOrQ_V4S" type="github"><diagram id="ykSedt-QM4OsxcuQvwfg">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-17T14:13:12.762Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="XF0nsKocFkl9s2jgV8Ss" version="20.3.6" type="github">
+  <diagram id="ykSedt-QM4OsxcuQvwfg" name="Page-1">
+    <mxGraphModel dx="3224" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-2" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-4" value="Introduce the first three options" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="150" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-4" target="VNunNrLz-rnGxFZPBOeD-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="430" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-13" target="VNunNrLz-rnGxFZPBOeD-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-25" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VNunNrLz-rnGxFZPBOeD-17">
+          <mxGeometry x="0.0986" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-13" target="VNunNrLz-rnGxFZPBOeD-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-24" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VNunNrLz-rnGxFZPBOeD-21">
+          <mxGeometry x="-0.1819" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-13" target="VNunNrLz-rnGxFZPBOeD-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="425" y="480" />
+              <mxPoint x="425" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-28" value="3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VNunNrLz-rnGxFZPBOeD-27">
+          <mxGeometry x="0.2373" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-13" value="1. Go to Mordor with Gandalf and the dwarves&lt;br&gt;2. Leave by yourself&lt;br&gt;3. Stay at home" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="350" y="270" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-2" target="VNunNrLz-rnGxFZPBOeD-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-16" target="VNunNrLz-rnGxFZPBOeD-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-16" value="Go to Mordor with the Gandalf and the dwarves tomorrow morning" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="307.5" width="240" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-18" target="VNunNrLz-rnGxFZPBOeD-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-18" target="VNunNrLz-rnGxFZPBOeD-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-18" value="1. Ride on horse&amp;nbsp;&lt;br&gt;2. Walk on foot" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1008.13" y="470" width="123.75" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-20" target="VNunNrLz-rnGxFZPBOeD-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-20" value="Leave for Mordor on your own in the middle of the night" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="312.5" width="229.12" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-22" target="VNunNrLz-rnGxFZPBOeD-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-22" target="VNunNrLz-rnGxFZPBOeD-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-22" value="Steal Gandalf&#39;s sword and rations" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-557.56" y="442.5" width="244.24" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-26" target="VNunNrLz-rnGxFZPBOeD-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-26" value="Stay at Home" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="545" width="145" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-29" value="No" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-185.265" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-31" target="VNunNrLz-rnGxFZPBOeD-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-31" value="Yes" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-784.005" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-33" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-764.005" y="625" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-35" target="VNunNrLz-rnGxFZPBOeD-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-35" value="Ride on horse" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="806.255" y="505" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-37" value="Walk on foot" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1213.755" y="505" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-39" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="826.255" y="635" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-41" value="Wake" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="382.5" y="697.5" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
