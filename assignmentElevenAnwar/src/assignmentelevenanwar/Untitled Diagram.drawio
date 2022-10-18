@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-18T14:04:40.808Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="l9Y3f79UaQx30EePavjT" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-18T14:09:04.226Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="2xbLSdbgzO2AuJ2FzHqM" version="20.4.1" type="github">
   <diagram id="ykSedt-QM4OsxcuQvwfg" name="Page-1">
-    <mxGraphModel dx="3122" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3731" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -146,6 +146,9 @@
         <mxCell id="VNunNrLz-rnGxFZPBOeD-41" value="Wake uo:&lt;br&gt;1. 10 Am&lt;br&gt;2. 12 PM" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="365" y="690" width="122.5" height="112.5" as="geometry" />
         </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-47" target="Mml3yy2sV2fEN9hdOUN2-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="VNunNrLz-rnGxFZPBOeD-47" value="You chicken out and decide to go back to sleep" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="-670" y="670" width="140" height="80" as="geometry" />
         </mxCell>
@@ -235,6 +238,53 @@
         </mxCell>
         <mxCell id="Mml3yy2sV2fEN9hdOUN2-1" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-843.75" y="1020" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-3" target="Mml3yy2sV2fEN9hdOUN2-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-500" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-7" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-6">
+          <mxGeometry x="-0.1116" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-690" y="920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-690" y="870" />
+              <mxPoint x="-690" y="900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-14" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-10">
+          <mxGeometry x="-0.116" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-3" value="Do you wake up early in the morning?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-5" target="Mml3yy2sV2fEN9hdOUN2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-5" value="The dwarves decided that they do not want you. You will remain a normal little hobbit." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingLeft=10;spacingBottom=10;spacingRight=10;spacing=2;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="920" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-8" value="End." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-11" target="Mml3yy2sV2fEN9hdOUN2-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-11" value="You slept in, the dwarves left 7 hours ago, you wont be able to catch up to them." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingLeft=10;spacingBottom=10;spacingRight=10;spacing=2;" vertex="1" parent="1">
+          <mxGeometry x="-740" y="920" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-12" value="End." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-740" y="1060" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
