@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-18T13:47:43.795Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="eQvmrcsrWJyXEwKUfzan" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-18T14:04:40.808Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="l9Y3f79UaQx30EePavjT" version="20.4.1" type="github">
   <diagram id="ykSedt-QM4OsxcuQvwfg" name="Page-1">
-    <mxGraphModel dx="2293" dy="318" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3122" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -100,7 +100,7 @@
         <mxCell id="VNunNrLz-rnGxFZPBOeD-26" value="Stay at Home" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="353" y="532.5" width="145" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-29" target="E2X-YpxnPieoCKrqT_GS-14">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-29" target="E2X-YpxnPieoCKrqT_GS-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VNunNrLz-rnGxFZPBOeD-29" value="You decide to leave without the sword and rations and then you encounter wargs." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
@@ -155,13 +155,13 @@
         <mxCell id="VNunNrLz-rnGxFZPBOeD-49" value="You decide to leave for the wild now." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="-1110" y="665" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-2" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-53" target="E2X-YpxnPieoCKrqT_GS-1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-2" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-53" target="E2X-YpxnPieoCKrqT_GS-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-53" target="E2X-YpxnPieoCKrqT_GS-5">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-53" target="E2X-YpxnPieoCKrqT_GS-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-7" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E2X-YpxnPieoCKrqT_GS-6">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-7" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="E2X-YpxnPieoCKrqT_GS-6" vertex="1" connectable="0">
           <mxGeometry x="0.1443" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -169,66 +169,72 @@
         <mxCell id="VNunNrLz-rnGxFZPBOeD-53" value="Do you enter the Lone Lands and leave Hobbitton?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1131.25" y="820" width="162.5" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-1" target="E2X-YpxnPieoCKrqT_GS-8">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-1" target="E2X-YpxnPieoCKrqT_GS-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-1" value="You are scared and lonely in the Lone Lands... and then you encounter trolls. The trolls pick you up and throw you into a smelly dungeon" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-1" value="You are scared and lonely in the Lone Lands... and then you encounter trolls. The trolls pick you up and throw you into a smelly dungeon" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="-1380" y="837.5" width="147.5" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-5" value="You&#39;re a bit of a scaredy, after all y&#39;er a li&#39;l hobbit. You decide to take a different but longer route" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-5" target="Mml3yy2sV2fEN9hdOUN2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-5" value="You&#39;re a bit of a scaredy, after all y&#39;er a li&#39;l hobbit. You decide to take a different but longer route" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="-867.5" y="837.5" width="127.5" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-8" target="E2X-YpxnPieoCKrqT_GS-10">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-8" target="E2X-YpxnPieoCKrqT_GS-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-8" value="Do you try to escape or do you give up on life?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-8" value="Do you try to escape or do you give up on life?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1358.12" y="1002.5" width="103.75" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-10" target="E2X-YpxnPieoCKrqT_GS-12">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-10" target="E2X-YpxnPieoCKrqT_GS-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-10" value="The trolls ate you, and you died." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-10" value="The trolls ate you, and you died." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="-1182.495" y="1012.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-12" value="The End." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-12" value="The End." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1182.495" y="1152.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-14" target="E2X-YpxnPieoCKrqT_GS-16">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-14" target="E2X-YpxnPieoCKrqT_GS-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-22" value="Fight Wargs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E2X-YpxnPieoCKrqT_GS-17">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-22" value="Fight Wargs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="E2X-YpxnPieoCKrqT_GS-17" vertex="1" connectable="0">
           <mxGeometry x="-0.2905" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-14" target="E2X-YpxnPieoCKrqT_GS-20">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-14" target="E2X-YpxnPieoCKrqT_GS-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-23" value="Escape" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E2X-YpxnPieoCKrqT_GS-21">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-23" value="Escape" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="E2X-YpxnPieoCKrqT_GS-21" vertex="1" connectable="0">
           <mxGeometry x="0.3136" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-14" value="Do you fight them or go back to safety?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-14" value="Do you fight them or go back to safety?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-171.44" y="635" width="107.63" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-16" target="E2X-YpxnPieoCKrqT_GS-18">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-16" target="E2X-YpxnPieoCKrqT_GS-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-16" value="You attempt to fight them, but die because you didn&#39;t have a sword." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-16" value="You attempt to fight them, but die because you didn&#39;t have a sword." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="-380" y="655" width="134.75" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-18" value="The End." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-18" value="The End." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-372.625" y="810" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-20" target="E2X-YpxnPieoCKrqT_GS-24">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-20" target="E2X-YpxnPieoCKrqT_GS-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-20" value="``````." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-20" value="You attempt to fight them, but they overpower you and you die." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="29.99" y="645" width="140.01" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="E2X-YpxnPieoCKrqT_GS-24" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="E2X-YpxnPieoCKrqT_GS-24" value="The End." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="39.99499999999999" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-1" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-843.75" y="1020" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
