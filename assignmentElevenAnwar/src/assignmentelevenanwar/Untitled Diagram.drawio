@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-19T14:23:23.134Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="wkqeFMRj5uyolRlztlkj" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-19T14:29:16.785Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="wTozIaomFBVN4s3m0xEr" version="20.4.1" type="github">
   <diagram id="ykSedt-QM4OsxcuQvwfg" name="Page-1">
-    <mxGraphModel dx="2885" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1859" dy="85" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -612,7 +612,7 @@
         <mxCell id="e_UvN_BDXexrJrs164Ez-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-58" target="e_UvN_BDXexrJrs164Ez-65">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_UvN_BDXexrJrs164Ez-58" value="Do you steal the riches, or complete the mission?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+        <mxCell id="e_UvN_BDXexrJrs164Ez-58" value="Do you steal the riches, or complete the mission?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
           <mxGeometry x="1867.5" y="1510" width="155" height="80" as="geometry" />
         </mxCell>
         <mxCell id="e_UvN_BDXexrJrs164Ez-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-60" target="e_UvN_BDXexrJrs164Ez-63">
@@ -627,17 +627,20 @@
         <mxCell id="e_UvN_BDXexrJrs164Ez-72" value="Go home" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-63" target="e_UvN_BDXexrJrs164Ez-71">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_UvN_BDXexrJrs164Ez-63" value="Do you live in the mountain or head back" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+        <mxCell id="e_UvN_BDXexrJrs164Ez-63" value="Do you live in the mountain or head back" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
           <mxGeometry x="1650" y="1640" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="e_UvN_BDXexrJrs164Ez-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-65" target="e_UvN_BDXexrJrs164Ez-67">
+        <mxCell id="e_UvN_BDXexrJrs164Ez-65" value="You managed to get and escape with the arkenstone, unfortunately the dragon has woken up." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="2125" y="1492.5" width="130" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-86" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-67" target="e_UvN_BDXexrJrs164Ez-85">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_UvN_BDXexrJrs164Ez-65" value="You managed to get and escape with the arkenstone, unfortunately the dragon has woken up." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
-          <mxGeometry x="2120" y="1505" width="130" height="90" as="geometry" />
+        <mxCell id="e_UvN_BDXexrJrs164Ez-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-67" target="e_UvN_BDXexrJrs164Ez-87">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_UvN_BDXexrJrs164Ez-67" value="You managed&amp;nbsp; to escape with the arkenstone" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
-          <mxGeometry x="2145" y="1650" width="80" height="80" as="geometry" />
+        <mxCell id="e_UvN_BDXexrJrs164Ez-67" value="Do you save the village?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="2230" y="1640" width="145" height="110" as="geometry" />
         </mxCell>
         <mxCell id="e_UvN_BDXexrJrs164Ez-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-69" target="e_UvN_BDXexrJrs164Ez-75">
           <mxGeometry relative="1" as="geometry" />
@@ -660,7 +663,7 @@
         <mxCell id="e_UvN_BDXexrJrs164Ez-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-75" target="e_UvN_BDXexrJrs164Ez-81">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_UvN_BDXexrJrs164Ez-75" value="You woke up the dragon. Do you run or hide?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+        <mxCell id="e_UvN_BDXexrJrs164Ez-75" value="You woke up the dragon. Do you run or hide?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
           <mxGeometry x="1858.75" y="1782.5" width="137.5" height="115" as="geometry" />
         </mxCell>
         <mxCell id="e_UvN_BDXexrJrs164Ez-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-77" target="e_UvN_BDXexrJrs164Ez-79">
@@ -676,10 +679,39 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e_UvN_BDXexrJrs164Ez-81" value="You hid, but the dragon smelled you and ate you." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
-          <mxGeometry x="2085" y="1810" width="120" height="60" as="geometry" />
+          <mxGeometry x="2085" y="1837.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="e_UvN_BDXexrJrs164Ez-83" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
           <mxGeometry x="2085" y="1950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-85" target="e_UvN_BDXexrJrs164Ez-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-85" value="The village has been saved" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="1665" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-87" target="e_UvN_BDXexrJrs164Ez-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-87" value="The village died." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="2022.5" y="1665" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-89" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="2017.5" y="1750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-91" target="e_UvN_BDXexrJrs164Ez-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-95" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_UvN_BDXexrJrs164Ez-94">
+          <mxGeometry x="-0.1884" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-91" value="Do you reignite the forges of the mountain and live there?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="2455" y="1782.5" width="170" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-93" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="2730" y="1825" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
