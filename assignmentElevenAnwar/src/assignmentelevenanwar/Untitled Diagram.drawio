@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-19T14:34:18.194Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="F_WMwas9r2zrrH0suZE2" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-19T14:38:07.819Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="hqo6hXVgkb6TnPDRiO9B" version="20.4.1" type="github">
   <diagram id="ykSedt-QM4OsxcuQvwfg" name="Page-1">
-    <mxGraphModel dx="3054" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2617" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -147,6 +147,9 @@
         </mxCell>
         <mxCell id="VNunNrLz-rnGxFZPBOeD-37" value="At midnight you encounter trolls who attempt to cook you" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingBottom=10;spacingTop=10;spacing=12;spacingRight=10;" parent="1" vertex="1">
           <mxGeometry x="1230.33" y="502.5" width="146.24" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-103" value="10AM" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-41" target="e_UvN_BDXexrJrs164Ez-102">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VNunNrLz-rnGxFZPBOeD-41" value="Wake uo:&lt;br&gt;1. 10 Am&lt;br&gt;2. 12 PM" style="rhombus;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="365" y="690" width="122.5" height="112.5" as="geometry" />
@@ -713,6 +716,19 @@
         <mxCell id="e_UvN_BDXexrJrs164Ez-91" value="Do you reignite the forges of the mountain and live there?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
           <mxGeometry x="2560" y="1782.5" width="170" height="145" as="geometry" />
         </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-93" target="e_UvN_BDXexrJrs164Ez-99">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2890" y="1930" />
+              <mxPoint x="2890" y="1930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-101" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_UvN_BDXexrJrs164Ez-100">
+          <mxGeometry x="0.3428" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="e_UvN_BDXexrJrs164Ez-93" value="You live in the mountain, but then a war breaks out." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
           <mxGeometry x="2835" y="1825" width="120" height="60" as="geometry" />
         </mxCell>
@@ -725,8 +741,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e_UvN_BDXexrJrs164Ez-97" value="You are beginning to leave, but there is an army approaching, so you return" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+        <mxCell id="e_UvN_BDXexrJrs164Ez-97" value="You are beginning to leave, but you meet Gandalf and the elves" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
           <mxGeometry x="2370" y="1802.5" width="120" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-99" value="Do you offer the elves the arkenstone?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="2820" y="1970" width="145" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-102" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="163.75" y="716.25" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
