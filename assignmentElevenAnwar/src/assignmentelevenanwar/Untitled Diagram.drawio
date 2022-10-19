@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-18T14:39:57.329Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="UM0-qqiHqs2JzYn1O0zG" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-19T13:58:49.818Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="1IDDqOuDpzbEWHzZRAXx" version="20.4.1" type="github">
   <diagram id="ykSedt-QM4OsxcuQvwfg" name="Page-1">
-    <mxGraphModel dx="4285" dy="1385" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2794" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -63,7 +63,7 @@
         <mxCell id="VNunNrLz-rnGxFZPBOeD-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-18" target="VNunNrLz-rnGxFZPBOeD-35" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-49" value="Ride on horse" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VNunNrLz-rnGxFZPBOeD-36">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-49" value="Ride on horse" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VNunNrLz-rnGxFZPBOeD-36" vertex="1" connectable="0">
           <mxGeometry x="-0.303" y="-2" relative="1" as="geometry">
             <mxPoint x="-6" as="offset" />
           </mxGeometry>
@@ -136,13 +136,13 @@
         <mxCell id="VNunNrLz-rnGxFZPBOeD-33" value="Take the sword and rations" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-888" y="640" width="132" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-35" target="Mml3yy2sV2fEN9hdOUN2-54">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-35" target="Mml3yy2sV2fEN9hdOUN2-54" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-35" value="You ride fast to Rivendell t&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;he elves coax you into telling them what the dwarves plan on doing&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" parent="1" vertex="1">
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-35" value="You ride fast to Rivendell, t&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;he elves coax you into telling them what the dwarves plan on doing&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" parent="1" vertex="1">
           <mxGeometry x="770" y="495" width="150" height="85" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-37" target="Mml3yy2sV2fEN9hdOUN2-50">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-37" target="Mml3yy2sV2fEN9hdOUN2-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VNunNrLz-rnGxFZPBOeD-37" value="At midnight you encounter trolls who attempt to cook you" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingBottom=10;spacingTop=10;spacing=12;spacingRight=10;" parent="1" vertex="1">
@@ -151,7 +151,7 @@
         <mxCell id="VNunNrLz-rnGxFZPBOeD-41" value="Wake uo:&lt;br&gt;1. 10 Am&lt;br&gt;2. 12 PM" style="rhombus;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="365" y="690" width="122.5" height="112.5" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VNunNrLz-rnGxFZPBOeD-47" target="Mml3yy2sV2fEN9hdOUN2-3">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-47" target="Mml3yy2sV2fEN9hdOUN2-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VNunNrLz-rnGxFZPBOeD-47" value="You chicken out and decide to go back to sleep" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
@@ -183,7 +183,7 @@
         <mxCell id="E2X-YpxnPieoCKrqT_GS-1" value="You are scared and lonely in the Lone Lands... and then you encounter trolls. The trolls pick you up and throw you into a smelly dungeon" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=10;" parent="1" vertex="1">
           <mxGeometry x="-1380" y="823.75" width="147.51" height="122.5" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-5" target="Mml3yy2sV2fEN9hdOUN2-1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-5" target="Mml3yy2sV2fEN9hdOUN2-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="E2X-YpxnPieoCKrqT_GS-5" value="You&#39;re a bit of a scaredy, after all y&#39;er a li&#39;l hobbit. You decide to take a different but longer route" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=10;" parent="1" vertex="1">
@@ -192,15 +192,15 @@
         <mxCell id="E2X-YpxnPieoCKrqT_GS-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-8" target="E2X-YpxnPieoCKrqT_GS-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-17" value="Give up" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E2X-YpxnPieoCKrqT_GS-11">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-17" value="Give up" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="E2X-YpxnPieoCKrqT_GS-11" vertex="1" connectable="0">
           <mxGeometry x="-0.2961" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-8" target="Mml3yy2sV2fEN9hdOUN2-15">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E2X-YpxnPieoCKrqT_GS-8" target="Mml3yy2sV2fEN9hdOUN2-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-18" value="Escape" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-16">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-18" value="Escape" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Mml3yy2sV2fEN9hdOUN2-16" vertex="1" connectable="0">
           <mxGeometry x="-0.2077" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -254,38 +254,38 @@
         <mxCell id="E2X-YpxnPieoCKrqT_GS-24" value="The End." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="39.99499999999999" y="810" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-1" target="Mml3yy2sV2fEN9hdOUN2-22">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-1" target="Mml3yy2sV2fEN9hdOUN2-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-24" value="Run Away" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-23">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-24" value="Run Away" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Mml3yy2sV2fEN9hdOUN2-23" vertex="1" connectable="0">
           <mxGeometry x="0.0783" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-1" target="Mml3yy2sV2fEN9hdOUN2-25">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-1" target="Mml3yy2sV2fEN9hdOUN2-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-27" value="Fight" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-26">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-27" value="Fight" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Mml3yy2sV2fEN9hdOUN2-26" vertex="1" connectable="0">
           <mxGeometry x="0.1428" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-1" value="Goblins that capture you, do you fight them or run away?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-1" value="Goblins that capture you, do you fight them or run away?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" parent="1" vertex="1">
           <mxGeometry x="-888" y="1130" width="124.75" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-3" target="Mml3yy2sV2fEN9hdOUN2-5">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-3" target="Mml3yy2sV2fEN9hdOUN2-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-500" y="870" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-7" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-6">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-7" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Mml3yy2sV2fEN9hdOUN2-6" vertex="1" connectable="0">
           <mxGeometry x="-0.1116" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-3">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-690" y="920" as="targetPoint" />
             <Array as="points">
@@ -294,68 +294,68 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-14" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-10">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-14" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Mml3yy2sV2fEN9hdOUN2-10" vertex="1" connectable="0">
           <mxGeometry x="-0.116" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-3" value="Do you wake up early in the morning?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-3" value="Do you wake up early in the morning?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-640" y="830" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-5" target="Mml3yy2sV2fEN9hdOUN2-8">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-5" target="Mml3yy2sV2fEN9hdOUN2-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-5" value="The dwarves decided that they do not want you. You will remain a normal little hobbit." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingLeft=10;spacingBottom=10;spacingRight=10;spacing=2;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-5" value="The dwarves decided that they do not want you. You will remain a normal little hobbit." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingLeft=10;spacingBottom=10;spacingRight=10;spacing=2;" parent="1" vertex="1">
           <mxGeometry x="-570" y="920" width="130" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-8" value="End." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-8" value="End." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-570" y="1060" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-11" target="Mml3yy2sV2fEN9hdOUN2-12">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-11" target="Mml3yy2sV2fEN9hdOUN2-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-11" value="You slept in, the dwarves left 7 hours ago, you wont be able to catch up to them." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingLeft=10;spacingBottom=10;spacingRight=10;spacing=2;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-11" value="You slept in, the dwarves left 7 hours ago, you wont be able to catch up to them." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingLeft=10;spacingBottom=10;spacingRight=10;spacing=2;" parent="1" vertex="1">
           <mxGeometry x="-740" y="920" width="120" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-12" value="End." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-12" value="End." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-740" y="1060" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-15" target="Mml3yy2sV2fEN9hdOUN2-19">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-15" target="Mml3yy2sV2fEN9hdOUN2-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-15" value="You attempted escape. But the trolls caught you, squeezed you and ate you." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-15" value="You attempted escape. But the trolls caught you, squeezed you and ate you." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;" parent="1" vertex="1">
           <mxGeometry x="-1570" y="1002.5" width="120" height="82.5" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-19" value="End." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-19" value="End." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1570.0049999999999" y="1152.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="E2X-YpxnPieoCKrqT_GS-10" target="E2X-YpxnPieoCKrqT_GS-10">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="E2X-YpxnPieoCKrqT_GS-10" target="E2X-YpxnPieoCKrqT_GS-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-22" target="Mml3yy2sV2fEN9hdOUN2-30">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-22" target="Mml3yy2sV2fEN9hdOUN2-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-22" value="Goblins aren&#39;t fast, you escaped" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-22" value="Goblins aren&#39;t fast, you escaped" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" parent="1" vertex="1">
           <mxGeometry x="-723.995" y="1260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-25" target="Mml3yy2sV2fEN9hdOUN2-28">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-25" target="Mml3yy2sV2fEN9hdOUN2-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-25" value="You use Gandalf&#39;s weapons, but you cannot handle them. The goblins kill you." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-25" value="You use Gandalf&#39;s weapons, but you cannot handle them. The goblins kill you." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" parent="1" vertex="1">
           <mxGeometry x="-1050.01" y="1240" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-28" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-28" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" parent="1" vertex="1">
           <mxGeometry x="-1050.01" y="1470" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-30" target="Mml3yy2sV2fEN9hdOUN2-32">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-30" target="Mml3yy2sV2fEN9hdOUN2-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-36" value="Go home" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-33">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-36" value="Go home" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Mml3yy2sV2fEN9hdOUN2-33" vertex="1" connectable="0">
           <mxGeometry x="0.2067" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-30" target="Mml3yy2sV2fEN9hdOUN2-37">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-30" target="Mml3yy2sV2fEN9hdOUN2-37" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-590" y="1440" />
@@ -363,69 +363,160 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-39" value="Go to a nearby town" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-38">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-39" value="Go to a nearby town" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Mml3yy2sV2fEN9hdOUN2-38" vertex="1" connectable="0">
           <mxGeometry x="0.1121" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-30" value="You realized that your map is old and outdated, do you go to a nearby town or go home?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-30" value="You realized that your map is old and outdated, do you go to a nearby town or go home?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="-733.99" y="1360" width="140" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-32" target="Mml3yy2sV2fEN9hdOUN2-34">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-32" target="Mml3yy2sV2fEN9hdOUN2-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-32" value="You went home, but no one was there. There were no good maps either. You failed your journey." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-32" value="You went home, but no one was there. There were no good maps either. You failed your journey." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" parent="1" vertex="1">
           <mxGeometry x="-893.5" y="1500" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-34" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-34" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" parent="1" vertex="1">
           <mxGeometry x="-893.5" y="1730" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-37" target="Mml3yy2sV2fEN9hdOUN2-40">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-37" target="Mml3yy2sV2fEN9hdOUN2-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-37" value="You find a nearby town, and somehow find the dwarves and Gandalf there too. They send you back home." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-37" value="You find a nearby town, and somehow find the dwarves and Gandalf there too. They send you back home." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" parent="1" vertex="1">
           <mxGeometry x="-540" y="1490" width="120" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-40" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-40" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;" parent="1" vertex="1">
           <mxGeometry x="-540" y="1730" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-42" value="Do you try to escape or do you give up on life?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-42" value="Do you try to escape or do you give up on life?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="-1358.12" y="1002.5" width="103.75" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-43" value="Take the sword and rations" style="rhombus;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-43" value="Take the sword and rations" style="rhombus;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="-888" y="640" width="132" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-44" value="Do you enter the Lone Lands and leave Hobbitton?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacing=10;spacingRight=10;spacingBottom=10;spacingLeft=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-44" value="Do you enter the Lone Lands and leave Hobbitton?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacing=10;spacingRight=10;spacingBottom=10;spacingLeft=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="-1120.62" y="820" width="141.25" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-45" value="Do you wake up early in the morning?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-45" value="Do you wake up early in the morning?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="-640" y="830" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-46" value="Goblins that capture you, do you fight them or run away?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-46" value="Goblins that capture you, do you fight them or run away?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingRight=10;spacingLeft=10;spacing=12;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="-888" y="1130" width="124.75" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-50" value="Do you escape or houl for help" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-50" value="Do you escape or houl for help" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="1246.9" y="635" width="113.11" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-54" target="Mml3yy2sV2fEN9hdOUN2-56">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-54" target="Mml3yy2sV2fEN9hdOUN2-56" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-60" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-57">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-60" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Mml3yy2sV2fEN9hdOUN2-57" vertex="1" connectable="0">
           <mxGeometry x="-0.1774" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-54" target="Mml3yy2sV2fEN9hdOUN2-58">
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Mml3yy2sV2fEN9hdOUN2-54" target="Mml3yy2sV2fEN9hdOUN2-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-54" value="Do you tell them?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+        <mxCell id="e_UvN_BDXexrJrs164Ez-10" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mml3yy2sV2fEN9hdOUN2-59">
+          <mxGeometry x="0.0156" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-54" value="Do you tell them?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="788.44" y="640" width="113.12" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-56" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
-          <mxGeometry x="993.1200000000001" y="667.5" width="120" height="60" as="geometry" />
+        <mxCell id="e_UvN_BDXexrJrs164Ez-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-56" target="e_UvN_BDXexrJrs164Ez-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Mml3yy2sV2fEN9hdOUN2-58" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
-          <mxGeometry x="591.8800000000001" y="667.5" width="120" height="60" as="geometry" />
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-56" value="Y&#39;er loyal for a little hobbit, the elves can see that you are a valuable person" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" parent="1" vertex="1">
+          <mxGeometry x="993.12" y="648.75" width="126.88" height="97.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mml3yy2sV2fEN9hdOUN2-58" target="e_UvN_BDXexrJrs164Ez-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mml3yy2sV2fEN9hdOUN2-58" value="Why&#39;d you do that bud? You didn&#39;t even get a bribe...the dwarves don&#39;t trust you, they are sending you back home" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" parent="1" vertex="1">
+          <mxGeometry x="570" y="638.75" width="141.88" height="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-1" target="e_UvN_BDXexrJrs164Ez-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-9" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_UvN_BDXexrJrs164Ez-8">
+          <mxGeometry x="0.116" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-1" target="e_UvN_BDXexrJrs164Ez-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-15" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_UvN_BDXexrJrs164Ez-14">
+          <mxGeometry x="0.1042" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-1" value="The dwarves are leaving, do you leave with them?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="993.12" y="800" width="125.16" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-5" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="580.94" y="836.25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-7" target="e_UvN_BDXexrJrs164Ez-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-7" value="You leave with them but you encounter goblins" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="1200.86" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-11" target="e_UvN_BDXexrJrs164Ez-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-20" value="Fight" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_UvN_BDXexrJrs164Ez-19">
+          <mxGeometry x="-0.3261" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-11" target="e_UvN_BDXexrJrs164Ez-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-23" value="Run Away" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_UvN_BDXexrJrs164Ez-22">
+          <mxGeometry x="0.2328" y="-1" relative="1" as="geometry">
+            <mxPoint x="18" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-11" value="Do you run away or fight?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="1205.43" y="960" width="110.86" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-13" target="e_UvN_BDXexrJrs164Ez-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-13" value="You have nothing to do...the elves sent you back home." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="800" y="820" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-16" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="800" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-18" target="e_UvN_BDXexrJrs164Ez-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-18" value="You fought, but the goblins overtook you." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="1391.72" y="975" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-21" value="You ran away and attempted to&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="993.12" y="975" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-24" target="e_UvN_BDXexrJrs164Ez-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-24" value="Do you try to escape the goblin cells?" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="1382.58" y="1100" width="138.28" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_UvN_BDXexrJrs164Ez-26" target="e_UvN_BDXexrJrs164Ez-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-26" value="You attempted escape and were successful" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="1110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_UvN_BDXexrJrs164Ez-30" value="" style="rhombus;whiteSpace=wrap;html=1;spacingLeft=10;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="1240" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
