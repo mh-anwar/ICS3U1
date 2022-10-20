@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-20T13:54:44.184Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="MNZugCqQy-jfvskerlGA" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-20T14:39:35.600Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="7Z14-wHECfLJEwW5HH9s" version="20.4.1" type="github">
   <diagram id="ykSedt-QM4OsxcuQvwfg" name="Page-1">
-    <mxGraphModel dx="3731" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2083" dy="627" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,23 +16,13 @@
             <mxPoint x="430" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-13" target="VNunNrLz-rnGxFZPBOeD-16" edge="1">
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-17" value="A" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-13" target="VNunNrLz-rnGxFZPBOeD-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-25" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VNunNrLz-rnGxFZPBOeD-17" vertex="1" connectable="0">
-          <mxGeometry x="0.0986" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-13" target="VNunNrLz-rnGxFZPBOeD-20" edge="1">
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-21" value="B" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-13" target="VNunNrLz-rnGxFZPBOeD-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-24" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VNunNrLz-rnGxFZPBOeD-21" vertex="1" connectable="0">
-          <mxGeometry x="-0.1819" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-13" target="VNunNrLz-rnGxFZPBOeD-26" edge="1">
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-27" value="C" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VNunNrLz-rnGxFZPBOeD-13" target="VNunNrLz-rnGxFZPBOeD-26" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="425" y="480" />
@@ -40,12 +30,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-28" value="3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="VNunNrLz-rnGxFZPBOeD-27" vertex="1" connectable="0">
-          <mxGeometry x="0.2373" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="VNunNrLz-rnGxFZPBOeD-13" value="1. Go to Mordor with Gandalf and the dwarves&lt;br&gt;2. Leave by yourself&lt;br&gt;3. Stay at home" style="rhombus;whiteSpace=wrap;html=1;align=center;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+        <mxCell id="VNunNrLz-rnGxFZPBOeD-13" value="A. Go to Mordor with Gandalf and the dwarves&lt;br&gt;B. Leave by yourself&lt;br&gt;C. Stay at home" style="rhombus;whiteSpace=wrap;html=1;align=center;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
           <mxGeometry x="216" y="270" width="418.75" height="150" as="geometry" />
         </mxCell>
         <mxCell id="VNunNrLz-rnGxFZPBOeD-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="VNunNrLz-rnGxFZPBOeD-2" target="VNunNrLz-rnGxFZPBOeD-4" edge="1">
