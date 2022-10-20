@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-20T13:47:46.515Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="U_ESuKoFWhfgXEN04N8O" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-20T13:54:03.470Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="eeZap7Wq1ZmoE4MM9HfL" version="20.4.1" type="github">
   <diagram id="ykSedt-QM4OsxcuQvwfg" name="Page-1">
-    <mxGraphModel dx="2937" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4070" dy="1270" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -889,11 +889,70 @@
         <mxCell id="2Kzz6zXPm9Hh00w324hG-39" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacingBottom=10;spacingLeft=10;spacingRight=10;spacing=12;" vertex="1" parent="1">
           <mxGeometry x="2640" y="2730" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Kzz6zXPm9Hh00w324hG-42" target="2Kzz6zXPm9Hh00w324hG-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="2Kzz6zXPm9Hh00w324hG-42" value="You enjoy lunch." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="910" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2Kzz6zXPm9Hh00w324hG-43" value="Do you water the lawn?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="1045" width="80" height="80" as="geometry" />
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Kzz6zXPm9Hh00w324hG-43" target="2Kzz6zXPm9Hh00w324hG-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-47" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2Kzz6zXPm9Hh00w324hG-46">
+          <mxGeometry x="-0.2968" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-51" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Kzz6zXPm9Hh00w324hG-43" target="2Kzz6zXPm9Hh00w324hG-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-43" value="Do you water the lawn?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="205" y="1035" width="130" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Kzz6zXPm9Hh00w324hG-45" target="2Kzz6zXPm9Hh00w324hG-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-45" value="Your lawn is happy, your 93rd birthday is coming, life is good." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1046.25" width="120" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Kzz6zXPm9Hh00w324hG-50" target="2Kzz6zXPm9Hh00w324hG-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-50" value="The lawn is dying." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry y="1062.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-64" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Kzz6zXPm9Hh00w324hG-61" target="2Kzz6zXPm9Hh00w324hG-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-66" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Kzz6zXPm9Hh00w324hG-61" target="2Kzz6zXPm9Hh00w324hG-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-61" value="Will you write a book about your hobbit life?" style="rhombus;whiteSpace=wrap;html=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="1192.5" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Kzz6zXPm9Hh00w324hG-63" target="2Kzz6zXPm9Hh00w324hG-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-63" value="Your book is famous, everyone loves it." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1202.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2Kzz6zXPm9Hh00w324hG-65" target="2Kzz6zXPm9Hh00w324hG-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-65" value="Your day is quite boring. Yet another day in the life of a hobbit." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="1180" width="120" height="82.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-67" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="1353.75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-69" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-72" value="End." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1012.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Kzz6zXPm9Hh00w324hG-74" value="End." style="ellipse;whiteSpace=wrap;html=1;spacingTop=10;spacing=12;spacingRight=10;spacingBottom=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1342.5" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
