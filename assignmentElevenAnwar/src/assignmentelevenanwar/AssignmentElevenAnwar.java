@@ -14,9 +14,8 @@ public class AssignmentElevenAnwar {
     static Scanner input = new Scanner(System.in);
     
     // I managed to only use TWO if-statements in a project that required 30 if statements
-    static void nextDecision(Integer nextPos, HashMap map, Integer oldPos, boolean... stopReturn){
+    static void nextDecision(Integer nextPos, HashMap map){
         while(true){
-            System.out.println(stopReturn);
                 if(nextPos == 0){
                    System.out.println("You lived life happily ever after. Bye bye.");
                    System.exit(0);
@@ -30,13 +29,12 @@ public class AssignmentElevenAnwar {
                     System.out.print("[Your Input (Y/N/R)] ~ ");
                     String decision = input.nextLine();
                     
-                    // When nextPos is provided to the function, it actually means the current/old position
-                    if (decision.equals(actions[1])) {
-                        nextDecision((Integer) actions[2], map, nextPos);
-                    } else if (decision.equals(actions[3])) {
-                        nextDecision((Integer) actions[4], map, nextPos);
-                    } else if (decision.equals("R") && stopReturn.equals(null)){
-                        nextDecision((Integer) oldPos, map, oldPos, true);
+                    if (decision.equals("Y")) {
+                        nextDecision((Integer) actions[1], map);
+                    } else if (decision.equals("N")) {
+                        nextDecision((Integer) actions[2], map);
+                    } else if (decision.equals("R")){
+                        nextDecision((Integer) actions[3], map);
                     }
                     
                 }
@@ -49,27 +47,27 @@ public class AssignmentElevenAnwar {
     
     public static void main(String[] args) {
         HashMap<Integer, Object[]> teamMap = new HashMap<Integer, Object[]>(){{
-            put(1, new Object[]{"Do you fight?", "Y", 2, "N", 3});
-            put(2, new Object[]{"Will you leave at night", "Y", 4, "N", 5});
-            put(3, new Object[]{"Will you sleep?", "Y", 0, "N", 0});
-            put(4, new Object[]{"The war was over, before you arrived. Would you like to go back home?", "Y", 0, "N", 0});
-            put(5, new Object[]{"You went to sleep instead.", "Y", 0, "N", 0});
+            put(1, new Object[]{"Do you fight?", 2, 3, 1});
+            put(2, new Object[]{"Will you leave at night", 4, 5, 1});
+            put(3, new Object[]{"Will you sleep?", 0, 0, 1});
+            put(4, new Object[]{"The war was over, before you arrived. Would you like to go back home?", 0, 0, 2});
+            put(5, new Object[]{"You went to sleep instead.", 0, 0, 2});
         }};
         
         HashMap<Integer, Object[]> homeMap = new HashMap<Integer, Object[]>(){{
-            put(1, new Object[]{"Do you fight?", "Y", 2, "N", 3});
-            put(2, new Object[]{"Will you leave at night", "Y", 4, "N", 5});
-            put(3, new Object[]{"Will you sleep?", "Y", 0, "N", 0});
-            put(4, new Object[]{"The war was over, before you arrived. Would you like to go back home?", "Y", 0, "N", 0});
-            put(5, new Object[]{"You went to sleep instead.", "Y", 0, "N", 0});
+            put(1, new Object[]{"Do you fight?", 2, 3, 1});
+            put(2, new Object[]{"Will you leave at night", 4, 5, 1});
+            put(3, new Object[]{"Will you sleep?", 0, 0, 1});
+            put(4, new Object[]{"The war was over, before you arrived. Would you like to go back home?", 0, 0, 2});
+            put(5, new Object[]{"You went to sleep instead.", 0, 0, 2});
         }};
         
         HashMap<Integer, Object[]> soloMap = new HashMap<Integer, Object[]>(){{
-            put(1, new Object[]{"Do you fight?", "Y", 2, "N", 3});
-            put(2, new Object[]{"Will you leave at night", "Y", 4, "N", 5});
-            put(3, new Object[]{"Will you sleep?", "Y", 0, "N", 0});
-            put(4, new Object[]{"The war was over, before you arrived. Would you like to go back home?", "Y", 0, "N", 0});
-            put(5, new Object[]{"You went to sleep instead.", "Y", 0, "N", 0});
+            put(1, new Object[]{"Do you fight?", 2, 3, 1});
+            put(2, new Object[]{"Will you leave at night", 4, 5, 1});
+            put(3, new Object[]{"Will you sleep?", 0, 0, 1});
+            put(4, new Object[]{"The war was over, before you arrived. Would you like to go back home?", 0, 0, 2});
+            put(5, new Object[]{"You went to sleep instead.", 0, 0, 2});
         }};
         
         while(true){
@@ -81,13 +79,13 @@ public class AssignmentElevenAnwar {
             
             switch(decision){
                 case "A":
-                    nextDecision(1, teamMap, 1);
+                    nextDecision(1, teamMap);
                     break;
                 case "B":
-                    nextDecision(1, soloMap, 1);
+                    nextDecision(1, soloMap);
                     break;
                 case "C":
-                    nextDecision(1, homeMap, 1);
+                    nextDecision(1, homeMap);
                     break;   
             }
         }
