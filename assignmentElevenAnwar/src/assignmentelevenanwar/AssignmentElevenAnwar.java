@@ -1,4 +1,5 @@
 package assignmentelevenanwar;
+import java.lang.reflect.Array;
 import java.util.Scanner;
 import java.util.HashMap;
 // @author Mohammad Anwar
@@ -23,8 +24,9 @@ public class AssignmentElevenAnwar {
                     System.out.println(actions[0] + ": "); //The question
                     System.out.print("[Your Input (Y/N/R)] ~ ");
                     String decision = input.nextLine();
-                    System.out.println(actions[4]);
-                    if(actions[4] != null){
+                    System.out.println(actions.length);
+                    System.out.println(Array.getLength(actions));
+                    if(actions.length>=4){
                         if (decision.equals("Y")) {
                             nextDecision((Integer) actions[1], map, (String) actions[4]);
                         } else if (decision.equals("N")) {
@@ -44,7 +46,7 @@ public class AssignmentElevenAnwar {
                 }
         }
     }
-       static void nextDecision(Integer nextPos, HashMap map, String endMessage){
+ static void nextDecision(Integer nextPos, HashMap map, String endMessage){
         while(true){
                 if(nextPos == 0){
                    System.out.println("You lived life happily ever after. Bye bye.");
@@ -109,13 +111,13 @@ public class AssignmentElevenAnwar {
             
             switch(decision){
                 case "A":
-                    nextDecision(1, teamMap);
+                    nextDecision(1, teamMap, "false");
                     break;
                 case "B":
-                    nextDecision(1, soloMap);
+                    nextDecision(1, soloMap, "false");
                     break;
                 case "C":
-                    nextDecision(1, homeMap);
+                    nextDecision(1, homeMap, "false");
                     break;   
             }
         }
