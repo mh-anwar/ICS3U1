@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package assignmentfifteenanwar;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -13,8 +11,6 @@ import java.util.Scanner;
  * @author s201076699
  */
 public class AssignmentFifteenAnwar {
-    
-    static Scanner input = new Scanner(System.in);
     
     /**
      * @param args the command line arguments
@@ -53,7 +49,6 @@ public class AssignmentFifteenAnwar {
         }    	  
         // Display 2nd, 3rd and 4th friends
         System.out.println("The second, third and fourth names were:"); 
-        System.out.println("First: " + friends[0]); 
         System.out.println("Second: " + friends[1]); 
         System.out.println("Third: " + friends[2]);
         System.out.println("Fourth: " + friends[3]); 
