@@ -26,7 +26,7 @@ public class AssignmentElevenAnwar {
                     String decision = input.nextLine();
                     System.out.println(actions.length);
                     System.out.println(Array.getLength(actions));
-                    if(actions.length>=4){
+                    if(actions.length>4){
                         if (decision.equals("Y")) {
                             nextDecision((Integer) actions[1], map, (String) actions[4]);
                         } else if (decision.equals("N")) {
@@ -48,7 +48,10 @@ public class AssignmentElevenAnwar {
     }
  static void nextDecision(Integer nextPos, HashMap map, String endMessage){
         while(true){
-                if(nextPos == 0){
+                if(endMessage!=null){
+                    System.out.println(endMessage);
+                    System.exit(0);
+                } else if(nextPos == 0){
                    System.out.println("You lived life happily ever after. Bye bye.");
                    System.exit(0);
                 } else if(nextPos == -1){
@@ -60,13 +63,16 @@ public class AssignmentElevenAnwar {
                     System.out.println(actions[0] + ": "); //The question
                     System.out.print("[Your Input (Y/N/R)] ~ ");
                     String decision = input.nextLine();
+                     if(actions.length>=4){
                     if (decision.equals("Y")) {
+                        System.out.println(endMessage);
                         nextDecision((Integer) actions[1], map, (String) actions[4]);
                     } else if (decision.equals("N")) {
                         nextDecision((Integer) actions[2], map, (String) actions[4]);
                     } else if (decision.equals("R")){
                         nextDecision((Integer) actions[3], map, (String) actions[4]);
                     }
+                     }
                 }
         }
     }
@@ -111,13 +117,13 @@ public class AssignmentElevenAnwar {
             
             switch(decision){
                 case "A":
-                    nextDecision(1, teamMap, "false");
+                    nextDecision(1, teamMap);
                     break;
                 case "B":
-                    nextDecision(1, soloMap, "false");
+                    nextDecision(1, soloMap);
                     break;
                 case "C":
-                    nextDecision(1, homeMap, "false");
+                    nextDecision(1, homeMap);
                     break;   
             }
         }
