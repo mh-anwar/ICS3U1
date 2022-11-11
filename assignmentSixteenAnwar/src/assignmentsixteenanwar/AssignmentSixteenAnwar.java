@@ -4,17 +4,11 @@
  * and open the template in the editor.
  */
 package assignmentsixteenanwar;
-
-import org.json.simple.JSONObject;
-import org.json.simple.JSONArray;
-import org.json.simple.parser.JSONParser;
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.json.simple.parser.ParseException;
+// Initially I was going to use JSON, but it works better with Web Languages
+import java.io.BufferedReader;  
+import java.io.FileReader;  
+import java.io.IOException;  
+import java.io.*;
 /*
  *
  * @author s201076699
@@ -24,20 +18,23 @@ public class AssignmentSixteenAnwar {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws IOException, ParseException {
-        JSONParser jsonParser = new JSONParser();
+    public static void main(String[] args) {
+        String [] names = new String [100];
+        String line = "";   
         try {
-            JSONObject jsonO = (JSONObject)jsonParser.parse(new FileReader("U:\\Documents\\NetBeansProjects\\assignmentSixteenAnwar\\src\\assignmentsixteenanwar\\data.json"));
-            JSONArray alldata = (JSONArray) jsonO.get("ctRoot");
-            System.out.println(alldata);
-            for(int i = 0; i< jsonO.length(); i++){
-                JSONObject explrObject = alldata.getJSONObject(i);
-                System.out.println(explrObject);
-            }
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(AssignmentSixteenAnwar.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
+            BufferedReader br = new BufferedReader(new FileReader("U:\\Documents\\NetBeansProjects\\assignmentSixteenAnwar\\src\\assignmentsixteenanwar\\data.csv"));  
+            while ((line = br.readLine()) != null){  
+                String[] data = line.split(","); 
+                String name = data[0];
+                String userName = data[1];
+                String email = data[2];
+                String post = data[3];
+                Double verified = Double.parseDouble(data[4]); //this is a funny variable
+                System.out.println(name+" "+ verified);
+                
+            }  
+        } catch (IOException e){  
+            e.printStackTrace();  
+        }  
     }
-    
 }
