@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package assignmentsixteenanwar;
 // Initially I was going to use JSON, but JSON is meant more for JS than Java
 // Second thought: CSV for a Twitter CLI is a horrible idea, txt file might have been better
@@ -20,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 /*
  *
- * @author s201076699
+ * @author Mohammad Anwar
  */
 public class AssignmentSixteenAnwar {
 
@@ -198,90 +193,120 @@ public class AssignmentSixteenAnwar {
               return;         
         } 
     }
-    
+    // This fucntion creates a user account (it takes into account that only one acccount can be on one device)
     static String createAccount(){
             System.out.println("Please note, you can only have one account. This action may delete your old account.");
+            // Prompts and requests user for their name
             System.out.println("What would you like to set your name as?");
             String name = keyedInput.nextLine();
-
+            // Prompts and requests user for a username
             System.out.println("What would you like to set your username to?");
             String userName = keyedInput.nextLine();
-
+            // Prompts and requests user for a password
             System.out.println("What would you like to set your password to?");
             String password = keyedInput.nextLine();
-
+            // Prompts and requests user for their age
             System.out.println("What is your age?");
             String age = keyedInput.nextLine();            
-            
+            // Prompts and requests user for their email            
             System.out.println("What would you like to set your email to?");
             String email = keyedInput.nextLine();
-
+            // Prompts and requests user whether they want to be verified
             System.out.println("Would you like to be verified?");
             String wantVerification = keyedInput.nextLine();
             String userVerified = "false";
+            // if they do want to be verified it calls a function that determines whether they should be verified
             if(wantVerification.equalsIgnoreCase("yes")){
                 userVerified =Boolean.toString(verifyUser());
             }
+            // finally the program creates one data structure with all the information in it and calls a function to write it to the user data file
             ArrayList<String> userInfo = new ArrayList<>(Arrays.asList(name, userName, password, age, email, userVerified));
             writeUserData(userInfo);
             return "true";
     }
-    
+    // this function writes user data to the user data file
     static void writeUserData(ArrayList allData){
-            try {
-                FileWriter myWriter = new FileWriter("user.csv");
-                myWriter.write(allData.get(0) +","+ allData.get(1) +","+ allData.get(2)  +","+ allData.get(3) +","+ allData.get(4)  +","+ allData.get(5));
-                myWriter.close();
-            } catch (IOException ex) {
-                System.out.println("You have failed to change the Path of the data files, visit lines: the exact error you encountered was:");
-                System.out.println(ex);
-            }
-    }
-     static void deleteAccount(){
-            try {
-                FileWriter myWriter = new FileWriter("user.csv");
-                myWriter.write("undefined,undefined,undefined,undefined,undefined,undefined");
-                myWriter.close();
-                System.out.println("Your account has been deleted.");
-                System.exit(0);
-            } catch (IOException ex) {
-                System.out.println("You have failed to change the Path of the data files, visit lines: the exact error you encountered was:");
-                System.out.println(ex);
-            }
-    }
-    static void writeUserData(ArrayList allData, String newSegment, int position){
-        allData.set(position, newSegment);
+        // Starts with a try catch, in the event that the file doesn't exist
         try {
+            // Begins a process to write to the file
             FileWriter myWriter = new FileWriter("user.csv");
+            // Processes the given array list and extrapolates the data into a CSV format and writes it to the file
             myWriter.write(allData.get(0) +","+ allData.get(1) +","+ allData.get(2)  +","+ allData.get(3) +","+ allData.get(4)  +","+ allData.get(5));
+            // Closes the process to write to it
             myWriter.close();
         } catch (IOException ex) {
-            System.out.println("You have failed to change the Path of the data files, visit lines: the exact error you encountered was:");
+            // Throws an error message in case the file is unable to be opened
+            System.out.println("You have failed to change the Path of the data files, the exact error you encountered was:");
             System.out.println(ex);
         }
     }
-    // Fun little perk
+    // this function overloads the method above, and uses different data to accomplish a similiar task
+    static void writeUserData(ArrayList allData, String newSegment, int position){
+        // This overrides the old data segment with the new segment
+        allData.set(position, newSegment);
+        // Starts with a try catch, in the event that the file doesn't exist
+        try {
+            // Begins a process to write to the file
+            FileWriter myWriter = new FileWriter("user.csv");
+            // Processes the given array list and extrapolates the data into a CSV format and writes it to the file
+            myWriter.write(allData.get(0) +","+ allData.get(1) +","+ allData.get(2)  +","+ allData.get(3) +","+ allData.get(4)  +","+ allData.get(5));
+            // Closes the process to write to it
+            myWriter.close();
+        } catch (IOException ex) {
+            // Throws an error message in case the file is unable to be opened
+            System.out.println("You have failed to change the Path of the data files, the exact error you encountered was:");
+            System.out.println(ex);
+        }
+    }
+    // This function deletes the user account
+     static void deleteAccount(){
+        // Starts with a try catch, in the event that the file doesn't exist
+        try {
+            // Begins a process to write to the file
+            FileWriter myWriter = new FileWriter("user.csv");
+            // Writes undefined for each segment, so that when the user tries to sign in they are provided with a specific error
+            myWriter.write("undefined,undefined,undefined,undefined,undefined,undefined");
+            // Closes the writing process and notifies the user of the account being deleted
+            myWriter.close();
+            System.out.println("Your account has been deleted.");
+            System.exit(0);
+        } catch (IOException ex) {
+            // Throws an error message in case the file is unable to be opened
+            System.out.println("You have failed to change the Path of the data files, the exact error you encountered was:");
+            System.out.println(ex);
+        }
+    }
+     
+    // Fun little perk, this function decides whether the user should be verified
     static Boolean verifyUser(){
+            // Generates a random "long" number that is rounded
             long verificationChance = (long) Math.round(Math.random()*200);
             Boolean userVerified = false;
+            // If it is greater than 100 the user is verified and the variable userVerified (which will be returned) is set to true
             if (verificationChance > 100){
                 System.out.println("Clitter has approved your verification. You are verified");
                 userVerified = true;
             } else{
+                // Otherwise userVerified remains false
                 System.out.println("Clitter has decided not to verify you. Remain a peasant.");
             }
+            // The function ends by returning whether the user is verified or not
             return userVerified;
     }
+    // This function is flow of login, it lets the user create an account or sign in
     static void loginFlow(){
         // accountSuccess measures whether an account has been made or successfully signed into if not it wont let the user pass and view Clitter
         // accountSuccess could be many values (false, fail, true)
         String accountSuccess = "false";
         while(!accountSuccess.equals("true")){
+            // Prints out welcome statements, requests the user for input on what type of flow they want
             System.out.println("");
             System.out.println("Welcome to the Clitter (CLI + Twitter). Would you like to");
             System.out.println("1.Login to your account or 2.Create a new account ");
             System.out.print("(1/2) >>> ");
             String loginFlowOption = keyedInput.nextLine();
+            
+            // Depending on user input, either the account is logged into or created
             if(loginFlowOption.equals("1")){
                 accountSuccess = loginToAccount();
             } else if(loginFlowOption.equals("2")) {
@@ -289,16 +314,18 @@ public class AssignmentSixteenAnwar {
             }
         }
     }
-    
+    // This method logs the user into their account
     static String loginToAccount(){
+        // Reads all the previous user data
         ArrayList<String> userInfo = readUserData();
-        // Countering the edge case where the user has previously deleted their account
+        // Countering the edge case where the user has previously deleted their account, this if-statement makes them create a new account
         if(userInfo.get(1).equals("undefined")){
             System.out.println("You must create an account.");
             String accountSuccess = createAccount();
             return accountSuccess;
         }
         String userLoggedIn = "false";
+        // As long as the user has not been logged in the while loop runs
         while(userLoggedIn.equals("false")){
             System.out.println("----------");
             // Get username
@@ -311,56 +338,75 @@ public class AssignmentSixteenAnwar {
                 String password = keyedInput.nextLine();
                 // Check file info if password is right
                 if(userInfo.get(2).equals(password)){
+                    // Prints out that the user is logged in and sets variable to true (so that while loop can end)
                     System.out.println("You are logged in!");
                     userLoggedIn = "true";
                 } else{
+                    // Prompts user with error and allows them to retry entering their account information
                     System.out.println("Incorrect Password");
                     System.out.print("Would you like to try again? (y/n) >>> ");
                     String nextLoginFlow = keyedInput.nextLine();
+                    // Allows the user to go back to the main menu if they might want to make a new account
                     if(nextLoginFlow.equalsIgnoreCase("n")){
                         userLoggedIn = "fail";
                     }
                 }
             } else {
+                    // Prompts user with error and allows them to retry entering their account information
                     System.out.println("Incorrect Username.");
                     System.out.print("Would you like to try again? (y/n) >>> ");
                     String nextLoginFlow = keyedInput.nextLine();
+                    // Allows the user to go back to the main menu if they might want to make a new account
                     if(nextLoginFlow.equalsIgnoreCase("n")){
                         userLoggedIn = "fail";
                     }
             }
         }
+        // Returns whether the user login was successfull or if it fialed
         return userLoggedIn;
     }
     
     static void createPost(){
+        // Reads all the user data (to be used when the post needs to be made)
         ArrayList<String> userInfo = readUserData();
+        // Prompts and requests content for the post 
         System.out.println("What is the content of your post?");
         String postContent = keyedInput.nextLine();
-
-        try {        
+        // Starts with a try in the event that the file does not exist
+        try {
+            // Creates a file instance
             File file = new File("data.csv");
+            // Creates a filewriter instance to be used to write to the file
             FileWriter fr = new FileWriter(file, true);
+            // Creates a buffered file instance off of the file-writer instance
             BufferedWriter br = new BufferedWriter(fr);
+            // Creates a print-writer instance off of the buffer (to be able to append to the file)
             PrintWriter pr = new PrintWriter(br);
+            // Processes the given data into CSV format and appends it to the file
             pr.println(userInfo.get(0) + "," + userInfo.get(1) + "," +userInfo.get(4)+ "," +postContent+ "," +userInfo.get(5));
+            // Closes all the file writers
             pr.close();
             br.close();
             fr.close();
         } catch (IOException ex) {
+            // Throws an error in case of anything unexpected from the file
             Logger.getLogger(AssignmentSixteenAnwar.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     } 
-            
+    // This function reads the user data file
     static ArrayList readUserData(){
         ArrayList<String> userInfo = new ArrayList<>();
+        // Starts with a try in the event that the file does not exist
         try {
+            // Creates a buffer to read the file
             BufferedReader buffer = new BufferedReader(new FileReader("user.csv"));  
             String line;
+            // Sets the line variable (initialized above) to be the current line
             while ((line = buffer.readLine()) != null){  
+                // Splits the data by the commas
                 String[] data = line.split(","); 
-
+                // Adds the information to a data structure that will be returned
                 userInfo.add(data[0]);
                 userInfo.add(data[1]);
                 userInfo.add(data[2]);
@@ -369,8 +415,10 @@ public class AssignmentSixteenAnwar {
                 userInfo.add(data[5]);
             }
         } catch (IOException e){  
+            // Throws an error in case the file has unexpected issues
             e.printStackTrace();  
         }
+        // Returns the data structure to the function that called it
         return userInfo;
     }
 }
