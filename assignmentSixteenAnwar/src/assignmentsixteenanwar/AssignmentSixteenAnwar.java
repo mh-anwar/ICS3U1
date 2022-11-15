@@ -21,9 +21,9 @@ public class AssignmentSixteenAnwar {
 
     // Declare and initalize Scanner for input
     static Scanner keyedInput = new Scanner (System.in);
-    final String dataFile = "data.csv";
-    final String userFile = "user.csv";
-    final int verifcationThreshold = 100;
+    static final String dataFile = "data.csv";
+    static final String userFile = "user.csv";
+    static final int verifcationThreshold = 100;
     public static void main(String[] args) {
         
         loginFlow();
