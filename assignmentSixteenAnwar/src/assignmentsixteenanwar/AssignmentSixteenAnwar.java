@@ -21,8 +21,11 @@ public class AssignmentSixteenAnwar {
 
     // Declare and initalize Scanner for input
     static Scanner keyedInput = new Scanner (System.in);
-    
+    final String dataFile = "data.csv";
+    final String userFile = "user.csv";
+    final int verifcationThreshold = 100;
     public static void main(String[] args) {
+        
         loginFlow();
         // 5 Arrays, each with 20 Elements, that alone makes a total of 100 Elements
         ArrayList<String> names = new ArrayList<>();
@@ -35,7 +38,7 @@ public class AssignmentSixteenAnwar {
         String line = "";
         try {
             // Create a new buffer to read file data.csv
-            BufferedReader br = new BufferedReader(new FileReader("data.csv"));  
+            BufferedReader br = new BufferedReader(new FileReader(dataFile));  
             while ((line = br.readLine()) != null){  
                 // Split CSV by commas and sort data into named variables
                 String[] data = line.split(","); 
@@ -52,7 +55,7 @@ public class AssignmentSixteenAnwar {
                 } else{
                     // If it is stored as a double, if it is greater than 100 then the user is verified
                     Double verificationChance = Double.parseDouble(data[4]); //this is a funny variable
-                    if(verificationChance >100){
+                    if(verificationChance >verifcationThreshold){
                         verified = true;
                     }
                 }
@@ -229,7 +232,7 @@ public class AssignmentSixteenAnwar {
         // Starts with a try catch, in the event that the file doesn't exist
         try {
             // Begins a process to write to the file
-            FileWriter myWriter = new FileWriter("user.csv");
+            FileWriter myWriter = new FileWriter(userFile);
             // Processes the given array list and extrapolates the data into a CSV format and writes it to the file
             myWriter.write(allData.get(0) +","+ allData.get(1) +","+ allData.get(2)  +","+ allData.get(3) +","+ allData.get(4)  +","+ allData.get(5));
             // Closes the process to write to it
@@ -247,7 +250,7 @@ public class AssignmentSixteenAnwar {
         // Starts with a try catch, in the event that the file doesn't exist
         try {
             // Begins a process to write to the file
-            FileWriter myWriter = new FileWriter("user.csv");
+            FileWriter myWriter = new FileWriter(userFile);
             // Processes the given array list and extrapolates the data into a CSV format and writes it to the file
             myWriter.write(allData.get(0) +","+ allData.get(1) +","+ allData.get(2)  +","+ allData.get(3) +","+ allData.get(4)  +","+ allData.get(5));
             // Closes the process to write to it
@@ -263,7 +266,7 @@ public class AssignmentSixteenAnwar {
         // Starts with a try catch, in the event that the file doesn't exist
         try {
             // Begins a process to write to the file
-            FileWriter myWriter = new FileWriter("user.csv");
+            FileWriter myWriter = new FileWriter(userFile);
             // Writes undefined for each segment, so that when the user tries to sign in they are provided with a specific error
             myWriter.write("undefined,undefined,undefined,undefined,undefined,undefined");
             // Closes the writing process and notifies the user of the account being deleted
@@ -283,7 +286,7 @@ public class AssignmentSixteenAnwar {
             long verificationChance = (long) Math.round(Math.random()*200);
             Boolean userVerified = false;
             // If it is greater than 100 the user is verified and the variable userVerified (which will be returned) is set to true
-            if (verificationChance > 100){
+            if (verificationChance > verifcationThreshold){
                 System.out.println("Clitter has approved your verification. You are verified");
                 userVerified = true;
             } else{
@@ -375,7 +378,7 @@ public class AssignmentSixteenAnwar {
         // Starts with a try in the event that the file does not exist
         try {
             // Creates a file instance
-            File file = new File("data.csv");
+            File file = new File(dataFile);
             // Creates a filewriter instance to be used to write to the file
             FileWriter fr = new FileWriter(file, true);
             // Creates a buffered file instance off of the file-writer instance
@@ -400,7 +403,7 @@ public class AssignmentSixteenAnwar {
         // Starts with a try in the event that the file does not exist
         try {
             // Creates a buffer to read the file
-            BufferedReader buffer = new BufferedReader(new FileReader("user.csv"));  
+            BufferedReader buffer = new BufferedReader(new FileReader(userFile));  
             String line;
             // Sets the line variable (initialized above) to be the current line
             while ((line = buffer.readLine()) != null){  
