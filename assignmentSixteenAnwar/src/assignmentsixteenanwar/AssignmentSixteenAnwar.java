@@ -48,14 +48,15 @@ public class AssignmentSixteenAnwar {
                 String post = data[3].toString();
                 // Check verified as it could be a string or double
                 Boolean verified = false;
-                if(data[4].equals("true")){
+                
+                if(data[4].equalsIgnoreCase("TRUE")){
                     verified = true;
-                } else if(data[4].equals("false")){
+                } else if(data[4].equalsIgnoreCase("FALSE")){
                     verified = false;
                 } else{
                     // If it is stored as a double, if it is greater than 100 then the user is verified
                     Double verificationChance = Double.parseDouble(data[4]); //this is a funny variable
-                    if(verificationChance >verifcationThreshold){
+                    if(verificationChance > verifcationThreshold){
                         verified = true;
                     }
                 }
@@ -113,10 +114,19 @@ public class AssignmentSixteenAnwar {
     // This is a recursive function that displays the user's feed
     // It takes in all the arrays as input
     static void displayFeed(ArrayList names, ArrayList userNames, ArrayList emails, ArrayList posts, ArrayList verifiedUser){
-        System.out.println("To move to the next post, press Enter");
+        System.out.println("To move to the next post, press any key and then Enter");
         System.out.println("To stop, type in 'No' ");
         // Because it is recursive and to add some spice to the feed, it chooses the next post randomly (based on the total number of items (names.size()))
-        int randomPostPosition = (int) Math.round(Math.random()*names.size());
+        int arraySize = names.size();
+        // Ensures that an array out of bounds exception does not occur
+        if(arraySize == 0){
+            arraySize+=1;
+        }
+        int randomPostPosition = (int) Math.round(Math.random()*arraySize -1);
+        // Double checks that an array out of bounds exception does not occur
+        while(randomPostPosition < 0){
+            randomPostPosition = (int) Math.round(Math.random()*arraySize -1);
+        }
         //Based on the random number, print the information for that specific post from all arrays
         System.out.println("----------");
         // This line uses and iternary operator to determine whether it should be blank or have content
@@ -215,14 +225,16 @@ public class AssignmentSixteenAnwar {
             System.out.println("What would you like to set your email to?");
             String email = keyedInput.nextLine();
             // Prompts and requests user whether they want to be verified
-            System.out.println("Would you like to be verified?");
+            System.out.println("Would you like to be verified? (yes/no)");
             String wantVerification = keyedInput.nextLine();
             String userVerified = "false";
-            // if they do want to be verified it calls a function that determines whether they should be verified
+            // If they do want to be verified it calls a function that determines whether they should be verified
             if(wantVerification.equalsIgnoreCase("yes")){
-                userVerified =Boolean.toString(verifyUser());
+                userVerified = Boolean.toString(verifyUser());
             }
-            // finally the program creates one data structure with all the information in it and calls a function to write it to the user data file
+            System.out.println("");
+            System.out.println("Your username is: '" + userName + "' and your password is: '" + password+"'");
+            // Finally the program creates one data structure with all the information in it and calls a function to write it to the user data file
             ArrayList<String> userInfo = new ArrayList<>(Arrays.asList(name, userName, password, age, email, userVerified));
             writeUserData(userInfo);
             return "true";
@@ -373,8 +385,8 @@ public class AssignmentSixteenAnwar {
         // Reads all the user data (to be used when the post needs to be made)
         ArrayList<String> userInfo = readUserData();
         // Prompts and requests content for the post 
-        System.out.println("What is the content of your post?");
-        String postContent = keyedInput.nextLine();
+        System.out.println("What is the content of your post? (Currently limited to one word)");
+        String postContent = keyedInput.next();
         // Starts with a try in the event that the file does not exist
         try {
             // Creates a file instance
@@ -391,6 +403,7 @@ public class AssignmentSixteenAnwar {
             pr.close();
             br.close();
             fr.close();
+            System.out.println("Successfully Posted!");
         } catch (IOException ex) {
             // Throws an error in case of anything unexpected from the file
             Logger.getLogger(AssignmentSixteenAnwar.class.getName()).log(Level.SEVERE, null, ex);
