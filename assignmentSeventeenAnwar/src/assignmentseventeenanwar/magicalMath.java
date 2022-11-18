@@ -5,12 +5,14 @@
  */
 package assignmentseventeenanwar;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author mohammad
  */
 public class magicalMath extends javax.swing.JFrame {
-
+    DecimalFormat df = new DecimalFormat("###.###");
     /**
      * Creates new form magicalMath
      */
@@ -29,31 +31,162 @@ public class magicalMath extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jSpinner1 = new javax.swing.JSpinner();
+        lblToDegreeAngleResult = new javax.swing.JLabel();
+        btnCubeRoot = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jSpinner2 = new javax.swing.JSpinner();
+        spnCubeRoot = new javax.swing.JSpinner();
+        lblCubeRootResult = new javax.swing.JLabel();
+        btnToDegreeAngle = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        btnPower = new javax.swing.JButton();
+        btnHypotenuse = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        btnAbsoluteValue = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        spnSquareRoot = new javax.swing.JSpinner();
+        btnToRadianAngle = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        btnSquareRoot = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        btnNaturalLog = new javax.swing.JButton();
+        txtRadianAngle = new javax.swing.JTextField();
+        lblPowerResult = new javax.swing.JLabel();
+        txtPowerBase = new javax.swing.JTextField();
+        txtPowerExponent = new javax.swing.JTextField();
+        lblAbsoluteValueResult = new javax.swing.JLabel();
+        lblHypotenuseResult = new javax.swing.JLabel();
+        txtAbsoluteValue = new javax.swing.JTextField();
+        txtTriangleSide1 = new javax.swing.JTextField();
+        txtTriangleSide2 = new javax.swing.JTextField();
+        lblSquareRootResult = new javax.swing.JLabel();
+        txtDegreeAngle = new javax.swing.JTextField();
+        lblToRadianAngleResult = new javax.swing.JLabel();
+        txtNaturalLog = new javax.swing.JTextField();
+        lblNaturalLogResult = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 153, 153));
         jPanel1.setAutoscrolls(true);
         jPanel1.setDoubleBuffered(false);
 
-        jLabel1.setText("Enter an integer. The program will display the CUBE ROOT of the integer.");
+        jLabel1.setText("Enter an angle in radians. The program will display the angle in DEGREES.");
 
-        jLabel2.setText("Answer");
+        lblToDegreeAngleResult.setText("Answer: 0");
 
-        jButton1.setText("CUBE ROOT");
+        btnCubeRoot.setText("CUBE ROOT");
+        btnCubeRoot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCubeRootActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Enter an integer. The program will display the CUBE ROOT of the integer.");
 
-        jLabel4.setText("Answer");
+        lblCubeRootResult.setText("Answer: 0");
 
-        jButton2.setText("CUBE ROOT");
+        btnToDegreeAngle.setText("DEGREES");
+        btnToDegreeAngle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnToDegreeAngleActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("Enter two numbers. The program will display the first number to the power of the second number");
+
+        jLabel6.setText("Enter a number. The program will display the ABSOLUTE VALUE of the number");
+
+        btnPower.setText("POWER");
+        btnPower.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPowerActionPerformed(evt);
+            }
+        });
+
+        btnHypotenuse.setText("HYPOTENUSE");
+        btnHypotenuse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHypotenuseActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setText("Enter the length of two sides of a right angle triangle. The program will display the HYPOTENUSE of the triangle.");
+
+        btnAbsoluteValue.setText("ABSOLUTE VALUE");
+        btnAbsoluteValue.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAbsoluteValueActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("Enter a positive integer. The program will display the SQUARE ROOT of the integer.");
+
+        btnToRadianAngle.setText("RADIANS");
+        btnToRadianAngle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnToRadianAngleActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Enter an angle in degrees. The program will display the the angle in RADIANS.");
+
+        btnSquareRoot.setText("SQUARE ROOT");
+        btnSquareRoot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSquareRootActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setText("Enter a positive number. The program will display the NATURAL LOGARITHM of the number.");
+
+        btnNaturalLog.setText("NATURAL LOG");
+        btnNaturalLog.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNaturalLogActionPerformed(evt);
+            }
+        });
+
+        txtRadianAngle.setText("0");
+
+        lblPowerResult.setText("Answer: 0");
+
+        txtPowerBase.setText("0");
+
+        txtPowerExponent.setText("0");
+
+        lblAbsoluteValueResult.setText("Answer: 0");
+
+        lblHypotenuseResult.setText("Answer: 0");
+
+        txtAbsoluteValue.setText("0");
+
+        txtTriangleSide1.setText("0");
+
+        txtTriangleSide2.setText("0");
+
+        lblSquareRootResult.setText("Answer: 0");
+
+        txtDegreeAngle.setText("0");
+
+        lblToRadianAngleResult.setText("Answer: 0");
+
+        txtNaturalLog.setText("0");
+
+        lblNaturalLogResult.setText("Answer: 0");
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
+        jLabel2.setText("Magical Math Methods");
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assignmentseventeenanwar/obtuseAngleJoke.png"))); // NOI18N
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assignmentseventeenanwar/mathAbsoluteValue.jpeg"))); // NOI18N
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assignmentseventeenanwar/gradian.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -62,74 +195,240 @@ public class magicalMath extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(262, 262, 262)
-                        .addComponent(jButton1))
+                        .addGap(63, 63, 63)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(txtNaturalLog, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(81, 81, 81)
+                                .addComponent(lblNaturalLogResult)
+                                .addGap(115, 115, 115)
+                                .addComponent(btnNaturalLog))
+                            .addComponent(jLabel10)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(txtDegreeAngle, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(81, 81, 81)
+                                .addComponent(lblToRadianAngleResult)
+                                .addGap(125, 125, 125)
+                                .addComponent(btnToRadianAngle))
+                            .addComponent(jLabel9)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(spnSquareRoot, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(83, 83, 83)
+                                .addComponent(lblSquareRootResult)
+                                .addGap(107, 107, 107)
+                                .addComponent(btnSquareRoot))
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel7)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(txtAbsoluteValue, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(78, 78, 78)
+                                .addComponent(lblAbsoluteValueResult)
+                                .addGap(102, 102, 102)
+                                .addComponent(btnAbsoluteValue))
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel5)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(txtRadianAngle, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(80, 80, 80)
+                                .addComponent(lblToDegreeAngleResult)
+                                .addGap(118, 118, 118)
+                                .addComponent(btnToDegreeAngle))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(txtPowerExponent, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(265, 265, 265))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(lblPowerResult)
+                                        .addGap(126, 126, 126)))
+                                .addComponent(btnPower))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(txtTriangleSide2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(76, 76, 76)
+                                        .addComponent(lblHypotenuseResult))
+                                    .addComponent(txtTriangleSide1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(115, 115, 115)
+                                .addComponent(btnHypotenuse))
+                            .addComponent(txtPowerBase, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel1)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(spnCubeRoot, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(82, 82, 82)
+                                .addComponent(lblCubeRootResult)
+                                .addGap(108, 108, 108)
+                                .addComponent(btnCubeRoot))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel2)
-                        .addGap(50, 50, 50)
-                        .addComponent(jButton2)))
-                .addContainerGap(528, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(44, 44, 44)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel3)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(16, 16, 16)
-                            .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(32, 32, 32)
-                            .addComponent(jLabel4)))
-                    .addContainerGap(526, Short.MAX_VALUE)))
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel2)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(66, 66, 66)
-                .addComponent(jButton1)
-                .addGap(26, 26, 26)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2)
-                    .addComponent(jLabel2))
-                .addContainerGap(306, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(55, 55, 55)
-                    .addComponent(jLabel3)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel4))
-                    .addContainerGap(369, Short.MAX_VALUE)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(spnCubeRoot, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCubeRoot)
+                            .addComponent(lblCubeRootResult))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1)
+                        .addGap(7, 7, 7)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnToDegreeAngle)
+                            .addComponent(lblToDegreeAngleResult)
+                            .addComponent(txtRadianAngle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnPower)
+                                    .addComponent(lblPowerResult))
+                                .addGap(12, 12, 12))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtPowerBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtPowerExponent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel6)
+                        .addGap(22, 22, 22)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtAbsoluteValue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblAbsoluteValueResult)
+                            .addComponent(btnAbsoluteValue))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtTriangleSide1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel11))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel4)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblHypotenuseResult)
+                                    .addComponent(btnHypotenuse))
+                                .addGap(25, 25, 25))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtTriangleSide2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)))
+                        .addComponent(jLabel8)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(spnSquareRoot, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnSquareRoot)
+                            .addComponent(lblSquareRootResult))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel9)
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtDegreeAngle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblToRadianAngleResult)
+                            .addComponent(btnToRadianAngle))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnNaturalLog)
+                            .addComponent(txtNaturalLog, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNaturalLogResult)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnToDegreeAngleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToDegreeAngleActionPerformed
+       Double input = Double.parseDouble(txtRadianAngle.getText());
+       Double degreeResult = Math.toDegrees(input);
+       lblToDegreeAngleResult.setText("Answer: " + df.format(degreeResult));
+    }//GEN-LAST:event_btnToDegreeAngleActionPerformed
+
+    private void btnCubeRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCubeRootActionPerformed
+       int input = Integer.parseInt(spnCubeRoot.getValue().toString());
+       Double cubeRootResult = Math.cbrt(input);
+       lblCubeRootResult.setText("Answer: " + df.format(cubeRootResult));
+    }//GEN-LAST:event_btnCubeRootActionPerformed
+
+    private void btnPowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPowerActionPerformed
+        Double powerBase = Double.parseDouble(txtPowerBase.getText());                                      
+        Double powerExponent = Double.parseDouble(txtPowerExponent.getText());
+        Double powerResult = Math.pow(powerBase, powerExponent);
+        lblPowerResult.setText("Answer: " + df.format(powerResult));
+    }//GEN-LAST:event_btnPowerActionPerformed
+
+    private void btnAbsoluteValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbsoluteValueActionPerformed
+       Double input = Double.parseDouble(txtAbsoluteValue.getText());
+       Double absoluteValueResult = Math.abs(input);
+       lblAbsoluteValueResult.setText("Answer: " + df.format(absoluteValueResult));
+    }//GEN-LAST:event_btnAbsoluteValueActionPerformed
+
+    private void btnHypotenuseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHypotenuseActionPerformed
+        Double triangleSideOne = Double.parseDouble(txtTriangleSide1.getText());                                      
+        Double triangleSideTwo = Double.parseDouble(txtTriangleSide2.getText());
+        Double hypotenuseResult = Math.hypot(triangleSideOne, triangleSideTwo);
+        lblHypotenuseResult.setText("Answer: " + df.format(hypotenuseResult));
+    }//GEN-LAST:event_btnHypotenuseActionPerformed
+
+    private void btnSquareRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSquareRootActionPerformed
+       int input = Integer.parseInt(spnSquareRoot.getValue().toString());
+       Double squareRootResult = Math.sqrt(input);
+       lblSquareRootResult.setText("Answer: " + df.format(squareRootResult));
+    }//GEN-LAST:event_btnSquareRootActionPerformed
+
+    private void btnToRadianAngleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToRadianAngleActionPerformed
+        Double input = Double.parseDouble(txtDegreeAngle.getText());
+        Double radianResult = Math.toRadians(input);
+        lblToRadianAngleResult.setText("Answer: " + df.format(radianResult));
+    }//GEN-LAST:event_btnToRadianAngleActionPerformed
+
+    private void btnNaturalLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNaturalLogActionPerformed
+       Double input = Double.parseDouble(txtNaturalLog.getText());
+       Double naturalLogResult = Math.log(input);
+       lblNaturalLogResult.setText("Answer: " + df.format(naturalLogResult));
+    }//GEN-LAST:event_btnNaturalLogActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,14 +466,44 @@ public class magicalMath extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnAbsoluteValue;
+    private javax.swing.JButton btnCubeRoot;
+    private javax.swing.JButton btnHypotenuse;
+    private javax.swing.JButton btnNaturalLog;
+    private javax.swing.JButton btnPower;
+    private javax.swing.JButton btnSquareRoot;
+    private javax.swing.JButton btnToDegreeAngle;
+    private javax.swing.JButton btnToRadianAngle;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JSpinner jSpinner2;
+    private javax.swing.JLabel lblAbsoluteValueResult;
+    private javax.swing.JLabel lblCubeRootResult;
+    private javax.swing.JLabel lblHypotenuseResult;
+    private javax.swing.JLabel lblNaturalLogResult;
+    private javax.swing.JLabel lblPowerResult;
+    private javax.swing.JLabel lblSquareRootResult;
+    private javax.swing.JLabel lblToDegreeAngleResult;
+    private javax.swing.JLabel lblToRadianAngleResult;
+    private javax.swing.JSpinner spnCubeRoot;
+    private javax.swing.JSpinner spnSquareRoot;
+    private javax.swing.JTextField txtAbsoluteValue;
+    private javax.swing.JTextField txtDegreeAngle;
+    private javax.swing.JTextField txtNaturalLog;
+    private javax.swing.JTextField txtPowerBase;
+    private javax.swing.JTextField txtPowerExponent;
+    private javax.swing.JTextField txtRadianAngle;
+    private javax.swing.JTextField txtTriangleSide1;
+    private javax.swing.JTextField txtTriangleSide2;
     // End of variables declaration//GEN-END:variables
 }
