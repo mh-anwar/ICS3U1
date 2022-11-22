@@ -253,10 +253,11 @@ public class SuperString extends javax.swing.JFrame {
                 .addGap(33, 33, 33)
                 .addComponent(jLabel8)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSpecificLetters, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblSpecificLettersResult)
-                    .addComponent(btnSpecificLetters))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtSpecificLetters, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSpecificLetters)))
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
@@ -279,48 +280,70 @@ public class SuperString extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnStringToLowerCaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStringToLowerCaseActionPerformed
+        // Get string input
         String input = txtLowerCaseString.getText();
+        // Convert input to upper case
         String upperCaseInput = input.toUpperCase();
+        // Display upper case output on lable
         lblUpperCaseResult.setText(upperCaseInput);
     }//GEN-LAST:event_btnStringToLowerCaseActionPerformed
 
     private void btnStringLengthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStringLengthActionPerformed
+        // Get string input
         String input = txtStringLength.getText();
+        // Get length of input
         int inputLength  = input.length();
+        // Diplay length of input on label
         lblStringLengthResult.setText(Integer.toString(inputLength));
     }//GEN-LAST:event_btnStringLengthActionPerformed
 
     private void btnLetterSpotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLetterSpotActionPerformed
+        // Get string input
         String input = txtLetterSpot.getText();
+        // Get the character at the 3rd spot
         char letterAtSpot = input.charAt(3);
+        // Display character on label
         lblLetterSpotResult.setText(Character.toString(letterAtSpot));
     }//GEN-LAST:event_btnLetterSpotActionPerformed
 
     private void btnIdenticalStringsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIdenticalStringsActionPerformed
+        // Get first string input
         String firstInput = txtIdenticalStringOne.getText();
+        // Get second string input
         String secondInput = txtIdenticalStringTwo.getText();
+        // Compare the first string input to the second one
         int stringComparision = firstInput.compareTo(secondInput);
+        // If they are the same (0) then display that they are identical
         if(stringComparision == 0){
             lblIdenticalStringResult.setText("Identical Strings");   
         } else{
+            // Or else display that they are non-identical
             lblIdenticalStringResult.setText("Non-identical Strings");   
         }
     }//GEN-LAST:event_btnIdenticalStringsActionPerformed
 
     private void btnLetterInStringActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLetterInStringActionPerformed
+        // Get the first string input
         String baseString = txtStringWithLetter.getText();
+        // Get the second string (which is a character)
         String character = txtLetterInString.getText();
+        // Get the index of the character
         int indexOfCharacter = baseString.indexOf(character);
+        // If the character exists, display that the character exists
         if(indexOfCharacter != -1){
-            lblLetterInStringResult.setText("Letter is in strings");   
+            lblLetterInStringResult.setText("Letter is in string");   
         } else{
+            // Or else display that it doesn't exist in the string
             lblLetterInStringResult.setText("Character is not in string");   
         }
     }//GEN-LAST:event_btnLetterInStringActionPerformed
 
     private void btnSpecificLettersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSpecificLettersActionPerformed
+        // Get string input
         String input = txtSpecificLetters.getText();
+        // Get substring fromthe string (characters 4,5,6)
         String subString = input.substring(4,7);
+        // Display the substring
         lblSpecificLettersResult.setText(subString);
     }//GEN-LAST:event_btnSpecificLettersActionPerformed
 

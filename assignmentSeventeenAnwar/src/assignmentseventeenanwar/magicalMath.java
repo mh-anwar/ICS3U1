@@ -381,52 +381,78 @@ public class magicalMath extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnToDegreeAngleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToDegreeAngleActionPerformed
+       // Get double input
        Double input = Double.parseDouble(txtRadianAngle.getText());
+       // Convert radian input to degrees
        Double degreeResult = Math.toDegrees(input);
+       // Display resul on label
        lblToDegreeAngleResult.setText("Answer: " + df.format(degreeResult));
     }//GEN-LAST:event_btnToDegreeAngleActionPerformed
 
     private void btnCubeRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCubeRootActionPerformed
+       // Get integer input from spinner, after convering value to string
        int input = Integer.parseInt(spnCubeRoot.getValue().toString());
+       // Cube root the input
        Double cubeRootResult = Math.cbrt(input);
+       // Display result on label
        lblCubeRootResult.setText("Answer: " + df.format(cubeRootResult));
     }//GEN-LAST:event_btnCubeRootActionPerformed
 
     private void btnPowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPowerActionPerformed
+        // Get double base number input from textfield
         Double powerBase = Double.parseDouble(txtPowerBase.getText());                                      
+        // Get double power input from textfield
         Double powerExponent = Double.parseDouble(txtPowerExponent.getText());
+        // Set base to power (exponent it?)
         Double powerResult = Math.pow(powerBase, powerExponent);
+        // Display result on label
         lblPowerResult.setText("Answer: " + df.format(powerResult));
     }//GEN-LAST:event_btnPowerActionPerformed
 
     private void btnAbsoluteValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbsoluteValueActionPerformed
+       // Get double input
        Double input = Double.parseDouble(txtAbsoluteValue.getText());
+       // Get the absolute value of the input
        Double absoluteValueResult = Math.abs(input);
+       // Return the absolute value of the input
        lblAbsoluteValueResult.setText("Answer: " + df.format(absoluteValueResult));
     }//GEN-LAST:event_btnAbsoluteValueActionPerformed
 
     private void btnHypotenuseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHypotenuseActionPerformed
+        // Get the double first-side input
         Double triangleSideOne = Double.parseDouble(txtTriangleSide1.getText());                                      
+        // Get the double second-side input
         Double triangleSideTwo = Double.parseDouble(txtTriangleSide2.getText());
+        // Use hypotenuse method to calculate hypotenuse from both side value
         Double hypotenuseResult = Math.hypot(triangleSideOne, triangleSideTwo);
+        // Return hypotenuse value
         lblHypotenuseResult.setText("Answer: " + df.format(hypotenuseResult));
     }//GEN-LAST:event_btnHypotenuseActionPerformed
 
     private void btnSquareRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSquareRootActionPerformed
+       // Get integer input from spinner, after convering value to string
        int input = Integer.parseInt(spnSquareRoot.getValue().toString());
+       // Square root the input
        Double squareRootResult = Math.sqrt(input);
+       // Display the square root on the label
        lblSquareRootResult.setText("Answer: " + df.format(squareRootResult));
     }//GEN-LAST:event_btnSquareRootActionPerformed
 
     private void btnToRadianAngleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToRadianAngleActionPerformed
+        // Get double input
         Double input = Double.parseDouble(txtDegreeAngle.getText());
+        // Convert degrees to radians
         Double radianResult = Math.toRadians(input);
+        // Display radians on label
         lblToRadianAngleResult.setText("Answer: " + df.format(radianResult));
     }//GEN-LAST:event_btnToRadianAngleActionPerformed
 
     private void btnNaturalLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNaturalLogActionPerformed
+       // Get double input
        Double input = Double.parseDouble(txtNaturalLog.getText());
+       // Use math.log on the input and calculate the natural logarithm
        Double naturalLogResult = Math.log(input);
+       // Display the natual logarithm on the label
        lblNaturalLogResult.setText("Answer: " + df.format(naturalLogResult));
     }//GEN-LAST:event_btnNaturalLogActionPerformed
 
