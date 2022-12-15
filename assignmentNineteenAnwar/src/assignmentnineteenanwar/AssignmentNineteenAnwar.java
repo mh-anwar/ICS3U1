@@ -19,8 +19,10 @@ public class AssignmentNineteenAnwar {
      */
    
     public static void main(String[] args) {
+        // Declare a boolean that is used to determine whether the user wants to exit or not
         boolean userExit = false;
         while(userExit == false){
+            // Output intro line
             System.out.println("-----------");
             System.out.println("Welcome to the Monkey Math Man");
             // Output menu
@@ -78,37 +80,54 @@ public class AssignmentNineteenAnwar {
         // Calculate the line midpoint
         // a^2 + b^2 = c^2
         System.out.println("Welcome to Line Segment Midpoint Calculator");
+        // Get the first x-coordinate
         System.out.println("What is the X co-ordinate of the first point?");
         int firstX = keyedInput.nextInt();
+        // Get the first y-coordinate
         System.out.println("What is the Y co-ordinate of the first point?");
         int firstY = keyedInput.nextInt();
+        // Get the second y-coordinate
         System.out.println("What is the X co-ordinate of the second point?");
         int secondX = keyedInput.nextInt();
+        // Get the second y-coordinate
         System.out.println("What is the Y co-ordinate of the second point?");
         int secondY = keyedInput.nextInt();
-        
+        // Add two x-coordinated and divide by two to get midpoint x-values
         int xValueMid = (firstX + secondX)/2;
+        // Add the y-coordinates and divide by two to get midpoint y values
         int yValueMid = (firstY + secondY)/2;
+        // Output the midpoint x and y values
         System.out.println("The midpoint of the line segment is: " + xValueMid + " " + yValueMid);
        
     }
     static void vehicleSpeed(){
+        // Calculate the vehicle speed
         System.out.println("Welcome to Vehicle Speed Calculator");
+        // Get the time the car took to travel
         System.out.println("What was the time it took the car to travel?");
         Double carTime = keyedInput.nextDouble();
+        // Get the distance the car travelled
         System.out.println("What was the distance the car travelled?");
         Double carDistance = keyedInput.nextDouble();
+        // Calculate the car speed
         Double carSpeed = carDistance/carTime;
+        // Display the car speed
         System.out.println("The car speed is: " + carSpeed);
     }
     static void triangleMissingAngle(){
+        // Declare the angle total
         final int totalAngle = 180;
+        // Calculate the triangle missing missing angle
         System.out.println("Welcome to Triangle Missing Angle Calculator");
+        // Get the first angle 
         System.out.println("What is angle A of the triangle?");
         Double angleA = keyedInput.nextDouble();
+        // Get the second angle
         System.out.println("What is angle B of the triangle?");
         Double angleB = keyedInput.nextDouble();
+        // Calculate the missing angle
         Double missingAngle = totalAngle - angleA - angleB;
+        // Display the missing angle
         System.out.println("The missing angle is: " + missingAngle + " degrees");
     }
 }
