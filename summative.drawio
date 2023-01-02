@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-12-21T13:53:26.908Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="wIgaLA1yfzYRGAvnI30L" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-02T00:13:24.643Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="E7_rnQAYP_a0VeDfqxUy" version="20.7.4" type="github">
   <diagram id="d-HQx0A6RlXULR6_okz4" name="Page-1">
-    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1562" dy="948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -37,53 +37,65 @@
         <mxCell id="T2zrcExbBJ0eOjrz7QeG-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T2zrcExbBJ0eOjrz7QeG-8" target="T2zrcExbBJ0eOjrz7QeG-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-8" value="User enters their account information to sign up (name, email, password)" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-8" value="1. User enters their account information to sign up (name, email, password)" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="370" width="120" height="70" as="geometry" />
         </mxCell>
         <mxCell id="T2zrcExbBJ0eOjrz7QeG-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T2zrcExbBJ0eOjrz7QeG-10" target="T2zrcExbBJ0eOjrz7QeG-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-10" value="Leader board data is fetched" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-10" value="2. Leader board data is fetched" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="365" y="370" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="T2zrcExbBJ0eOjrz7QeG-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T2zrcExbBJ0eOjrz7QeG-12" target="T2zrcExbBJ0eOjrz7QeG-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-12" value="Retrieve user games" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-12" value="4. Retrieve user games" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="365" y="510" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="T2zrcExbBJ0eOjrz7QeG-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T2zrcExbBJ0eOjrz7QeG-14" target="T2zrcExbBJ0eOjrz7QeG-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-14" value="User enters their account login information to login (name, password)" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-14" value="1. User enters their account login information to login (name, password)" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="510" width="120" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-16" value="User clicks &#39;Challenge&#39; and inputs game information (win/draw and type of win)" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="QfndSkn7wX7v_pdeejdK-2" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="T2zrcExbBJ0eOjrz7QeG-16" target="QfndSkn7wX7v_pdeejdK-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-16" value="6. User clicks &#39;Challenge&#39; and inputs game information (win/draw and type of win)" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="650" width="120" height="95" as="geometry" />
         </mxCell>
         <mxCell id="T2zrcExbBJ0eOjrz7QeG-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T2zrcExbBJ0eOjrz7QeG-18" target="T2zrcExbBJ0eOjrz7QeG-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-18" value="Update result when user accepts/reports game results that have been inputted" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="365" y="667.5" width="120" height="60" as="geometry" />
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-18" value="5. Update result when user accepts/reports game results that have been inputted" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="358" y="667.5" width="135" height="72.5" as="geometry" />
         </mxCell>
         <mxCell id="T2zrcExbBJ0eOjrz7QeG-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T2zrcExbBJ0eOjrz7QeG-20" target="T2zrcExbBJ0eOjrz7QeG-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-20" value="Update leaderboard based on game results" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-20" value="7. Update leaderboard based on game results" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="365" y="807.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-22" value="Update user game list based on game results" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-22" value="8. Update user game list based on game results" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="365" y="947.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="T2zrcExbBJ0eOjrz7QeG-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="T2zrcExbBJ0eOjrz7QeG-24" target="T2zrcExbBJ0eOjrz7QeG-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-24" value="Display leader board" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-24" value="3. Display leader board" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="660" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="T2zrcExbBJ0eOjrz7QeG-26" value="Display user games" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+        <mxCell id="QfndSkn7wX7v_pdeejdK-4" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="T2zrcExbBJ0eOjrz7QeG-26" target="QfndSkn7wX7v_pdeejdK-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T2zrcExbBJ0eOjrz7QeG-26" value="4. Display user games" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="660" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QfndSkn7wX7v_pdeejdK-1" value="9. User edits their profile info" style="whiteSpace=wrap;html=1;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="40" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QfndSkn7wX7v_pdeejdK-3" value="10. Show updated profile info" style="whiteSpace=wrap;html=1;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="660" y="690" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
