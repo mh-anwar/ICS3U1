@@ -11,6 +11,7 @@ package custom.components;
  */
 public class HeaderLabel extends javax.swing.JLabel{
     public HeaderLabel(String text, String type) {
+        // Set font based on wehther h1 (Header 1) is wanted or not, then set text
         if(type.equals("h1")){
             setFont(new java.awt.Font("Dialog", 0, 48));
         } else if(type.equals("h2")){

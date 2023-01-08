@@ -22,34 +22,37 @@ import java.awt.event.ActionListener;
  */
 public class LoginContainer extends javax.swing.JPanel{
     public LoginContainer(Dimension MAIN_DIMENSION, Container MainContainer){
+        // Set size, layout type of panel, then initialize components
         setSize(MAIN_DIMENSION);
         setLayout(new GridBagLayout());
         initComponents(MainContainer);
     }
     private void initComponents(Container MainContainer){
-        HeaderLabel PageTitle = new HeaderLabel("Login to Your Account", "h1");
-        GridBagConstraints pageTitleConstraints = new GridConstraints(0, 0, 0, 1, false);
+        // The next few lines: create an element given parameters and set it's pos. on the page with GBC
+        HeaderLabel lblPageTitle = new HeaderLabel("Login to Your Account", "h1");
+        GridBagConstraints lblPageTitleConstraints = new GridConstraints(0, 0, 0, 1, false);
 
-        Textfield EmailField = new Textfield("Enter your Email");
-        GridBagConstraints emailFieldConstraints = new GridConstraints(0, 1, 0, 1, false);
+        Textfield txtEmail = new Textfield("Enter your Email");
+        GridBagConstraints txtEmailConstraints = new GridConstraints(0, 1, 0, 1, false);
         
-        PasswordContainer PassField = new PasswordContainer("Enter your Password");
-        GridBagConstraints passFieldConstraints = new GridConstraints(0, 2, 0, 1, false);
+        PasswordContainer txtPass = new PasswordContainer("Enter your Password");
+        GridBagConstraints txtPassConstraints = new GridConstraints(0, 2, 0, 1, false);
         
-        Button LoginBtn = new Button("Login");
-        GridBagConstraints loginBtnConstraints = new GridConstraints(0, 3, 0, 1, true);
+        Button btnLogin = new Button("Login");
+        GridBagConstraints btnLoginConstraints = new GridConstraints(0, 3, 0, 1, true);
 
-        Button ReturnBtn = new Button("Return", true);
-        GridBagConstraints returnBtnConstraints = new GridConstraints(0, 5, 0, 1, false);
+        Button btnReturn = new Button("Return", true);
+        GridBagConstraints btnReturnConstraints = new GridConstraints(0, 5, 0, 1, false);
         
-
-        this.add(PageTitle, pageTitleConstraints);
-        this.add(EmailField, emailFieldConstraints);
-        this.add(PassField, passFieldConstraints);
-        this.add(LoginBtn, loginBtnConstraints);
-        this.add(ReturnBtn, returnBtnConstraints );
+        // Add all created elements to page
+        this.add(lblPageTitle, lblPageTitleConstraints);
+        this.add(txtEmail, txtEmailConstraints);
+        this.add(txtPass, txtPassConstraints);
+        this.add(btnLogin, btnLoginConstraints);
+        this.add(btnReturn, btnReturnConstraints );
         
-        ReturnBtn.addActionListener(new ActionListener(){
+        // Listen for click on on btnReturn to display Main Container
+        btnReturn.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
                 setVisible(false);

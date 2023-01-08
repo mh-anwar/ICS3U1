@@ -14,6 +14,7 @@ package custom.components;
 // This is done to customize each of them
 public class Label extends javax.swing.JLabel{
     public Label(String text) {
+        // Set font and text
         setFont(new java.awt.Font("Dialog", 0, 20));
         setText(text);
       }

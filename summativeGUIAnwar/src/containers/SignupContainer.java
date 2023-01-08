@@ -24,42 +24,46 @@ import java.awt.event.ActionListener;
  */
 public class SignupContainer extends javax.swing.JPanel{
     public SignupContainer(Dimension MAIN_DIMENSION, Container MainContainer){
+        // Set size, layout type of panel, then initialize components
         setSize(MAIN_DIMENSION);
         setLayout(new GridBagLayout());
         initComponents(MainContainer);
     }
     private void initComponents(Container MainContainer){
-        HeaderLabel PageTitle = new HeaderLabel("Signup for an Account", "h1");
-        GridBagConstraints pageTitleConstraints = new GridConstraints(0, 0, 0, 1, false);
+        // The next few lines: create an element given parameters and set it's pos.
+        HeaderLabel lblPageTitle = new HeaderLabel("Signup for an Account", "h1");
+        GridBagConstraints lblPageTitleConstraints = new GridConstraints(0, 0, 0, 1, false);
 
-        Textfield EmailField = new Textfield("Enter your Email");
-        GridBagConstraints emailFieldConstraints = new GridConstraints(0, 1, 0, 1, false);
+        Textfield txtEmail = new Textfield("Enter your Email");
+        GridBagConstraints txtEmailConstraints = new GridConstraints(0, 1, 0, 1, false);
         
-        Textfield FirstNameField = new Textfield("Enter your First Name");
-        GridBagConstraints firstNameFieldConstraints = new GridConstraints(0, 2, 0, 1, false);
+        Textfield txtFirstName = new Textfield("Enter your First Name");
+        GridBagConstraints txtFirstNameConstraints = new GridConstraints(0, 2, 0, 1, false);
         
-        Textfield LastNameField = new Textfield("Enter your Last Name");
-        GridBagConstraints lastNameFieldConstraints = new GridConstraints(0, 3, 0, 1, false);
+        Textfield txtLastName = new Textfield("Enter your Last Name");
+        GridBagConstraints txtLastNameConstraints = new GridConstraints(0, 3, 0, 1, false);
         
-        PasswordContainer PassField = new PasswordContainer("Enter your Password");
-        GridBagConstraints passFieldConstraints = new GridConstraints(0, 4, 0, 1, false);
+        PasswordContainer txtPass = new PasswordContainer("Enter your Password");
+        GridBagConstraints txtPassConstraints = new GridConstraints(0, 4, 0, 1, false);
         
-        Button SignupBtn = new Button("Login");
-        GridBagConstraints signupBtnConstraints = new GridConstraints(0, 5, 0, 1, true);
+        Button btnSignup = new Button("Login");
+        GridBagConstraints btnSignupConstraints = new GridConstraints(0, 5, 0, 1, true);
 
-        Button ReturnBtn = new Button("Return", true);
-        GridBagConstraints returnBtnConstraints = new GridConstraints(0, 6, 0, 1, false);
+        Button btnReturn = new Button("Return", true);
+        GridBagConstraints btnReturnConstraints = new GridConstraints(0, 6, 0, 1, false);
         
-
-        this.add(PageTitle, pageTitleConstraints);
-        this.add(EmailField, emailFieldConstraints);
-        this.add(FirstNameField, firstNameFieldConstraints);
-        this.add(LastNameField, lastNameFieldConstraints);
-        this.add(PassField, passFieldConstraints);
-        this.add(SignupBtn, signupBtnConstraints);
-        this.add(ReturnBtn, returnBtnConstraints );
+        // Add all created elements to page
+        this.add(lblPageTitle, lblPageTitleConstraints);
+        this.add(txtEmail, txtEmailConstraints);
+        this.add(txtFirstName, txtFirstNameConstraints);
+        this.add(txtLastName, txtLastNameConstraints);
+        this.add(txtPass, txtPassConstraints);
+        this.add(btnSignup, btnSignupConstraints);
+        this.add(btnReturn, btnReturnConstraints );
         
-        ReturnBtn.addActionListener(new ActionListener(){
+        // Copied from LoginContainer - maybe this should be its own component
+        // Listen for click on on ReturnBtn to display Main Container
+        btnReturn.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
                 setVisible(false);

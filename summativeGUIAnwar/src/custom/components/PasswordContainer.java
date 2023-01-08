@@ -20,9 +20,10 @@ import javax.swing.border.Border;
  */
 public class PasswordContainer extends javax.swing.JPanel {
     public PasswordContainer(String text){
+        // Create elements
         PasswordField passField = new PasswordField(text);
         ShowPasswordBtn showPassword = new ShowPasswordBtn(passField);
-        
+        // Add all created elements
         this.add(passField);
         this.add(showPassword);
     }
@@ -33,6 +34,7 @@ public class PasswordContainer extends javax.swing.JPanel {
     */
     class PasswordField extends javax.swing.JPasswordField{
         public PasswordField(String text){
+            // Set dimensions of passfield, set border, set opacity and font
             setPreferredSize(new Dimension(400,60));
             Border fieldBorder = BorderFactory.createTitledBorder(text);
             setBorder(fieldBorder);
@@ -43,23 +45,30 @@ public class PasswordContainer extends javax.swing.JPanel {
     }
     class ShowPasswordBtn extends javax.swing.JToggleButton{
         public ShowPasswordBtn(PasswordField passField){
+            // Set dimensions, border
             setPreferredSize(new Dimension(60,60));
             Border fieldBorder = BorderFactory.createTitledBorder("Show");
             setBorder(fieldBorder);
             
+            // Get image icon for button
             ImageIcon eyeOpenIcon = new ImageIcon(getClass().getResource("images/eyeOpenEmoji.png"));
             // TODO: this can probably be optimized
             // Get the image from the Image Icon
             Image eyeOpenInitialImage = eyeOpenIcon.getImage();
+            
             //Scale the image smoothly to 40x40
             Image eyeOpenResized = eyeOpenInitialImage.getScaledInstance(40, 40,  java.awt.Image.SCALE_SMOOTH);
+            
             // Set the eyeOpenIcon to the resized image
             eyeOpenIcon = new ImageIcon(eyeOpenResized);
-            // Set the icon of the button
+                
+            // Set the icon, background, opacity and whether it is selected
             setIcon(eyeOpenIcon);
             setBackground(new Color(0, 0, 0));
             setOpaque(false);
-            setSelected(false);
+            setSelected(false); // unnecessary
+            
+            // Listen for clicks and show password based on state
             this.addActionListener(new ActionListener(){
                 @Override
                 public void actionPerformed(ActionEvent e){

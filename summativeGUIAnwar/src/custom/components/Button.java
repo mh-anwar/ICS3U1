@@ -17,6 +17,7 @@ import javax.swing.border.Border;
  */
 public class Button extends javax.swing.JButton{
     public Button(String text) {
+        // Set text, dimensions of btn, margin and border
         super(text);
         setPreferredSize(new Dimension(120, 60));
         setBackground(new Color(153, 153, 255));
@@ -26,6 +27,7 @@ public class Button extends javax.swing.JButton{
       }
     // Method overloading is amazing
     public Button(String text, Boolean increasedMargin) {
+        // Set text, dimensions of btn, bacgkround, opacity and border + padding
         super(text);
         setPreferredSize(new Dimension(120, 60));
         /* The color does not do anything, but is used in combination with 

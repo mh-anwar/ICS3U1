@@ -21,66 +21,82 @@ import java.awt.event.ActionListener;
  * @author mohammad
  */
 public class MainContainer extends javax.swing.JPanel {
-    public MainContainer(Dimension MAIN_DIMENSION, javax.swing.JFrame MainFrame){        
+    public MainContainer(Dimension MAIN_DIMENSION, javax.swing.JFrame MainFrame){  
+        // Set size, layout type of panel, then initialize components      
         setSize(MAIN_DIMENSION);
         setLayout(new GridBagLayout());
         initComponents(MAIN_DIMENSION, MainFrame);
     }
     private void initComponents(Dimension MAIN_DIMENSION, javax.swing.JFrame MainFrame){
+        // The next few lines: create an element given parameters and set it's pos. on the page with GBC 
+        // GBC - Grid Bag Constraints
+        HeaderLabel lblPageTitle = new HeaderLabel("Wilson Chess", "h1");
+        GridBagConstraints lblPageTitleConstraints = new GridConstraints(0, 0, 0, 3, false);
         
-        HeaderLabel PageTitle = new HeaderLabel("Wilson Chess", "h1");
-        GridBagConstraints pageTitleConstraints = new GridConstraints(0, 0, 0, 3, false);
+        HeaderLabel  lblPageSecTitle = new HeaderLabel("Tournament Leaderboard", "h2");
+        GridBagConstraints lblPageSecTitleConstraints = new GridConstraints(0, 1, 0, 3, false);
         
-        HeaderLabel  PageSecTitle = new HeaderLabel("Tournament Leaderboard", "h2");
-        GridBagConstraints pageSecTitleConstraints = new GridConstraints(0, 1, 0, 3, false);
+        Label lblInstructions = new Label("Click Login if you have an account and click Signup to make one");
+        GridBagConstraints lblInstructionsConstraints = new GridConstraints(0,2, 0, 3, false);
         
-        Label Instructions = new Label("Click Login if you have an account and click Signup to make one");
-        GridBagConstraints instructionsConstraints = new GridConstraints(0,2, 0, 3, false);
+        Button btnLogin = new Button("Login");
+        GridBagConstraints btnLoginConstraints = new GridConstraints(0, 4, 0.5, 1, true);
         
-        Button LoginBtn = new Button("Login");
-        GridBagConstraints loginBtnConstraints = new GridConstraints(0, 4, 0.5, 1, true);
+        Button btnSignup = new Button("Signup");
+        GridBagConstraints btnSignupConstraints = new GridConstraints(1,4, 0.5, 1, true);
         
-        Button SignupBtn = new Button("Signup");
-        GridBagConstraints signupBtnConstraints = new GridConstraints(1,4, 0.5, 1, true);
+        Button btnLeaderboard = new Button("Leaderboard");
+        GridBagConstraints btnLeaderboardConstraints = new GridConstraints(2,4, 0.5, 1, true);
         
-        Button LeaderboardBtn = new Button("Leaderboard");
-        GridBagConstraints leaderboardBtnConstraints = new GridConstraints(2,4, 0.5, 1, true);
-        
-        LoginBtn.addActionListener(new ActionListener() {
+        // Listen for clicks on the following buttons
+        btnLogin.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                // Hide main container
                 setVisible(false);
+                // Get the the button
                 Component component = (Component)e.getSource();
-                Container ParentContainer = component.getParent();
-                LoginContainer LoginCont = new LoginContainer(MAIN_DIMENSION, ParentContainer);
-                MainFrame.add(LoginCont);
+                // Get parent container
+                Container contParent = component.getParent();
+                // Create and add login container to Main JFrame
+                LoginContainer contLogin = new LoginContainer(MAIN_DIMENSION, contParent);
+                MainFrame.add(contLogin);
             }
         });
         
-        SignupBtn.addActionListener(new ActionListener() {
+        btnSignup.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                // Hide main container
                 setVisible(false);
+                // Get the the button
                 Component component = (Component)e.getSource();
-                Container ParentContainer = component.getParent();
-                SignupContainer SignupCont = new SignupContainer(MAIN_DIMENSION, ParentContainer);
-                MainFrame.add(SignupCont);
+                // Get parent container
+                Container contParent = component.getParent();
+                // Create and add login container to Main JFrame
+                SignupContainer contSignup = new SignupContainer(MAIN_DIMENSION, contParent);
+                MainFrame.add(contSignup);
             }
         });
         
-        LeaderboardBtn.addActionListener(new ActionListener() {
+        btnLeaderboard.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                // Hide main container
                 setVisible(false);
+                // Get the the button
                 Component component = (Component)e.getSource();
-                Container ParentContainer = component.getParent();
-                LeaderboardContainer LeaderboardCont = new LeaderboardContainer(MAIN_DIMENSION, ParentContainer);
-                MainFrame.add(LeaderboardCont);
+                // Get parent container
+                Container contParent = component.getParent();
+                // Create and add login container to Main JFrame
+                LeaderboardContainer contLeaderboard = new LeaderboardContainer(MAIN_DIMENSION, contParent);
+                MainFrame.add(contLeaderboard);
             }
         });
         
-        this.add(PageTitle, pageTitleConstraints);
-        this.add(PageSecTitle, pageSecTitleConstraints);
-        this.add(Instructions, instructionsConstraints);
-        this.add(LoginBtn, loginBtnConstraints);
-        this.add(SignupBtn, signupBtnConstraints);
-        this.add(LeaderboardBtn, leaderboardBtnConstraints);
+        // Add all created elements to page
+        this.add(lblPageTitle, lblPageTitleConstraints);
+        this.add(lblPageSecTitle, lblPageSecTitleConstraints);
+        this.add(lblInstructions, lblInstructionsConstraints);
+        this.add(btnLogin, btnLoginConstraints);
+        this.add(btnSignup, btnSignupConstraints);
+        this.add(btnLeaderboard, btnLeaderboardConstraints);
     }
 }

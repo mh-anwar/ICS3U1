@@ -15,6 +15,7 @@ import javax.swing.border.Border;
  */
 public class Textfield extends javax.swing.JTextField {
     public Textfield(String text){
+        // Set dimensions, border, opacity and font
         setPreferredSize(new Dimension(400,60));
         Border fieldBorder = BorderFactory.createTitledBorder(text);
         setBorder(fieldBorder);

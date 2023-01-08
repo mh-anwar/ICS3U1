@@ -17,6 +17,7 @@ import java.awt.Insets;
 */
 public class GridConstraints extends GridBagConstraints{
     public GridConstraints(int gridX, int gridY, double weightX, int gridWidth, boolean inset){
+        // Declare gridx, gridy, gridwidth, weightx, fill and insets (if they are wanted)
         gridx = gridX;
         gridy = gridY;
         gridwidth = gridWidth;
@@ -26,7 +27,7 @@ public class GridConstraints extends GridBagConstraints{
             insets = new Insets(15,0,0,0);
         }
     }
-    // what is this??
+    // Default generated code
     @Override
     public Object clone() {
         return super.clone(); //To change body of generated methods, choose Tools | Templates.

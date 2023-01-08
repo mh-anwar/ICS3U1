@@ -11,10 +11,6 @@ package summativeguianwar;
  */
 import containers.MainContainer;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ComponentEvent;
-import java.awt.event.ComponentListener;
 
 public class SummativeGUIAnwar extends javax.swing.JFrame {
 
@@ -31,15 +27,17 @@ public class SummativeGUIAnwar extends javax.swing.JFrame {
     }
   
     public SummativeGUIAnwar() {
-        // Here, because of it's location, all methods being applied to `this` don't need to start with `this.`
+        // Set size of main JFrame and center it
         setSize(MAIN_DIMENSION);
         setLocationRelativeTo(null);
-        // I think this is a normal-window-manager thing where it shows a close btn, but I can't see with my window manager
+        // Stop the program when the GUI is closed
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        // Initialize components
         initComponents();
     }
     
     private void initComponents(){
+        // Create the main container and add it to page
         MainContainer MainContainer = new MainContainer(MAIN_DIMENSION, this);
         this.add(MainContainer);
     }
