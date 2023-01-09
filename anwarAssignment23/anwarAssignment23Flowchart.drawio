@@ -1,1 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2023-01-09T01:43:23.445Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.3" etag="0dL7Me9yy97eRDWjGLUr" type="github"><diagram id="C1OsmjKs38Os0z2peuaD">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-01-09T01:55:09.371Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.3" etag="SfLk2PvPI3fzf13p8b4R" type="github">
+  <diagram id="hhPXo_21CQ6GM49i9aAH" name="Page-1">
+    <mxGraphModel dx="2202" dy="1348" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Lni63jejwht1ameaPv6V-1" value="Begin" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="84" y="-77" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-5" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Lni63jejwht1ameaPv6V-2" target="Lni63jejwht1ameaPv6V-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-2" value="Obtain number of vrobits from user (inputVrobits)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;size=12.619041806175602;" vertex="1" parent="1">
+          <mxGeometry x="42.5" y="64" width="203" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-3" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Lni63jejwht1ameaPv6V-1" target="Lni63jejwht1ameaPv6V-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="175" y="225" as="sourcePoint" />
+            <mxPoint x="225" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-7" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Lni63jejwht1ameaPv6V-4" target="Lni63jejwht1ameaPv6V-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-4" value="drobzit = inputVrobits/100000" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="51" y="276" width="186" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-9" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Lni63jejwht1ameaPv6V-6" target="Lni63jejwht1ameaPv6V-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-6" value="clickwick = (inputVrobits - drobzit*100000)/50000" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="51" y="494" width="186" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-12" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Lni63jejwht1ameaPv6V-8" target="Lni63jejwht1ameaPv6V-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-8" value="gazoontight = (inputVrobits - drobzit*100000 - clickwick*50000)/10000" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-9" y="712" width="306" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-15" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Lni63jejwht1ameaPv6V-11" target="Lni63jejwht1ameaPv6V-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-11" value="frazoint = (inputVrobits - drobzit*100000 - clickwick*50000 - gazoontight*10000)/1000" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3" y="930" width="286" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-17" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Lni63jejwht1ameaPv6V-14" target="Lni63jejwht1ameaPv6V-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-14" value="blointoint = (inputVrobits - drobzit*100000 - clickwick*50000 - gazoontight*10000 -frazoint*1000 )/500" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-79.5" y="1148" width="451" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-19" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Lni63jejwht1ameaPv6V-16" target="Lni63jejwht1ameaPv6V-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-16" value="vrobit = inputVrobits - drobzit*100000 - clickwick*50000 - gazoontight*10000 -frazoint*1000 - blointoint*500" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-79.5" y="1366" width="451" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-18" value="Output number of number&lt;br/&gt;of drobzits, clickwicks,&lt;br/&gt;gazoontights, frazoints,&lt;br/&gt;blointoints and leftover&lt;br/&gt;vrobits" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="31" y="1565" width="230" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-22" value="Finish" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="42.5" y="1845" width="207" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="Lni63jejwht1ameaPv6V-23" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Lni63jejwht1ameaPv6V-18" target="Lni63jejwht1ameaPv6V-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="4" y="1597" as="sourcePoint" />
+            <mxPoint x="54" y="1547" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
