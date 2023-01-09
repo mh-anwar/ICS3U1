@@ -1,0 +1,8 @@
+Get the number of vrobits from the user.
+Calculate the number of drozbits: total vrobits/100000.
+Calculate the number of clickwicks: (total vrobits - drozbits*100000)/50000.
+Calculate the number of gazoontights: (total vrobits - drozbits*100000 - clickwicks*50000)/10000.
+Calculate the number of frazoints: (total vrobits - drozbits*100000 - clickwicks*50000 - gazoontights*10000 )/1000.
+Calculate the number of blointoints: (total vrobits - drozbits*100000 - clickwicks*50000 - gazoontights*10000 - frazoints*1000)/500.
+Calculate the number of remaining vrobits: total vrobits - drozbits*100000 - clickwicks*50000 - gazoontights*10000 -frazoints*1000 - blointoints*500.
+Output the number of drozbits, clickwicks, gazoontights, frazoints, blointoints and remaining vrobits to the user.
