@@ -32,14 +32,15 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
         btnPrime = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtFibonacci = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        spnPrime = new javax.swing.JSpinner();
-        spnFactorial = new javax.swing.JSpinner();
-        lblPrime = new javax.swing.JLabel();
+        lblFibonacci = new javax.swing.JLabel();
         lblFactorial = new javax.swing.JLabel();
+        txtFactorial = new javax.swing.JTextField();
+        txtPrime = new javax.swing.JTextField();
+        lblPrime = new javax.swing.JLabel();
 
         jToolBar1.setRollover(true);
 
@@ -60,6 +61,11 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
         });
 
         jButton3.setText("Fibonacci");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
         jLabel1.setText("--NUMBERS--");
@@ -70,9 +76,11 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
 
         jLabel4.setText("Enter a number and click the button to see the corresponding Fibonacci Number");
 
-        lblPrime.setText("This number is:");
+        lblFibonacci.setText("This number is:");
 
         lblFactorial.setText("The factorial is:");
+
+        lblPrime.setText("This number is:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -81,22 +89,12 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(spnFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(72, 72, 72)
-                        .addComponent(btrnFactorial)
-                        .addGap(100, 100, 100)
-                        .addComponent(lblFactorial, javax.swing.GroupLayout.DEFAULT_SIZE, 303, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(128, 128, 128)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(75, 75, 75)
+                        .addGap(24, 24, 24)
+                        .addComponent(txtFibonacci, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(106, 106, 106)
                         .addComponent(jButton3))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
@@ -104,59 +102,100 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(jLabel4)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(spnPrime, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(78, 78, 78)
-                                .addComponent(btnPrime)))
-                        .addGap(33, 33, 33)
-                        .addComponent(lblPrime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGap(16, 16, 16)
+                                .addComponent(txtPrime, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(110, 110, 110)
+                                .addComponent(btnPrime))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2))
+                        .addGap(102, 102, 102)
+                        .addComponent(btrnFactorial)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblFibonacci, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(567, 567, 567)
+                    .addComponent(lblPrime, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(38, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
                         .addGap(40, 40, 40)
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(spnFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btrnFactorial))
+                            .addComponent(btrnFactorial)
+                            .addComponent(txtFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(21, 21, 21)
                         .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnPrime)
-                            .addComponent(spnPrime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
                         .addComponent(lblFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblPrime, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnPrime)
+                    .addComponent(txtPrime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
                 .addComponent(jLabel4)
-                .addGap(7, 7, 7)
+                .addGap(1, 1, 1)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3))
-                .addContainerGap(71, Short.MAX_VALUE))
+                    .addComponent(txtFibonacci, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3)
+                    .addComponent(lblFibonacci, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(65, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(211, Short.MAX_VALUE)
+                    .addComponent(lblPrime, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(137, 137, 137)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btrnFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btrnFactorialActionPerformed
-        int factorialNum = Integer.parseInt(spnFactorial.getValue().toString());
-        String factorialOutput = factorial(factorialNum);
-        lblFactorial.setText(factorialOutput);
-
+        int factorialNum = 0;
+        try{
+            factorialNum = Integer.parseInt(txtFactorial.getText());
+            String factorialOutput = factorial(factorialNum);
+            lblFactorial.setText(factorialOutput);
+        } catch (Exception e){
+            lblFactorial.setText("Please only enter numbers");
+        }
     }//GEN-LAST:event_btrnFactorialActionPerformed
     private void btnPrimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimeActionPerformed
-        int primeNum = Integer.parseInt(spnPrime.getValue().toString());
-        String isPrimeOutput = isNumberPrime(primeNum);
-        lblPrime.setText(isPrimeOutput);
+        int primeNum = 0;
+        try{
+            primeNum = Integer.parseInt(txtPrime.getText());
+            String isPrimeOutput = isNumberPrime(primeNum);
+            lblFibonacci.setText(isPrimeOutput);
+        } catch (Exception e){
+            lblFibonacci.setText("Please only enter numbers");
+        }
     }//GEN-LAST:event_btnPrimeActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        int finalNum = 0;
+        try{
+            finalNum = Integer.parseInt(txtFibonacci.getText());
+            int fibonacciPosition = fibonacciNumber(15, 0, 1, 0);
+            lblFibonacci.setText(Integer.toString(fibonacciPosition));
+        } catch (Exception e){
+            lblFibonacci.setText("Please only enter numbers");
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
     
     private String factorial(int factorialNum){        
         int factorialTotal = factorialNum;
@@ -186,10 +225,16 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
         }
     }
     
-    private String fibonacciNumber(){
+    private int fibonacciNumber(int position, int sLastNum, int lastNum, int finalNum, int myPos){
         // https://durham.elearningontario.ca/content/enforced/21904065-BL_CS_ICS3U1-20_904392_2223Sem1/ICS3UU03/ICS3UU03A02/_content.html?ou=21904065&d2l_body_type=3
         // https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-arithmetic-sequences/a/writing-recursive-formulas-for-arithmetic-sequences
-        return "";
+        finalNum = sLastNum + lastNum;
+        myPos +=1;
+        if(myPos == position){
+            return finalNum;
+        }
+        fibonacciNumber(position, lastNum, finalNum, position);
+        return 0;
     }
     
     /**
@@ -235,11 +280,12 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JLabel lblFactorial;
+    private javax.swing.JLabel lblFibonacci;
     private javax.swing.JLabel lblPrime;
-    private javax.swing.JSpinner spnFactorial;
-    private javax.swing.JSpinner spnPrime;
+    private javax.swing.JTextField txtFactorial;
+    private javax.swing.JTextField txtFibonacci;
+    private javax.swing.JTextField txtPrime;
     // End of variables declaration//GEN-END:variables
 }
