@@ -37,7 +37,9 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         spnPrime = new javax.swing.JSpinner();
-        spnFactorial1 = new javax.swing.JSpinner();
+        spnFactorial = new javax.swing.JSpinner();
+        lblPrime = new javax.swing.JLabel();
+        lblFactorial = new javax.swing.JLabel();
 
         jToolBar1.setRollover(true);
 
@@ -66,7 +68,11 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
 
         jLabel3.setText("Enter a number and click the button to determine whether or not it is a prime number:");
 
-        jLabel4.setText("Enter a number and click the button to see the correspondign Fibonacci Number");
+        jLabel4.setText("Enter a number and click the button to see the corresponding Fibonacci Number");
+
+        lblPrime.setText("This number is:");
+
+        lblFactorial.setText("The factorial is:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,80 +81,117 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(spnFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(72, 72, 72)
+                        .addComponent(btrnFactorial)
+                        .addGap(100, 100, 100)
+                        .addComponent(lblFactorial, javax.swing.GroupLayout.DEFAULT_SIZE, 303, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(128, 128, 128)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(69, 69, 69)
+                        .addContainerGap()
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(75, 75, 75)
+                        .addComponent(jButton3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
                             .addComponent(jLabel3)
+                            .addComponent(jLabel4)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(46, 46, 46)
-                                .addComponent(jButton3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(372, 372, 372)
-                                .addComponent(btrnFactorial))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(6, 6, 6)
-                                    .addComponent(spnPrime, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnPrime))
-                                .addComponent(jLabel4)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(79, 79, 79)
-                    .addComponent(spnFactorial1, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(130, Short.MAX_VALUE)))
+                                .addComponent(spnPrime, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(78, 78, 78)
+                                .addComponent(btnPrime)))
+                        .addGap(33, 33, 33)
+                        .addComponent(lblPrime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(18, 18, 18))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jLabel1)
-                .addGap(41, 41, 41)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btrnFactorial)
-                .addGap(20, 20, 20)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnPrime)
-                    .addComponent(spnPrime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(40, 40, 40)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(spnFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btrnFactorial))
+                        .addGap(21, 21, 21)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnPrime)
+                            .addComponent(spnPrime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblFactorial, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblPrime, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(17, 17, 17)
                 .addComponent(jLabel4)
-                .addGap(6, 6, 6)
+                .addGap(7, 7, 7)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3))
-                .addContainerGap(30, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(147, 147, 147)
-                    .addComponent(spnFactorial1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(186, Short.MAX_VALUE)))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btrnFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btrnFactorialActionPerformed
-        int factorialNum = Integer.parseInt(spnPrime.getValue().toString());
-        System.out.println(factorialNum);
+        int factorialNum = Integer.parseInt(spnFactorial.getValue().toString());
+        String factorialOutput = factorial(factorialNum);
+        lblFactorial.setText(factorialOutput);
+
+    }//GEN-LAST:event_btrnFactorialActionPerformed
+    private void btnPrimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimeActionPerformed
+        int primeNum = Integer.parseInt(spnPrime.getValue().toString());
+        String isPrimeOutput = isNumberPrime(primeNum);
+        lblPrime.setText(isPrimeOutput);
+    }//GEN-LAST:event_btnPrimeActionPerformed
+    
+    private String factorial(int factorialNum){        
         int factorialTotal = factorialNum;
         for(int i =1; i<factorialNum; i++){
             factorialTotal*=i;
         }
-        System.out.println(factorialTotal);
-    }//GEN-LAST:event_btrnFactorialActionPerformed
-
-    private void btnPrimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimeActionPerformed
+        return ("The factorial of " + Integer.toString(factorialNum) + " is " + Integer.toString(factorialTotal));
         
-    }//GEN-LAST:event_btnPrimeActionPerformed
-
+    }
+    
+    private String isNumberPrime(int primeNum){
+        boolean isPrime = true;
+        int modulusResult;
+        for(int i =2; i<primeNum; i++){
+            modulusResult = primeNum%i;
+            System.out.println(modulusResult);
+            if(modulusResult == 0){
+                isPrime = false;
+                break;
+            }
+        }
+        
+        if(isPrime){
+            return (Integer.toString(primeNum) +" is a prime number." );
+        } else {
+            return (Integer.toString(primeNum) +" is not a prime number." );
+        }
+    }
+    
+    private String fibonacciNumber(){
+        // https://durham.elearningontario.ca/content/enforced/21904065-BL_CS_ICS3U1-20_904392_2223Sem1/ICS3UU03/ICS3UU03A02/_content.html?ou=21904065&d2l_body_type=3
+        // https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-arithmetic-sequences/a/writing-recursive-formulas-for-arithmetic-sequences
+        return "";
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -194,7 +237,9 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JToolBar jToolBar1;
-    private javax.swing.JSpinner spnFactorial1;
+    private javax.swing.JLabel lblFactorial;
+    private javax.swing.JLabel lblPrime;
+    private javax.swing.JSpinner spnFactorial;
     private javax.swing.JSpinner spnPrime;
     // End of variables declaration//GEN-END:variables
 }
