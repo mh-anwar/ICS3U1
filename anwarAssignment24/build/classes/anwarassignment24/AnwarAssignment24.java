@@ -180,27 +180,18 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
         try{
             primeNum = Integer.parseInt(txtPrime.getText());
             String isPrimeOutput = isNumberPrime(primeNum);
-            lblPrime.setText(isPrimeOutput);
+            lblFibonacci.setText(isPrimeOutput);
         } catch (Exception e){
-            lblPrime.setText("Please only enter numbers");
+            lblFibonacci.setText("Please only enter numbers");
         }
     }//GEN-LAST:event_btnPrimeActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    int fibonacciNum = 1;
-        int fibonacciPosition = 0;
+        int finalNum = 0;
         try{
-            fibonacciPosition = Integer.parseInt(txtFibonacci.getText());
-            if(fibonacciPosition == 1 || fibonacciPosition == 2){
-                fibonacciNum = 1;
-            } else if(fibonacciPosition == 3){
-                fibonacciNum = 2;
-            } else{
-                fibonacciNum = fibonacciNumber(fibonacciPosition, 1, 1, 3);
-            }
-            
-            lblFibonacci.setText("The Fibonacci number at position " + fibonacciPosition + " is " +Integer.toString(fibonacciNum));
-            
+            finalNum = Integer.parseInt(txtFibonacci.getText());
+            int fibonacciPosition = fibonacciNumber(15, 0, 1, 0);
+            lblFibonacci.setText(Integer.toString(fibonacciPosition));
         } catch (Exception e){
             lblFibonacci.setText("Please only enter numbers");
         }
@@ -226,7 +217,7 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
                 break;
             }
         }
-        System.out.println(isPrime);
+        
         if(isPrime){
             return (Integer.toString(primeNum) +" is a prime number." );
         } else {
@@ -234,15 +225,16 @@ public class AnwarAssignment24 extends javax.swing.JFrame {
         }
     }
     
-    private int fibonacciNumber(int position, int sLastNum, int lastNum, int myPos){
-        int finalNum = sLastNum + lastNum;
-        System.out.println(finalNum);
+    private int fibonacciNumber(int position, int sLastNum, int lastNum, int finalNum, int myPos){
+        // https://durham.elearningontario.ca/content/enforced/21904065-BL_CS_ICS3U1-20_904392_2223Sem1/ICS3UU03/ICS3UU03A02/_content.html?ou=21904065&d2l_body_type=3
+        // https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-arithmetic-sequences/a/writing-recursive-formulas-for-arithmetic-sequences
+        finalNum = sLastNum + lastNum;
         myPos +=1;
-        System.out.println(position + " " + myPos);
         if(myPos == position){
             return finalNum;
         }
-        return fibonacciNumber(position, lastNum, finalNum, myPos);
+        fibonacciNumber(position, lastNum, finalNum, position);
+        return 0;
     }
     
     /**

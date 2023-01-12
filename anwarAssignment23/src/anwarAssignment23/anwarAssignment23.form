@@ -27,32 +27,35 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnSubmit" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel2" min="-2" pref="417" max="-2" attributes="0"/>
-                          <Component id="spnVrobits" min="-2" pref="436" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabel2" min="-2" pref="417" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" pref="360" max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnSubmit" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtVrobits" min="-2" pref="235" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace type="separate" pref="72" max="32767" attributes="0"/>
+              <EmptySpace pref="91" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="lblVrobit" max="32767" attributes="0"/>
                   <Component id="lblBlointoint" pref="618" max="32767" attributes="0"/>
                   <Component id="lblDrobzit" alignment="1" max="32767" attributes="0"/>
                   <Component id="lblFrazoint" alignment="1" max="32767" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="lblGazoontight" alignment="0" pref="306" max="32767" attributes="0"/>
-                      <Component id="lblClickwick" alignment="0" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="lblGazoontight" alignment="0" pref="618" max="32767" attributes="0"/>
+                  <Component id="lblClickwick" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              <Component id="txtError" min="-2" pref="352" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -74,20 +77,27 @@
                   <Component id="jLabel2" min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="lblClickwick" alignment="0" min="-2" pref="39" max="-2" attributes="0"/>
               </Group>
+              <Component id="lblGazoontight" min="-2" pref="39" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="spnVrobits" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                  <Component id="lblGazoontight" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnSubmit" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblFrazoint" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="txtVrobits" alignment="3" min="-2" pref="57" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="lblBlointoint" min="-2" pref="39" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="lblVrobit" min="-2" pref="39" max="-2" attributes="0"/>
-              <EmptySpace pref="45" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="lblBlointoint" min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lblVrobit" min="-2" pref="39" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Component id="btnSubmit" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+              <Component id="txtError" min="-2" pref="47" max="-2" attributes="0"/>
+              <EmptySpace pref="58" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -127,8 +137,6 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmitActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JSpinner" name="spnVrobits">
-    </Component>
     <Component class="javax.swing.JLabel" name="lblFrazoint">
       <Properties>
         <Property name="text" type="java.lang.String" value="Frazoint left:"/>
@@ -148,6 +156,10 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Vrobits left:"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtVrobits">
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtError">
     </Component>
   </SubComponents>
 </Form>
