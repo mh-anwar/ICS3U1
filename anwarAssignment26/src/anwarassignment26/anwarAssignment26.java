@@ -172,18 +172,21 @@ public class anwarAssignment26 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDecToBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecToBinActionPerformed
-        // TODO add your handling code here:
+ 
     }//GEN-LAST:event_btnDecToBinActionPerformed
 
     private void btnDecToBin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecToBin1ActionPerformed
         String binaryNumber = txtBinary.getText();
-        String decimalNumber = "";
-        int power = 0;
+        int decimalNumber = 0;
+        double power = 0;
         for(int i = binaryNumber.length()-1; i >= 0; i--){
             
-            int number = (int) binaryNumber.charAt(i);
-            decimalNumber += number;
+            int binaryNum = Character.getNumericValue(binaryNumber.charAt(i));
+            int baseTwoNum = binaryNum * (int) Math.pow(2, power);
+            decimalNumber += baseTwoNum;
+            power+=1;
         }
+        System.out.println(decimalNumber);
     }//GEN-LAST:event_btnDecToBin1ActionPerformed
 
     private void btnDecToBin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecToBin2ActionPerformed
