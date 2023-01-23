@@ -9,4 +9,5 @@ The file naming scheme was changed from `assignmentEighteenAnwar` to `anwarAssig
   - [ ] `final` declared for constants
   - [ ] Constants declared at top/beginning of code
 - [ ] Decimal formatting: two decimal places
-- [ ] Assignment 22 Onwards: Try-Catch anything with validation, use Spinners in GUI for numbers
+- [ ] Assignment 22 Onwards: Try-Catch anything with validation
+  - [ ] Preferably use Spinners for numbers (especially in ISU) but that is generally not allowed
