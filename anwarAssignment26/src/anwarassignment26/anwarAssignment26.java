@@ -30,7 +30,7 @@ public class anwarAssignment26 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtDecimal = new javax.swing.JTextField();
         btnDecToBin = new javax.swing.JButton();
         btnDecToBin1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
@@ -39,9 +39,9 @@ public class anwarAssignment26 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        btnDecToBin3 = new javax.swing.JButton();
+        btnHextToDec = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtHexadecimal = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -78,18 +78,18 @@ public class anwarAssignment26 extends javax.swing.JFrame {
 
         jLabel6.setText("Decimal and Hexadecimal");
 
-        btnDecToBin3.setText("Hex. to Dec.");
-        btnDecToBin3.addActionListener(new java.awt.event.ActionListener() {
+        btnHextToDec.setText("Hex. to Dec.");
+        btnHextToDec.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDecToBin3ActionPerformed(evt);
+                btnHextToDecActionPerformed(evt);
             }
         });
 
         jLabel7.setText("Enter a hexadecimal number:");
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        txtHexadecimal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                txtHexadecimalActionPerformed(evt);
             }
         });
 
@@ -113,17 +113,17 @@ public class anwarAssignment26 extends javax.swing.JFrame {
                                 .addGap(28, 28, 28)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtHexadecimal, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(51, 51, 51)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(btnDecToBin1)
                                             .addComponent(btnDecToBin)
                                             .addComponent(btnDecToBin2)
-                                            .addComponent(btnDecToBin3)))
+                                            .addComponent(btnHextToDec)))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtBinary, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtDecimal, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(202, 202, 202))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -146,7 +146,7 @@ public class anwarAssignment26 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtDecimal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnDecToBin))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -163,8 +163,8 @@ public class anwarAssignment26 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDecToBin3))
+                    .addComponent(txtHexadecimal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnHextToDec))
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
@@ -172,7 +172,16 @@ public class anwarAssignment26 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDecToBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecToBinActionPerformed
- 
+        // DATA VAL
+        int decimalNumber = Integer.parseInt(txtDecimal.getText());
+        String binaryNumber = "";
+        int remainder;
+        while(decimalNumber != 1/2){
+            remainder = decimalNumber % 2;
+            decimalNumber = decimalNumber / 2;
+            binaryNumber += Integer.toString(remainder);
+        }
+        System.out.println(binaryNumber);
     }//GEN-LAST:event_btnDecToBinActionPerformed
 
     private void btnDecToBin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecToBin1ActionPerformed
@@ -193,13 +202,28 @@ public class anwarAssignment26 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnDecToBin2ActionPerformed
 
-    private void btnDecToBin3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecToBin3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDecToBin3ActionPerformed
+    private void btnHextToDecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHextToDecActionPerformed
+        String hexNumber = txtHexadecimal.getText();
+        int decimalNumber = 0;
+        double power = 0;
+        char[] letterToHex = {'A'};
+        int[] hexNumbersList = {11};
+        for(int i = hexNumber.length()-1; i >= 0; i--){
+            char currentLetter = hexNumber.charAt(i);
+            if(new String(letterToHex).indexOf(currentLetter)){
+                
+            }
+            int binaryNum = Character.getNumericValue(binaryNumber.charAt(i));
+            int baseTwoNum = binaryNum * (int) Math.pow(2, power);
+            decimalNumber += baseTwoNum;
+            power+=1;
+        }
+        System.out.println(decimalNumber);
+    }//GEN-LAST:event_btnHextToDecActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void txtHexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHexadecimalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_txtHexadecimalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,7 +264,7 @@ public class anwarAssignment26 extends javax.swing.JFrame {
     private javax.swing.JButton btnDecToBin;
     private javax.swing.JButton btnDecToBin1;
     private javax.swing.JButton btnDecToBin2;
-    private javax.swing.JButton btnDecToBin3;
+    private javax.swing.JButton btnHextToDec;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -248,9 +272,9 @@ public class anwarAssignment26 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField txtBinary;
+    private javax.swing.JTextField txtDecimal;
+    private javax.swing.JTextField txtHexadecimal;
     // End of variables declaration//GEN-END:variables
 }
