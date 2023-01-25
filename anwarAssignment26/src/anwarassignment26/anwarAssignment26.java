@@ -189,7 +189,10 @@ public class anwarAssignment26 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    static final char[] HEX_LETTERS = {'A', 'B', 'C', 'D', 'E', 'F'};
+    static final char[] HEX_NUMBERS = {10, 11, 12, 13, 14, 15};
+    
     private void btnDecimalToBinaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecimalToBinaryActionPerformed
         // Declare the blank decimal number
         int decimalNumber = 0;
@@ -197,10 +200,53 @@ public class anwarAssignment26 extends javax.swing.JFrame {
         // Try to get the value of the decimal number from textfield
         try{
             decimalNumber = Integer.parseInt(txtDecimal.getText());
+            String binaryNumber = decimalToBinary(decimalNumber);
+            lblDecimalToBinary.setText(binaryNumber);
         } catch(Exception e){
             lblDecimalToBinary.setText("Please enter a number.");
         }
+    }//GEN-LAST:event_btnDecimalToBinaryActionPerformed
+
+    private void btnBinaryToDecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBinaryToDecimalActionPerformed
+        String binaryNumber = txtBinary.getText();
+        int decimalNumber = binaryToDecimal(binaryNumber);
+        lblBinaryToDecimal.setText(Integer.toString(decimalNumber));
+    }//GEN-LAST:event_btnBinaryToDecimalActionPerformed
+
+
+    private void btnDecimalToHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecimalToHexActionPerformed
+        // Declare the blank decimal number
+        int decimalNumber = 0;
         
+        // Try to get the value of the decimal number from textfield
+        try{
+            decimalNumber = Integer.parseInt(txtDecimalToHex.getText());
+            String hexadecimal = decimalToHex(decimalNumber);
+            lblDecimalToHex.setText(hexadecimal);
+        } catch(Exception e){
+            lblDecimalToHex.setText("Please enter a number.");
+        }
+    }//GEN-LAST:event_btnDecimalToHexActionPerformed
+
+    private void btnHexToDecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHexToDecimalActionPerformed
+        String hexString = txtHexadecimal.getText();
+        int decimalNumber = hexToDecimal(hexString);
+        lblHexToDecimal.setText(Integer.toString(decimalNumber));
+    }//GEN-LAST:event_btnHexToDecimalActionPerformed
+
+    private void txtHexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHexadecimalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtHexadecimalActionPerformed
+    
+    private String textReverser(String initialText){
+        String reversedText = "";
+        for(int i = initialText.length()-1; i >= 0; i--){
+            reversedText += initialText.charAt(i);
+        }
+        return reversedText;
+    }
+    
+    private String decimalToBinary(int decimalNumber){
         // Declare string and int to hold the binary num and remainder respectively
         String binaryNumber = "";
         int remainder;
@@ -215,12 +261,10 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             binaryNumber += Integer.toString(remainder);
         }
         binaryNumber = textReverser(binaryNumber);
-        lblDecimalToBinary.setText(binaryNumber);
-    }//GEN-LAST:event_btnDecimalToBinaryActionPerformed
-
-    private void btnBinaryToDecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBinaryToDecimalActionPerformed
+        return binaryNumber;
+    }
+    private int binaryToDecimal(String binaryNumber){
         final int baseTwo = 2;
-        String binaryNumber = txtBinary.getText();
         int decimalNumber = 0;
         double power = 0;
         
@@ -235,21 +279,10 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             // Increase power by 1 for next loop
             power+=1;
         }
-        lblBinaryToDecimal.setText(Integer.toString(decimalNumber));
-    }//GEN-LAST:event_btnBinaryToDecimalActionPerformed
-        static final char[] HEX_LETTERS = {'A', 'B', 'C', 'D', 'E', 'F'};
-        static final char[] HEX_NUMBERS = {10, 11, 12, 13, 14, 15};
-    private void btnDecimalToHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecimalToHexActionPerformed
-        // Declare the blank decimal number
-        int decimalNumber = 0;
-        
-        // Try to get the value of the decimal number from textfield
-        try{
-            decimalNumber = Integer.parseInt(txtDecimalToHex.getText());
-        } catch(Exception e){
-            lblDecimalToHex.setText("Please enter a number.");
-        }
-        
+        return decimalNumber;
+    }
+    
+    private String decimalToHex(int decimalNumber){
         // Declare string and int to hold the hexadecimal num and remainder respectively
         String hexadecimal = "";
         int remainder;
@@ -273,11 +306,10 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             // Add the remainder to the binary number (either 0 or 1)
         }
         hexadecimal = textReverser(hexadecimal);
-        lblDecimalToHex.setText(hexadecimal);
-    }//GEN-LAST:event_btnDecimalToHexActionPerformed
-
-    private void btnHexToDecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHexToDecimalActionPerformed
-        String hexString = txtHexadecimal.getText();
+        return hexadecimal;
+    }
+    
+    private int hexToDecimal(String hexString){
         int decimalNumber = 0;
         double power = 0;
         for(int i = hexString.length()-1; i >= 0; i--){
@@ -294,19 +326,8 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             decimalNumber += baseSixteenNum;
             power+=1;
         }
-        lblHexToDecimal.setText(Integer.toString(decimalNumber));
-    }//GEN-LAST:event_btnHexToDecimalActionPerformed
-    private String textReverser(String initialText){
-        String reversedText = "";
-        for(int i = initialText.length()-1; i >= 0; i--){
-            reversedText += initialText.charAt(i);
-        }
-        return reversedText;
+        return decimalNumber;
     }
-    private void txtHexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHexadecimalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtHexadecimalActionPerformed
-
     /**
      * @param args the command line arguments
      */
