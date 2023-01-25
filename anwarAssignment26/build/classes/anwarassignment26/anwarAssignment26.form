@@ -43,10 +43,10 @@
                                       <Component id="txtHexadecimal" min="-2" pref="86" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btnDecToBin1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="btnDecToBin" min="-2" max="-2" attributes="0"/>
-                                          <Component id="btnDecToBin2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="btnHextToDec" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnBinaryToDecimal" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnDecimalToBinary" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnDecimalToHex" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnHexToDecimal" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
@@ -58,22 +58,36 @@
                                   </Group>
                               </Group>
                           </Group>
+                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextField3" min="-2" pref="86" max="-2" attributes="0"/>
+                          <Component id="txtDecimalToHex" min="-2" pref="86" max="-2" attributes="0"/>
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="202" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="51" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="271" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="lblDecimalToBinary" pref="344" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="lblBinaryToDecimal" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblDecimalToHex" max="32767" attributes="0"/>
+                          <Component id="lblHexToDecimal" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -85,32 +99,40 @@
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtDecimal" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnDecToBin" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="lblDecimalToBinary" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtDecimal" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnDecimalToBinary" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtBinary" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnDecToBin1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnBinaryToDecimal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblBinaryToDecimal" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnDecToBin2" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="lblDecimalToHex" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtDecimalToHex" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnDecimalToHex" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtHexadecimal" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnHextToDec" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnHexToDecimal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblHexToDecimal" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="10" max="32767" attributes="0"/>
+              <EmptySpace type="separate" pref="22" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -133,20 +155,20 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtDecimal">
     </Component>
-    <Component class="javax.swing.JButton" name="btnDecToBin">
+    <Component class="javax.swing.JButton" name="btnDecimalToBinary">
       <Properties>
         <Property name="text" type="java.lang.String" value="Dec. To Bin."/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDecToBinActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDecimalToBinaryActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnDecToBin1">
+    <Component class="javax.swing.JButton" name="btnBinaryToDecimal">
       <Properties>
         <Property name="text" type="java.lang.String" value="Bin. To Dec."/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDecToBin1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBinaryToDecimalActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
@@ -156,12 +178,12 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtBinary">
     </Component>
-    <Component class="javax.swing.JButton" name="btnDecToBin2">
+    <Component class="javax.swing.JButton" name="btnDecimalToHex">
       <Properties>
         <Property name="text" type="java.lang.String" value="Dec. To Hex."/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDecToBin2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDecimalToHexActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
@@ -169,19 +191,19 @@
         <Property name="text" type="java.lang.String" value="Enter a decimal number:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="txtDecimalToHex">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="text" type="java.lang.String" value="Decimal and Hexadecimal"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnHextToDec">
+    <Component class="javax.swing.JButton" name="btnHexToDecimal">
       <Properties>
         <Property name="text" type="java.lang.String" value="Hex. to Dec."/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHextToDecActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHexToDecimalActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
@@ -193,6 +215,14 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtHexadecimalActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblBinaryToDecimal">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDecimalToBinary">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDecimalToHex">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblHexToDecimal">
     </Component>
   </SubComponents>
 </Form>
