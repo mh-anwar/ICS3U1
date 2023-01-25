@@ -214,6 +214,7 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             // Add the remainder to the binary number (either 0 or 1)
             binaryNumber += Integer.toString(remainder);
         }
+        binaryNumber = textReverser(binaryNumber);
         lblDecimalToBinary.setText(binaryNumber);
     }//GEN-LAST:event_btnDecimalToBinaryActionPerformed
 
@@ -271,6 +272,7 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             System.out.println(remainder);
             // Add the remainder to the binary number (either 0 or 1)
         }
+        hexadecimal = textReverser(hexadecimal);
         lblDecimalToHex.setText(hexadecimal);
     }//GEN-LAST:event_btnDecimalToHexActionPerformed
 
@@ -294,7 +296,13 @@ public class anwarAssignment26 extends javax.swing.JFrame {
         }
         lblHexToDecimal.setText(Integer.toString(decimalNumber));
     }//GEN-LAST:event_btnHexToDecimalActionPerformed
-
+    private String textReverser(String initialText){
+        String reversedText = "";
+        for(int i = initialText.length()-1; i >= 0; i--){
+            reversedText += initialText.charAt(i);
+        }
+        return reversedText;
+    }
     private void txtHexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHexadecimalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtHexadecimalActionPerformed
