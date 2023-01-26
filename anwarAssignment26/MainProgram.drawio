@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-25T20:21:52.598Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.5" etag="krkRvxVsOmI0FosOBrNl" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-26T19:07:33.121Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.5" etag="Iucbk_HMF3bTdWpfLSqc" type="github">
   <diagram id="ooM96mxMuV-w2LaP69B2" name="Page-1">
     <mxGraphModel dx="773" dy="1320" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,8 +22,14 @@
         <mxCell id="GcNyAwlGQuFy15fl2Ail-4" value="binaryToDecimal()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="64.5" y="253" width="183" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="GcNyAwlGQuFy15fl2Ail-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="GcNyAwlGQuFy15fl2Ail-6" target="GcNyAwlGQuFy15fl2Ail-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="GcNyAwlGQuFy15fl2Ail-6" value="decimalToHex()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="64.5" y="433" width="183" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GcNyAwlGQuFy15fl2Ail-9" value="hexToDecimal()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="64.5" y="613" width="183" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
