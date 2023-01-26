@@ -203,14 +203,19 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             String binaryNumber = decimalToBinary(decimalNumber);
             lblDecimalToBinary.setText(binaryNumber);
         } catch(Exception e){
-            lblDecimalToBinary.setText("Please enter a number.");
+            lblDecimalToBinary.setText("Please enter numbers only.");
         }
     }//GEN-LAST:event_btnDecimalToBinaryActionPerformed
 
     private void btnBinaryToDecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBinaryToDecimalActionPerformed
-        String binaryNumber = txtBinary.getText();
-        int decimalNumber = binaryToDecimal(binaryNumber);
-        lblBinaryToDecimal.setText(Integer.toString(decimalNumber));
+        String binaryNumber = "";
+        try{
+            binaryNumber = Integer.toString(Integer.parseInt(txtBinary.getText()));
+            int decimalNumber = binaryToDecimal(binaryNumber);
+            lblBinaryToDecimal.setText(Integer.toString(decimalNumber));
+        } catch(Exception e){
+            lblBinaryToDecimal.setText("Please enter numbers only.");
+        }
     }//GEN-LAST:event_btnBinaryToDecimalActionPerformed
 
 
@@ -224,7 +229,7 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             String hexadecimal = decimalToHex(decimalNumber);
             lblDecimalToHex.setText(hexadecimal);
         } catch(Exception e){
-            lblDecimalToHex.setText("Please enter a number.");
+            lblDecimalToHex.setText("Please enter numbers only.");
         }
     }//GEN-LAST:event_btnDecimalToHexActionPerformed
 
@@ -302,7 +307,6 @@ public class anwarAssignment26 extends javax.swing.JFrame {
                 
                 hexadecimal += Integer.toString(remainder);
             }
-            System.out.println(remainder);
             // Add the remainder to the binary number (either 0 or 1)
         }
         hexadecimal = textReverser(hexadecimal);
