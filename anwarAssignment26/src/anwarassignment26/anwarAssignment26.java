@@ -298,10 +298,9 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             remainder = decimalNumber % 16;
             // Divide it by 16 for next iteration
             decimalNumber /= 16;
-            // Convert hexadecimal to letter, if it is letter
+            // Convert hexadecimal to letter, if it is letter or else append the remainder to the hexadecimal
             if(remainder >= 10){
                 int letterPosition = new String(HEX_NUMBERS).indexOf(remainder);
-                
                 hexadecimal += HEX_LETTERS[letterPosition];
             } else{
                 
@@ -309,25 +308,29 @@ public class anwarAssignment26 extends javax.swing.JFrame {
             }
             // Add the remainder to the binary number (either 0 or 1)
         }
+        // Reverse the hexadecimal string
         hexadecimal = textReverser(hexadecimal);
         return hexadecimal;
     }
     
     private int hexToDecimal(String hexString){
+        // Declare the decimal number and power, both as 0
         int decimalNumber = 0;
         double power = 0;
+        // Reverse loop through the hex string
         for(int i = hexString.length()-1; i >= 0; i--){
-            
             int currentNum = Character.getNumericValue(hexString.charAt(i));
             // Check if the current character is a letter
             int letterPosition = new String(HEX_LETTERS).indexOf(currentNum);
-            
+            // If the current number is a letter, set it to the value of a number
             if(letterPosition >= 0){
                 currentNum =  (int)  HEX_NUMBERS[letterPosition];
             } 
-            
+            // Multiply the current number by 16 to a power
             int baseSixteenNum = currentNum * (int) Math.pow(16, power);
+            // Add to the decimal number
             decimalNumber += baseSixteenNum;
+            // Increase power by one
             power+=1;
         }
         return decimalNumber;
