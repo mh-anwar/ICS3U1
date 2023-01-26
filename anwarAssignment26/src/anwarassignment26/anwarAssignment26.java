@@ -192,7 +192,7 @@ public class anwarAssignment26 extends javax.swing.JFrame {
     
     static final char[] HEX_LETTERS = {'A', 'B', 'C', 'D', 'E', 'F'};
     static final char[] HEX_NUMBERS = {10, 11, 12, 13, 14, 15};
-    
+    final int baseTwo = 2;
     private void btnDecimalToBinaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecimalToBinaryActionPerformed
         // Declare the blank decimal number
         int decimalNumber = 0;
@@ -244,10 +244,14 @@ public class anwarAssignment26 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtHexadecimalActionPerformed
     
     private String textReverser(String initialText){
+        // Initialize string for reversed text
         String reversedText = "";
+        // Reverse loop through initial string
         for(int i = initialText.length()-1; i >= 0; i--){
+            // Append each letter to reversedText
             reversedText += initialText.charAt(i);
         }
+        // Return the reversed text
         return reversedText;
     }
     
@@ -259,17 +263,18 @@ public class anwarAssignment26 extends javax.swing.JFrame {
         // Loop until the value of the decimal number is not less than 1 (
         while(decimalNumber != 1/2){
             // Get the remainder of the decimal divided by 2
-            remainder = decimalNumber % 2;
+            remainder = decimalNumber % baseTwo;
             // Divide it by 2 for next iteration
-            decimalNumber /= 2;
+            decimalNumber /= baseTwo;
             // Add the remainder to the binary number (either 0 or 1)
             binaryNumber += Integer.toString(remainder);
         }
+        // Reverse binaryNumber text
         binaryNumber = textReverser(binaryNumber);
         return binaryNumber;
     }
     private int binaryToDecimal(String binaryString){
-        final int baseTwo = 2;
+        // Declare decimalNumber and power and set them to 0
         int decimalNumber = 0;
         double power = 0;
         
@@ -292,7 +297,7 @@ public class anwarAssignment26 extends javax.swing.JFrame {
         String hexadecimal = "";
         int remainder;
         
-        // Loop until the value of the decimal number is not less than 1 (
+        // Loop until the value of the decimal number is not less than 1
         while(decimalNumber != 1/2){
             // Get the remainder of the decimal divided by 16 (because hexadecimal is base 16)
             remainder = decimalNumber % 16;
@@ -303,10 +308,8 @@ public class anwarAssignment26 extends javax.swing.JFrame {
                 int letterPosition = new String(HEX_NUMBERS).indexOf(remainder);
                 hexadecimal += HEX_LETTERS[letterPosition];
             } else{
-                
                 hexadecimal += Integer.toString(remainder);
             }
-            // Add the remainder to the binary number (either 0 or 1)
         }
         // Reverse the hexadecimal string
         hexadecimal = textReverser(hexadecimal);
