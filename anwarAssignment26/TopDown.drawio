@@ -1,1 +1,69 @@
-<mxfile host="app.diagrams.net" modified="2023-01-26T20:23:12.954Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.12" etag="erYPQZalhuj06vBaWJts" type="github"><diagram name="Page-1" id="M9TZU5eoPPWfv9ihyZqa">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-01-26T20:29:09.643Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="gInQAOVar8BSSH5KN1du" version="20.8.12" type="github">
+  <diagram name="Page-1" id="M9TZU5eoPPWfv9ihyZqa">
+    <mxGraphModel dx="2202" dy="1327" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-4" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="E__TCtUMu3NJ9jDVDJ3l-1" target="E__TCtUMu3NJ9jDVDJ3l-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="E__TCtUMu3NJ9jDVDJ3l-1" target="E__TCtUMu3NJ9jDVDJ3l-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="-294" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="E__TCtUMu3NJ9jDVDJ3l-1" target="E__TCtUMu3NJ9jDVDJ3l-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-289" y="-293" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-1" value="Converting binary and decimals as well as hexadecimals and decimals&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-58" y="-324" width="332" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-18" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="E__TCtUMu3NJ9jDVDJ3l-2" target="E__TCtUMu3NJ9jDVDJ3l-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-2" value="Processes" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="-169" width="120" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-5" value="Outputs" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="493" y="-169" width="120" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="E__TCtUMu3NJ9jDVDJ3l-7" target="E__TCtUMu3NJ9jDVDJ3l-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-7" value="Inputs" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-382" y="-169" width="120" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="E__TCtUMu3NJ9jDVDJ3l-9" target="E__TCtUMu3NJ9jDVDJ3l-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-9" value="Ask the user for decimal value to be converted to binary" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-382" y="6" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-14" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="E__TCtUMu3NJ9jDVDJ3l-11" target="E__TCtUMu3NJ9jDVDJ3l-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-11" value="Ask the user for binary value&amp;nbsp;" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-382" y="137" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="E__TCtUMu3NJ9jDVDJ3l-13" target="E__TCtUMu3NJ9jDVDJ3l-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-13" value="Ask the user for hexadecimal value&amp;nbsp;" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-382" y="272" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-15" value="Ask the user for decimal value to be converted to hexadecimal" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-382" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="E__TCtUMu3NJ9jDVDJ3l-17" value="Call decimalToBinary()" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="37.5" y="12" width="141" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
