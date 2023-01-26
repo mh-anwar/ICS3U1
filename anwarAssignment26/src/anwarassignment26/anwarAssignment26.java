@@ -268,17 +268,17 @@ public class anwarAssignment26 extends javax.swing.JFrame {
         binaryNumber = textReverser(binaryNumber);
         return binaryNumber;
     }
-    private int binaryToDecimal(String binaryNumber){
+    private int binaryToDecimal(String binaryString){
         final int baseTwo = 2;
         int decimalNumber = 0;
         double power = 0;
         
         // Reverse loop through the binary number
-        for(int i = binaryNumber.length()-1; i >= 0; i--){
+        for(int i = binaryString.length()-1; i >= 0; i--){
             // Get the number at position i
-            int binaryNum = Character.getNumericValue(binaryNumber.charAt(i));
+            int currentNum = Character.getNumericValue(binaryString.charAt(i));
             // Multiply the number by 2 to a power to get the base two number
-            int baseTwoNum = binaryNum * (int) Math.pow(baseTwo, power);
+            int baseTwoNum = currentNum * (int) Math.pow(baseTwo, power);
             // Add the base two number to the toal decimal value
             decimalNumber += baseTwoNum;
             // Increase power by 1 for next loop
@@ -318,15 +318,15 @@ public class anwarAssignment26 extends javax.swing.JFrame {
         double power = 0;
         for(int i = hexString.length()-1; i >= 0; i--){
             
-            int currentChar = Character.getNumericValue(hexString.charAt(i));
+            int currentNum = Character.getNumericValue(hexString.charAt(i));
             // Check if the current character is a letter
-            int letterPosition = new String(HEX_LETTERS).indexOf(currentChar);
+            int letterPosition = new String(HEX_LETTERS).indexOf(currentNum);
             
             if(letterPosition >= 0){
-                currentChar =  (int)  HEX_NUMBERS[letterPosition];
+                currentNum =  (int)  HEX_NUMBERS[letterPosition];
             } 
             
-            int baseSixteenNum = currentChar * (int) Math.pow(16, power);
+            int baseSixteenNum = currentNum * (int) Math.pow(16, power);
             decimalNumber += baseSixteenNum;
             power+=1;
         }
