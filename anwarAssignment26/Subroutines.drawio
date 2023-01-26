@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-26T19:34:56.645Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.5" etag="mNQBmVQFfJTcm3msBLvy" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-26T19:55:35.718Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.5" etag="BcShOI7JMh4gYRRemmxd" type="github">
   <diagram id="QGvk3yh6qzKKtQ3O9pUi" name="Page-1">
-    <mxGraphModel dx="2202" dy="1327" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2202" dy="1348" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -183,6 +183,152 @@
             <mxPoint x="1109" y="1076" as="sourcePoint" />
             <mxPoint x="1159" y="1026" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-53" value="Hexadecimal To Decimal Subroutine" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="-218" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-76" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-77" target="RWuzewwSkAC1oUChftIm-79">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2602" y="76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-77" value="Begin" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="2542" y="-104" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-78" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-79" target="RWuzewwSkAC1oUChftIm-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-79" value="Obtain number (integer) and set it to: decimalNumber" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="2526" y="30" width="148" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-80" value="true" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-81" target="RWuzewwSkAC1oUChftIm-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-147" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-81" target="RWuzewwSkAC1oUChftIm-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-81" value="decimalNumber != 1/2" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="2540" y="378" width="134" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-97" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-88" target="RWuzewwSkAC1oUChftIm-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-88" value="binaryNumber = &quot;&quot;&lt;br&gt;(declare) remainder" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="2519" y="186" width="162" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-92" value="remainder = decimalNumber %2&lt;br&gt;decimalNumber /= 2&lt;br&gt;binaryNumber += Integer.toString(remainder)&lt;br&gt;&lt;br&gt;//Get the remainder of the decimalNumber divided by 2&lt;br&gt;//Actually divide it by 2, add the remainder to the binaryNumber for next iteration" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="2314" y="588" width="597" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-95" value="Decimal to Binary Subroutine" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="2547" y="-233" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-101" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-92" target="RWuzewwSkAC1oUChftIm-81">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2316" y="524" as="sourcePoint" />
+            <mxPoint x="2366" y="474" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2253" y="535" />
+              <mxPoint x="2324" y="411" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-118" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-119" target="RWuzewwSkAC1oUChftIm-121">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3618" y="76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-119" value="Begin" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="3558" y="-104" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-120" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-121" target="RWuzewwSkAC1oUChftIm-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-121" value="Obtain number (integer) and set it to: decimalNumber" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="3542" y="30" width="148" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-122" value="true" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-124" target="RWuzewwSkAC1oUChftIm-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-140" value="false" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-124" target="RWuzewwSkAC1oUChftIm-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-124" value="decimalNumber != 1/2" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="3556" y="378" width="134" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-125" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-126" target="RWuzewwSkAC1oUChftIm-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-126" value="Output hexadecimal" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="4337" y="383" width="141" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-127" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-128" target="RWuzewwSkAC1oUChftIm-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-128" value="hexadecimal = &quot;&quot;&lt;br&gt;(declare) remainder" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="3535" y="186" width="162" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-134" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-129" target="RWuzewwSkAC1oUChftIm-133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-129" value="remainder = decimalNumber %16&lt;br&gt;decimalNumber /= 16&lt;br&gt;binaryNumber += Integer.toString(remainder)&lt;br&gt;&lt;br&gt;//Get the remainder of the decimalNumber divided by 16&lt;br&gt;//Actually divide it by 16, add the remainder to the binaryNumber for next iteration" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="3330" y="588" width="597" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-130" value="Decimal to Hexadecimal Subroutine" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3563" y="-233" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-131" value="Finish" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="4347.5" y="528" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-132" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;exitX=0.003;exitY=0.607;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-137" target="RWuzewwSkAC1oUChftIm-124">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3332" y="524" as="sourcePoint" />
+            <mxPoint x="3382" y="474" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3084" y="798" />
+              <mxPoint x="3252" y="492" />
+              <mxPoint x="3428" y="418" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-136" value="true" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-133" target="RWuzewwSkAC1oUChftIm-135">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3793" y="958" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-138" value="false" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-133" target="RWuzewwSkAC1oUChftIm-137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-133" value="if remainder &amp;gt;= 10" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="3536.38" y="808" width="184.25" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-135" value="letterPosition =&amp;nbsp;new String(HEX_NUMBERS).indexOf(remainder)&lt;br&gt;hexadecimal += HEX_LETTERS[letterPosition]&lt;br&gt;&lt;br&gt;// if the remainder is greater than 10, it is a letter, so get it&#39;s index from HEX_NUMBERS, then get it&#39;s letter value from HEX_LETTERS and append to hexadecimal string" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="3742" y="1006" width="595" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-137" value="hexadecimal += Integer.toString(remainder)&lt;br&gt;// Convert remainder to string and add it to hexadecimal string" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="3150.37" y="1006" width="386.01" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-141" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-139" target="RWuzewwSkAC1oUChftIm-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-139" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; hexadecimal = textReverser(hexadecimal)&lt;/div&gt;&lt;div&gt;// Reverse the hexadecimal text&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="3819" y="374.5" width="390" height="77" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-142" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-143" target="RWuzewwSkAC1oUChftIm-144">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-143" value="Output binaryNumber" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="2978" y="500" width="141" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-144" value="Finish" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="2988.5" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-145" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="RWuzewwSkAC1oUChftIm-146" target="RWuzewwSkAC1oUChftIm-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWuzewwSkAC1oUChftIm-146" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; binaryNumber = textReverser(binaryNumber)&lt;/div&gt;&lt;div&gt;// Reverse the binaryNumber text&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=16;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="2716" y="373.5" width="390" height="77" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
