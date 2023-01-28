@@ -1,2 +1,7 @@
 Mohammad Anwar 16 2000 1
-Hecker Hack 32 100000 7
+John Dane 12 3000 10
+Jane Doe 40 20000 5
+Jane Dane 22 5000 17
+Ron Weasley 19 7000 34
+Harry Potter 23 23000 41
+Hermione Granger 15 45000 36
