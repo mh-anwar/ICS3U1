@@ -66,14 +66,15 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtUserFirstName = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        txtUserLastName = new javax.swing.JTextField();
+        btnSubmitData = new javax.swing.JButton();
+        txtUserAge = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtUserIncome = new javax.swing.JTextField();
+        lblDataSubmission = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         lblAverageUserAge = new javax.swing.JLabel();
@@ -81,17 +82,18 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
         lblHighestUserAge = new javax.swing.JLabel();
         lblNumberOfUsers = new javax.swing.JLabel();
         lblAverageUserIncome = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        lblPostDataSubmission = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         txtPostURL = new javax.swing.JTextField();
         btnCreatePost = new javax.swing.JButton();
         txtPostData = new javax.swing.JTextField();
+        lblPostSubmission = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         lblPostImage = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnDisplayNextPost = new javax.swing.JButton();
         lblPostLabel = new javax.swing.JLabel();
         lblPostAuthor = new javax.swing.JLabel();
 
@@ -120,10 +122,17 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
         jLabel5.setText("Your Data:");
 
-        jButton1.setText("Submit Your Data");
+        btnSubmitData.setText("Submit Your Data");
+        btnSubmitData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSubmitDataActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         jLabel6.setText("Your Age");
+
+        lblDataSubmission.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -137,26 +146,29 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel10)
                                 .addGap(65, 65, 65)
-                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtUserLastName, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel9)
                                 .addGap(65, 65, 65)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtUserFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel8)
                                 .addGap(65, 65, 65)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtUserIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addGap(38, 38, 38))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addGap(65, 65, 65)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(txtUserAge, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(156, 156, 156)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(123, Short.MAX_VALUE))
+                        .addGap(161, 161, 161)
+                        .addComponent(btnSubmitData, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(lblDataSubmission, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -166,22 +178,23 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtUserAge, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(16, 16, 16)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtUserIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtUserFirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtUserLastName, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
-                .addGap(31, 31, 31)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addComponent(btnSubmitData, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblDataSubmission, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -234,10 +247,10 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
                 .addComponent(lblAverageUserIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblHighestUserAge, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        lblPostDataSubmission.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel7.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         jLabel7.setText("Make A Post");
@@ -261,24 +274,27 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        lblPostSubmission.setText("jLabel14");
+
+        javax.swing.GroupLayout lblPostDataSubmissionLayout = new javax.swing.GroupLayout(lblPostDataSubmission);
+        lblPostDataSubmission.setLayout(lblPostDataSubmissionLayout);
+        lblPostDataSubmissionLayout.setHorizontalGroup(
+            lblPostDataSubmissionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lblPostDataSubmissionLayout.createSequentialGroup()
                 .addGap(95, 95, 95)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                .addGroup(lblPostDataSubmissionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jLabel4)
                     .addComponent(jLabel11)
                     .addComponent(txtPostURL, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCreatePost, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7)
-                    .addComponent(txtPostData, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPostData, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPostSubmission, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        lblPostDataSubmissionLayout.setVerticalGroup(
+            lblPostDataSubmissionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lblPostDataSubmissionLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
@@ -291,7 +307,9 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
                 .addComponent(txtPostURL, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnCreatePost, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(224, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                .addComponent(lblPostSubmission)
+                .addGap(60, 60, 60))
         );
 
         jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -308,10 +326,10 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Next Post");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnDisplayNextPost.setText("Next Post");
+        btnDisplayNextPost.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnDisplayNextPostActionPerformed(evt);
             }
         });
 
@@ -326,7 +344,7 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDisplayNextPost, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblPostLabel)
                     .addComponent(jLabel13)
                     .addComponent(lblPostAuthor))
@@ -348,7 +366,7 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblPostAuthor)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDisplayNextPost, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24))
         );
 
@@ -366,7 +384,7 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblPostDataSubmission, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -392,12 +410,15 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(6, 6, 6)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(6, 6, 6))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(lblPostDataSubmission, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         pack();
@@ -411,26 +432,89 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
         String postText = txtPostData.getText();
         String postURL;
         postURL = txtPostURL.getText();
-        appendPostData(postText, postURL);
+        String dataLine = "\n" + postText + " " + postURL;
+        try{
+            validatePostData(postText, postURL);
+            boolean successfullAppend = appendDataToFile("post_data", dataLine);
+            if(successfullAppend){
+                txtPostData.setText("");
+                txtPostURL.setText("");
+            }
+            lblPostSubmission.setText("Post submitted!");
+        } catch (Exception exceptionErr){
+            System.out.println(exceptionErr.getMessage());
+            if(exceptionErr.getMessage().equals("no_data")){
+                System.out.println("here");
+                lblPostSubmission.setText("Please fill in both fields");
+            } else if(exceptionErr.getMessage().equals("data_too_long")){
+                lblPostSubmission.setText("Please only enter one word to describe your post");
+            } else if(exceptionErr.getMessage().equals("no_protocol")){
+                lblPostSubmission.setText("Please enter a valid URL");
+            }
+        }        
     }//GEN-LAST:event_btnCreatePostActionPerformed
 
     private void lblPostImageComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_lblPostImageComponentShown
         displayPostData();
     }//GEN-LAST:event_lblPostImageComponentShown
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnDisplayNextPostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisplayNextPostActionPerformed
         displayPostData();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnDisplayNextPostActionPerformed
+
+    private void btnSubmitDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitDataActionPerformed
+        // Initialize age, income, first and last name variables
+        String userAge = "";
+        String userIncome = "";
+        String userFirstName = txtUserFirstName.getText();
+        String userLastName = txtUserLastName.getText();
+        boolean successfullDataAppend = false;
+        
+        // Validate data and attempt appending to file
+        try{
+            // Attempt to parse user age and income as integer, if it works, then the data is valid
+            // Then it can be converted back to a string, and appended to file
+            userAge = Integer.toString(Integer.parseInt(txtUserAge.getText()));
+            userIncome = Integer.toString(Integer.parseInt(txtUserIncome.getText()));
+            
+            // Check if first/last name fields are empty and throw error 
+            if(userFirstName == " " || userLastName == " "){
+                throw new Exception("empty_fields");
+            }
+            // Create the String to be appended
+            String dataLine = "\n" + userFirstName + " " + userLastName + " " + userAge + " " + userIncome + " 0";
+            // Call function to append data and assign to a boolean result
+            successfullDataAppend = appendDataToFile("user_data",dataLine);
+        } catch(Exception e){
+            // Throw error if there are empty fields or integers are required
+            if(e.getMessage().equals("empty_fields")){
+                lblDataSubmission.setText("Please fill in all fields");
+            } else{
+                lblDataSubmission.setText("Please enter integers for income and age.");
+            }
+        }
+
+        // Clear all text fields, if the appending the data worked
+        if(successfullDataAppend){
+            lblDataSubmission.setText("Data submitted!");
+            txtUserAge.setText("");
+            txtUserIncome.setText("");
+            txtUserFirstName.setText("");
+            txtUserLastName.setText("");
+        }
+    }//GEN-LAST:event_btnSubmitDataActionPerformed
     
     private void initializeArrays(){
+        // Try catch in case files don't exist
         try {
+            // Read user data files and initialize arrays based on number of lines
             int userDataLines = (int) Files.lines(Paths.get(USER_DATA_FILE)).count();
             firstNames = new String[userDataLines];
             lastNames = new String[userDataLines];
             allUserAges = new String[userDataLines];
             allUserIncomes = new String[userDataLines];
             postsPerUser = new String[userDataLines];
-            
+            // Read post data files and initialize arrays based on number of lines
             int postDataLines = (int) Files.lines(Paths.get(POST_DATA_FILE)).count();
             instaPosts = new String[postDataLines];
             instaImages = new String[postDataLines];
@@ -440,18 +524,30 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
         }
     }
         
-    private void appendPostData(String postText,String postURL){
-        File postFile = new File(POST_DATA_FILE);
+    private boolean appendDataToFile(String fileType, String data){
+        // Try catch in case file doesn't exist or writing is not possible
         try {
-            FileWriter postFileWriter = new FileWriter(postFile, true);        
+            // Initialize post file
+            File appendFile;
+            // Set file equal to specific file based on provided type
+            if(fileType.equals("post_data")){
+                appendFile = new File(POST_DATA_FILE);
+            } else{
+                appendFile = new File(USER_DATA_FILE);
+            }
+            // Create file writer, set append to true
+            FileWriter postFileWriter = new FileWriter(appendFile, true);
+            // Create a buffer (to write)
             BufferedWriter postFileBuffer = new BufferedWriter(postFileWriter);
-            postFileBuffer.write(postText + " " + postURL);        
+            // Write the data
+            postFileBuffer.write(data);
+            // Close buffer and file-writer
             postFileBuffer.close();
             postFileWriter.close();
+            return true;
         } catch (IOException ex) {
-            Logger.getLogger(AnwarAssignment27.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
         }
-
     }
     
     private void loadEveryoneData(){
@@ -503,6 +599,21 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
             postDataBuffer.close();
         } catch(IOException e){
             System.out.println(e);
+        }
+    }
+    private void validatePostData(String postText, String postURL) throws Exception{
+        if(postText.equals("") || postURL.equals("")){
+            throw new Exception("no_data");
+        } 
+        
+        String[] postTextualData = postText.split(" ");
+        System.out.println(postTextualData.length);
+        if(postTextualData.length > 1){
+            // If there is more than one word, throw an error
+            throw new Exception("data_too_long");
+        } else if(!postURL.contains("https") || !postURL.contains("http")){
+            // Cool that there is a specific exception for malformed URL's
+            throw new MalformedURLException("no_protocol");
         }
     }
     private void displayPostData(){
@@ -600,8 +711,8 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCreatePost;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnDisplayNextPost;
+    private javax.swing.JButton btnSubmitData;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -617,21 +728,23 @@ public class AnwarAssignment27 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JLabel lblAverageUserAge;
     private javax.swing.JLabel lblAverageUserIncome;
     private javax.swing.JLabel lblAverageUserPosts;
+    private javax.swing.JLabel lblDataSubmission;
     private javax.swing.JLabel lblHighestUserAge;
     private javax.swing.JLabel lblNumberOfUsers;
     private javax.swing.JLabel lblPostAuthor;
+    private javax.swing.JPanel lblPostDataSubmission;
     private javax.swing.JLabel lblPostImage;
     private javax.swing.JLabel lblPostLabel;
+    private javax.swing.JLabel lblPostSubmission;
     private javax.swing.JTextField txtPostData;
     private javax.swing.JTextField txtPostURL;
+    private javax.swing.JTextField txtUserAge;
+    private javax.swing.JTextField txtUserFirstName;
+    private javax.swing.JTextField txtUserIncome;
+    private javax.swing.JTextField txtUserLastName;
     // End of variables declaration//GEN-END:variables
 }
