@@ -26,7 +26,8 @@ public class GridConstraints extends GridBagConstraints{
         if(inset == true){
             insets = new Insets(15,0,0,0);
         }
-    }
+    }    
+ 
     // Default generated code
     @Override
     public Object clone() {

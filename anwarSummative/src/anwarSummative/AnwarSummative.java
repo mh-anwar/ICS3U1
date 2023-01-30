@@ -11,15 +11,16 @@ package anwarSummative;
  */
 import containers.MainContainer;
 import java.awt.*;
-import java.awt.geom.RoundRectangle2D;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
-public class AnwarSummative extends javax.swing.JFrame {
-
+public class AnwarSummative extends JFrame {
     static final Dimension MAIN_DIMENSION = new Dimension(1000,800);
+    
     public static void main(String args[]) {
         
         /* Create and display the form */
@@ -33,13 +34,13 @@ public class AnwarSummative extends javax.swing.JFrame {
   
     public AnwarSummative() {
         // Create undecorated, rounded JFrame with preset size in the middle of the screen
-        setUndecorated(true);
-        setShape(new RoundRectangle2D.Double(0, 0, 1000,800, 50, 50));
+        setUndecorated(false);
         setSize(MAIN_DIMENSION);
+        setPreferredSize(MAIN_DIMENSION);
         setLocationRelativeTo(null);
         // Stop the program when the GUI is closed
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(Color.RED);
+        // Set Font and aesthetics
         File fontFile = new File("src/CascadiaCode.ttf");
         Font font;
         try {
@@ -48,22 +49,42 @@ public class AnwarSummative extends javax.swing.JFrame {
              font = new Font("Dialog", 0, 20);
         }
         setFont(font);
-        
-        MainContainer MainContainer = new MainContainer(MAIN_DIMENSION, this){
-            public void paintComponent(Graphics g) {
-                super.paintComponent(g);
-                g.setColor(getBackground());
-                g.fillRect(0, 0, getWidth(), getHeight());
-            }
-        };
+        setBackground(Color.PINK);
+        setForeground(Color.BLACK);
+        setMode();
+        // Create main container and add to frame
+        MainContainer MainContainer = new MainContainer(MAIN_DIMENSION, this);
         MainContainer.setBackground(getBackground());
+        MainContainer.setForeground(getForeground());
+        MainContainer.setFont(getFont());        
+        MainContainer.setSize(MAIN_DIMENSION);
+        MainContainer.setPreferredSize(MAIN_DIMENSION);
         add(MainContainer);
     }
-    
-    private void initComponents(){
-        // Create the main container and add it to page
-        MainContainer MainContainer = new MainContainer(MAIN_DIMENSION, this);
-        this.add(MainContainer);
+    public void setMode(){
+        // Read file for mode data
+        try {
+            File programDataFile = new File("src/programData.txt");
+            FileReader fileReader = new FileReader(programDataFile);
+            BufferedReader fileBuffer = new BufferedReader(fileReader);
+            String line;
+            // Loop through every line, until the next line is null
+            for (int i = 0; (line = fileBuffer.readLine()) != null; i++){
+                if(i == 0){
+                    System.out.println(line);
+                    if(Integer.parseInt(line) == 1){
+                        setBackground(new Color(0,4,31));
+                        setForeground(new Color(255,255,255));
+                    }
+                }
+            }
+            fileBuffer.close();
+          } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + e.getMessage());
+          } catch (IOException e) {
+            System.out.println("Error reading file: " + e.getMessage());
+          }
     }
-
+    
+    
 }

@@ -43,5 +43,17 @@ public class Button extends javax.swing.JButton{
         // Create an EmptyBorder with 10 pixels of padding on all sides
         Border paddingBorder = BorderFactory.createEmptyBorder(10, 10, 10, 10);
         setBorder(paddingBorder);
+      }    
+    // Method overloading is amazing
+    public Button(String text, int width, int height) {
+        // Set text, dimensions of btn, margin and border
+        super(text);
+        setPreferredSize(new Dimension(width, height));
+        setBackground(GlobalData.secBackgroundColor);
+        setForeground(GlobalData.foregroundColor);
+        setMargin(new Insets(5,5,5,5));
+        Border btnBorder = BorderFactory.createRaisedBevelBorder();
+        setBorder(btnBorder);
+        setFont(super.getFont().deriveFont(15f));
       }
 }

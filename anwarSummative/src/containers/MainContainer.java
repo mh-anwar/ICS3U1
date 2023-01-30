@@ -4,10 +4,11 @@
  */
 package containers;
 
-import anwarSummative.GlobalData;
+import anwarSummative.AnwarSummative;
 import custom.components.Button;
 import custom.components.GridConstraints;
 import custom.components.Label;
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -15,6 +16,13 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  *
@@ -22,12 +30,7 @@ import java.awt.event.ActionListener;
  */
 public class MainContainer extends javax.swing.JPanel {
     public MainContainer(Dimension MAIN_DIMENSION, javax.swing.JFrame MainFrame){  
-        // Set size, layout type of panel, then initialize components      
-        
-        setSize(MAIN_DIMENSION);
-        setForeground(GlobalData.foregroundColor);
-        setFont(super.getFont());
-        setOpaque(false);
+        // Set size, layout type of panel, then initialize components
         setLayout(new GridBagLayout());
         initComponents(MAIN_DIMENSION, MainFrame);
     }
@@ -35,6 +38,7 @@ public class MainContainer extends javax.swing.JPanel {
     private void initComponents(Dimension MAIN_DIMENSION, javax.swing.JFrame MainFrame){
         // The next few lines: create an element given parameters and set it's pos. on the page with GBC 
         // GBC - Grid Bag Constraints
+        
         Label lblPageTitle = new Label("Wilson Chess", "h1");
         GridBagConstraints lblPageTitleConstraints = new GridConstraints(0, 0, 0, 3, false);
         
@@ -48,10 +52,14 @@ public class MainContainer extends javax.swing.JPanel {
         GridBagConstraints btnLoginConstraints = new GridConstraints(0, 4, 0.5, 1, true);
         
         Button btnSignup = new Button("Signup");
-        GridBagConstraints btnSignupConstraints = new GridConstraints(1,4, 0.5, 1, true);
+        GridBagConstraints btnSignupConstraints = new GridConstraints(0,5, 0.5, 1, true);
         
         Button btnLeaderboard = new Button("Leaderboard");
-        GridBagConstraints btnLeaderboardConstraints = new GridConstraints(2,4, 0.5, 1, true);
+        GridBagConstraints btnLeaderboardConstraints = new GridConstraints(0,6, 0.5, 1, true);
+        
+        
+        Button btnDarkMode = new Button("Change Mode (Restart for Effect)", 350, 60);
+        GridBagConstraints btnDarkModeConstraints = new GridConstraints(2,4, 0.5, 1, true);
         
         // Listen for clicks on the following buttons
         btnLogin.addActionListener(new ActionListener() {
@@ -96,6 +104,50 @@ public class MainContainer extends javax.swing.JPanel {
             }
         });
         
+        btnDarkMode.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Read the current mode, then set it
+                int programMode = 0;
+                String programFirstName = "";
+                try {
+                    File programDataFile = new File("src/programData.txt");
+                    FileReader fileReader = new FileReader(programDataFile);
+                    BufferedReader fileBuffer = new BufferedReader(fileReader);
+                    String line;
+                    // Loop through every line, until the next line is null
+                    for (int i = 0; (line = fileBuffer.readLine()) != null; i++){
+                        if(i == 0){
+                            programMode = Integer.parseInt(line);
+                        } else if(i == 1){
+                            programFirstName = line;
+                        }
+                    }
+                    fileBuffer.close();
+                  } catch (FileNotFoundException err) {
+                    System.out.println("File not found: " + err.getMessage());
+                  } catch (IOException err) {
+                    System.out.println("Error reading file: " + err.getMessage());
+                  }
+                // Switch to opposite mode
+                if(programMode == 0){
+                    programMode = 1;
+                } else{
+                    programMode = 0;
+                }
+                // Write new mode
+                try {
+                    File programDataFile = new File("src/programData.txt");
+                    FileWriter fileWriter = new FileWriter(programDataFile);
+                    BufferedWriter fileBuffer = new BufferedWriter(fileWriter);
+                    fileBuffer.write(Integer.toString(programMode));
+                    fileBuffer.newLine();
+                    fileBuffer.write(programFirstName);
+                    fileBuffer.close();
+              } catch (IOException err) {
+                    err.printStackTrace();
+              }
+            }
+        });
         // Add all created elements to page
         this.add(lblPageTitle, lblPageTitleConstraints);
         this.add(lblPageSecTitle, lblPageSecTitleConstraints);
@@ -103,5 +155,7 @@ public class MainContainer extends javax.swing.JPanel {
         this.add(btnLogin, btnLoginConstraints);
         this.add(btnSignup, btnSignupConstraints);
         this.add(btnLeaderboard, btnLeaderboardConstraints);
+        this.add(btnDarkMode, btnDarkModeConstraints);
     }
+
 }

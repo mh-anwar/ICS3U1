@@ -8,6 +8,7 @@ import anwarSummative.GlobalData;
 import custom.components.Button;
 import custom.components.Challenge;
 import custom.components.GridConstraints;
+import custom.components.Label;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -34,9 +35,10 @@ import javax.swing.JTable;
  */
 public class LeaderboardContainer extends javax.swing.JPanel{
     public LeaderboardContainer(Dimension MAIN_DIMENSION, Container MainContainer){
-        setBackground(super.getBackground());
-        setForeground(super.getForeground());
-        setFont(super.getFont());
+        setBackground(MainContainer.getBackground());
+        setForeground(MainContainer.getForeground());
+        setFont(MainContainer.getFont());
+        
         setSize(MAIN_DIMENSION);
         setLayout(new GridBagLayout());
         JSONArray leaderboardData = null;
@@ -51,15 +53,15 @@ public class LeaderboardContainer extends javax.swing.JPanel{
     }
     private void initComponents(Container MainContainer, JSONArray leaderboardData){
         // Create column label string array
-        String[] columnLabels = {"Name",  "Rank"};
+        String[] columnLabels = {"Name",  "Won"};
         // Create column data object with length of leaderboardData
         Object[][] columnData = new Object[leaderboardData.size()][];   
         // Get each JSONObject from leaderboard array, get name and rank, add it to columnData
         for (int i = 0; i < leaderboardData.size(); i++) {
             JSONObject object = (JSONObject) leaderboardData.get(i);
-            String name = object.get("name").toString();
-            String rank = object.get("rank").toString();
-            columnData[i] = new Object[] {name, rank, };
+            String name = object.get("key").toString();
+            String won = object.get("won").toString();
+            columnData[i] = new Object[] {name, won };
         }
         
         // Provide JTable with columnData and columnLabels in order to create a table
@@ -77,10 +79,16 @@ public class LeaderboardContainer extends javax.swing.JPanel{
         Button btnReturn = new Button("Return", true);
         GridBagConstraints btnReturnConstraints = new GridConstraints(0, 3, 0, 1, false);
         
+        Label lblInfoMessage = new Label("<html>Alas, I am writing this at 11:47 and I have found out that Java doesnt allow PATCH HTTP Methods"
+                + "<br>If I had known this, I would have never used an external database"
+                + "<br>therefore the challenge feature wont work, in theory my code will work.</html>");
+        GridBagConstraints lblInfoMessageConstraints = new GridConstraints(0, 10, 0, 5, false);
+        
         // Add all created elements to page
         this.add(tableScrollPane, tableScrollPaneConstraints);
         this.add(btnChallenge, btnChallengeConstraints);
         this.add(btnReturn, btnReturnConstraints);
+        this.add(lblInfoMessage, lblInfoMessageConstraints );
         
         // Copied from LoginContainer - maybe this should be its own component
         // Listen for click on on btnReturn to display Main Container
@@ -95,7 +103,7 @@ public class LeaderboardContainer extends javax.swing.JPanel{
         btnChallenge.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
-                Challenge challengeUI = new Challenge();
+                Challenge challengeUI = new Challenge(MainContainer, leaderboardData);
             }
         });
     }
@@ -103,7 +111,7 @@ public class LeaderboardContainer extends javax.swing.JPanel{
         // This is an ACTUAL database, that contains real data
         // on https://nanwar.ca there are two separate DB's instead of a joint one, which was a big mistake
         // Here I use one database for leaderboard and user info
-        URL url = new URL("https://database.deta.sh/v1/b0jecxqg/leaderboard/query");
+        URL url = new URL("https://database.deta.sh/v1/b0jecxqg/javaAppLeaderboard/query");
         HttpURLConnection conn = (HttpURLConnection)url.openConnection();
         conn.setRequestMethod("POST"); // getting data
 
@@ -122,12 +130,6 @@ public class LeaderboardContainer extends javax.swing.JPanel{
          */
         // Write data to a file (caching purposes)
         JSONArray leaderboard = (JSONArray) leaderboardData.get("items");
-        /*
-        Iterator itr = leaderboard.iterator();
-        List<String> jsonValues = new ArrayList<String>();
-
-        Collections.sort(jsonValues);
-        JSONArray sortedJsonArray = new JSONArray(jsonValues);*/
         return leaderboard;
     }
 }

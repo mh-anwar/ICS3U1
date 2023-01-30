@@ -24,8 +24,10 @@ import java.awt.event.ActionListener;
 public class ProfileContainer extends javax.swing.JPanel {
     public ProfileContainer(Dimension MAIN_DIMENSION, Container MainContainer){
         // Set size, layout type of panel, then initialize components
-        setBackground(GlobalData.backgroundColor);
-        setForeground(GlobalData.foregroundColor);
+        setBackground(MainContainer.getBackground());
+        setForeground(MainContainer.getForeground());
+        setFont(MainContainer.getFont());
+        
         setSize(MAIN_DIMENSION);
         setLayout(new GridBagLayout());
         initComponents(MainContainer);
@@ -62,4 +64,5 @@ public class ProfileContainer extends javax.swing.JPanel {
             }
         });
     }
+    
 }

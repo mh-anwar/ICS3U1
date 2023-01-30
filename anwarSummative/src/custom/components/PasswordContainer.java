@@ -20,18 +20,24 @@ import javax.swing.border.TitledBorder;
  * @author mohammad
  */
 public class PasswordContainer extends javax.swing.JPanel {
+    PasswordField passField;
     public PasswordContainer(String text){
         // Create elements
-        PasswordField passField = new PasswordField(text);
+        passField = new PasswordField(text);
         ShowPasswordBtn showPassword = new ShowPasswordBtn(passField);
         setBackground(super.getBackground());
         setForeground(super.getForeground());
         setOpaque(false);   
+        Font textFont = super.getFont();
+        setFont(textFont.deriveFont(20f));
         // Add all created elements
         this.add(passField);
         this.add(showPassword);
     }
     
+    public char[] getPassword(){
+        return passField.getPassword();
+    }
     /* Generally, custom components are in their own class/file
      * However, in this case, this components will always be together
      * component. Therefore, it makes sense to have them in one class/file.
