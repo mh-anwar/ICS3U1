@@ -12,9 +12,7 @@ The file naming scheme was changed from `assignmentEighteenAnwar` to `anwarAssig
 - [ ] Assignment 22 Onwards: Try-Catch anything with validation
   - [ ] Preferably use Spinners for numbers (especially in ISU) but that is generally not allowed
 
-NOTE: Assignments 2, 5 and 6 have small mistakes in them.
-Assignment 2
-- [ ] Rate of interest and principle should be double, to stop program from crashing
+NOTE: Assignments 5 and 6 have small mistakes in them.
 
 Assignment 5
 - [ ] Constants need to be in all caps
