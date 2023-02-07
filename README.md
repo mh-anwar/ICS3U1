@@ -12,7 +12,7 @@ The file naming scheme was changed from `assignmentEighteenAnwar` to `anwarAssig
 - [ ] Assignment 22 Onwards: Try-Catch anything with validation
   - [ ] Preferably use Spinners for numbers (especially in ISU) but that is generally not allowed
 
-NOTE: Assignments 5 and 6 have small mistakes in them.
+NOTE: Assignments 5, 6 and 18 have small mistakes in them.
 
 Assignment 5
 - [ ] Constants need to be in all caps
